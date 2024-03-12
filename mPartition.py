@@ -135,7 +135,7 @@ print("mset: "+mset)
 while len(alignList) > 0:
 	for align in alignList:
 		if num_run == 1 and len(alignList) == 1:
-			command = "python mPartition_3part.py -f "+align+" -m "+str(maxlength)+" -tper "+str(tper)+" -mset "+mset+" -o "+output+" -prot "+str(ndna)
+			command = "python2.7 mPartition_3part.py -f "+align+" -m "+str(maxlength)+" -tper "+str(tper)+" -mset "+mset+" -o "+output+" -prot "+str(ndna)
 			os.system(command)
 
 			extS = 0
@@ -155,7 +155,7 @@ while len(alignList) > 0:
 			parfile = output + "/par."+treefn
 			tiger_file = "rate_"+treefn
 			inv_file = "inv_"+treefn
-			command = "python mPartition_3part.py -f "+align+" -m "+str(maxlength)+" -tiger "+tiger_file+" -inv "+inv_file+" -tper "+str(tper)+" -mset "+mset+" -t "+treefile+" -p "+parfile+" -o "+output+" -prot "+str(ndna)
+			command = "python2.7 mPartition_3part.py -f "+align+" -m "+str(maxlength)+" -tiger "+tiger_file+" -inv "+inv_file+" -tper "+str(tper)+" -mset "+mset+" -t "+treefile+" -p "+parfile+" -o "+output+" -prot "+str(ndna)
 
 			os.system(command)
 			extS = 0

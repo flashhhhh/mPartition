@@ -708,7 +708,7 @@ if(os.path.isfile(output+"/"+treefn+"_G1.sitelh") and os.path.isfile(output+"/"+
 			parFile.write(line.strip(",")+"\n")
 		parFile.close()
 		#os.system("python extractPartitions.py -f "+filex+" -p "+output+"/F1_Par_"+treefn+" -o "+output)
-		os.system("python splitPartition.py -f "+newfile+" -p "+output+"/F1_Par_"+treefn+"")
+		os.system("python2.7 splitPartition.py -f "+newfile+" -p "+output+"/F1_Par_"+treefn+"")
 		
 		if(os.path.isfile(path+""+treefn+"P1") and not os.path.isfile(output+"/"+treefn+"P1")):
 			os.system("cp "+path+""+treefn+"P1 "+output+"/"+treefn+"P1")
