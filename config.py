@@ -1,2 +1,2 @@
-iqtree_path = "$IQTREE/" 
-tiger_path = "/home/lkthu/Partitions/tiger_original/" 
+iqtree_path = "/home/diepht/danquan/pQMaker/" 
+tiger_path = "tiger_original/" 

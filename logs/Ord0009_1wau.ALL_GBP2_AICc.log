@@ -1,0 +1,216 @@
+IQ-TREE multicore version 1.6.12 for Linux 64-bit built Aug 15 2019
+Developed by Bui Quang Minh, Nguyen Lam Tung, Olga Chernomor,
+Heiko Schmidt, Dominik Schrempf, Michael Woodhams.
+
+Host:    fit-gw.local (AVX2, FMA3, 62 GB RAM)
+Command: /home/diepht/danquan/pQMaker/iqtree -s ../output/hssp/split/Ord0009_1wau.ALL_GBP2 -m MFP -fast -mset LG,WAG,JTT -t ../output/hssp/split/Ord0009_1wau.ALL_GB.tree -safe -seed 0 -pre ../output/hssp/split/Ord0009_1wau.ALL_GBP2_AICc
+Seed:    0 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Sat Mar  9 17:04:36 2024
+Kernel:  Safe AVX+FMA - 1 threads (36 CPU cores detected)
+
+HINT: Use -nt option to specify number of threads because your CPU has 36 cores!
+HINT: -nt AUTO will automatically determine the best number of threads to use.
+
+Reading alignment file ../output/hssp/split/Ord0009_1wau.ALL_GBP2 ... Phylip format detected
+Alignment most likely contains protein sequences
+Alignment has 91 sequences with 88 columns, 88 distinct patterns
+86 parsimony-informative, 0 singleton sites, 2 constant sites
+                       Gap/Ambiguity  Composition  p-value
+   1  1wau_seed                0.00%    passed     99.82%
+   2  11_1wau_Q8ZNW4_SALTY     0.00%    passed     99.96%
+   3  15_1wau_A0VZW1_9ENTR     0.00%    passed     99.99%
+   4  16_1wau_ALKH_DICD3       0.00%    passed     99.97%
+   5  17_1wau_Q6D4B5_ERWCT     0.00%    passed     99.99%
+   6  18_1wau_Q66AT0_YERPS     0.00%    passed     96.44%
+   7  22_1wau_A1JRF1_YEREN     0.00%    passed     92.17%
+   8  23_1wau_A0IKA2_9ENTR     0.00%    passed     98.81%
+   9  24_1wau_A0IUX4_9ENTR     0.00%    passed     99.94%
+  10  25_1wau_Q15X88_PSEA6     0.00%    passed     91.90%
+  11  26_1wau_A1S6K8_9GAMM     0.00%    passed     90.56%
+  12  27_1wau_Q8EEA1_SHEON     0.00%    passed     82.41%
+  13  30_1wau_A0J3Y3_9GAMM     0.00%    passed     82.05%
+  14  31_1wau_Q082S4_SHEFN     0.00%    passed     94.19%
+  15  34_1wau_A0X649_9GAMM     0.00%    passed     75.00%
+  16  35_1wau_A0KX59_9GAMM     0.00%    passed     78.00%
+  17  38_1wau_Q33VT6_9GAMM     0.00%    passed     96.58%
+  18  39_1wau_Q0F7Y3_9PROT     0.00%    passed     68.15%
+  19  40_1wau_Q12MG8_SHEDO     0.00%    passed     97.37%
+  20  42_1wau_A0WGF5_9GAMM     0.00%    passed     90.77%
+  21  43_1wau_Q482L3_COLP3     0.00%    passed     24.62%
+  22  44_1wau_Q0SE64_RHOSR     0.00%    passed     97.81%
+  23  46_1wau_Q7P1S0_CHRVO     0.00%    passed     92.62%
+  24  47_1wau_Q7DDC2_NEIMB     0.00%    passed     77.94%
+  25  50_1wau_Q1ZR96_9VIBR     0.00%    passed     87.18%
+  26  51_1wau_A0KF01_AERHH     0.00%    passed     90.25%
+  27  52_1wau_A0HC21_COMTE     0.00%    passed     99.78%
+  28  53_1wau_Q2C7L1_9GAMM     0.00%    passed     79.66%
+  29  54_1wau_Q9L015_STRCO     0.00%    passed     31.10%
+  30  55_1wau_Q5F8Q4_NEIG1     0.00%    passed     83.64%
+  31  56_1wau_A0VHA6_COMAC     0.00%    passed     96.31%
+  32  59_1wau_A1SYR7_9GAMM     0.00%    passed     39.00%
+  33  60_1wau_Q1QTX2_CHRSD     0.00%    passed     36.08%
+  34  61_1wau_A1TQX2_9BURK     0.00%    passed     75.44%
+  35  62_1wau_Q82B27_STRAW     0.00%    passed     44.88%
+  36  66_1wau_Q21WR7_RHOFD     0.00%    passed     96.53%
+  37  67_1wau_Q1YKP4_9RHIZ     0.00%    passed     86.19%
+  38  68_1wau_A1W7J9_9BURK     0.00%    passed     79.21%
+  39  69_1wau_Q60CU4_METCA     0.00%    passed     81.03%
+  40  70_1wau_Q5E8R1_VIBF1     0.00%    passed     71.93%
+  41  73_1wau_Q0FHI7_9RHOB     1.14%    passed     99.49%
+  42  76_1wau_A0QP88_MYCSM     0.00%    passed     95.19%
+  43  79_1wau_Q1H3A9_METFK     0.00%    passed     97.74%
+  44  82_1wau_A1WL07_9BURK     0.00%    passed     83.52%
+  45  84_1wau_Q26UT7_XANP2     0.00%    passed     93.35%
+  46  85_1wau_Q1LDZ6_RALME     0.00%    passed     87.54%
+  47  87_1wau_A0VW76_9RHOB     1.14%    passed     80.05%
+  48  88_1wau_A0YBK6_9GAMM     0.00%    passed     95.64%
+  49  90_1wau_Q126T4_POLSJ     0.00%    passed     95.32%
+  50  91_1wau_Q28QZ1_JANSC     1.14%    passed     94.68%
+  51  94_1wau_Q1GJQ8_SILST     1.14%    passed     91.92%
+  52  95_1wau_Q3J334_RHOS4     0.00%    passed     94.46%
+  53  97_1wau_Q92LX8_RHIME     0.00%    passed     99.97%
+  54  98_1wau_Q4IYY5_AZOVI     0.00%    passed     24.86%
+  55  99_1wau_Q0MLU5_9RHIZ     0.00%    passed     99.95%
+  56  100_1wau_Q46U04_RALEJ    0.00%    passed     92.56%
+  57  101_1wau_Q89NB9_BRAJA    0.00%    passed     50.09%
+  58  102_1wau_Q0K1X1_RALEH    0.00%    passed     88.30%
+  59  104_1wau_Q2D8N1_ACICY    0.00%    passed     92.48%
+  60  105_1wau_A1VRK6_9BURK    0.00%    passed     90.38%
+  61  107_1wau_Q35NK0_9BRAD    0.00%    passed     64.09%
+  62  108_1wau_A0HUN3_PSEME    0.00%    passed     57.48%
+  63  109_1wau_Q1MBN2_RHIL3    0.00%    passed     99.69%
+  64  110_1wau_Q3W179_9ACTO    0.00%    passed     61.03%
+  65  112_1wau_A0Y6I8_9GAMM    0.00%    passed     90.48%
+  66  115_1wau_Q8XQN2_RALSO    0.00%    passed     81.24%
+  67  117_1wau_A1HDC7_BURPI    0.00%    passed     75.04%
+  68  120_1wau_Q8U7F5_AGRT5    0.00%    passed     98.44%
+  69  121_1wau_Q21KY5_SACD2    0.00%    passed     97.82%
+  70  123_1wau_Q2SQ13_HAHCH    0.00%    passed     98.73%
+  71  124_1wau_A1FZ31_XANMA    0.00%    passed     95.99%
+  72  126_1wau_Q8YE09_BRUME    0.00%    passed     98.34%
+  73  127_1wau_Q2K446_RHIEC    0.00%    passed     92.38%
+  74  128_1wau_Q98H77_RHILO    0.00%    passed     83.62%
+  75  129_1wau_Q17YK2_HELAH    0.00%    passed     13.69%
+  76  131_1wau_Q165D9_ROSDO    1.14%    passed     92.23%
+  77  135_1wau_A0Z4E6_9GAMM    0.00%    passed     97.13%
+  78  139_1wau_Q4J147_AZOVI    0.00%    passed     96.81%
+  79  140_1wau_Q3IL59_PSEHT    0.00%    passed     73.75%
+  80  143_1wau_A1FJL0_PSEPU    0.00%    passed     95.81%
+  81  144_1wau_Q2X8X8_PSEPU    0.00%    passed     95.81%
+  82  149_1wau_A0NPR1_9RHOB    0.00%    passed     93.65%
+  83  153_1wau_Q6FEN9_ACIAD    0.00%    passed     53.02%
+  84  154_1wau_Q62H28_BURMA    0.00%    passed     32.65%
+  85  159_1wau_Q02PY7_PSEAB    0.00%    passed     26.29%
+  86  181_1wau_Q2SZ84_BURTA    0.00%    passed     29.06%
+  87  186_1wau_Q1BZ63_BURCA    0.00%    passed     48.41%
+  88  188_1wau_Q4BHH9_BURVI    0.00%    passed     10.70%
+  89  193_1wau_A0UQS4_9BURK    0.00%    passed      5.91%
+  90  194_1wau_Q39JL8_BURS3    0.00%    passed     15.03%
+  91  204_1wau_Q0C2Y8_HYPNA    0.00%    passed     88.38%
+****  TOTAL                    0.06%  0 sequences failed composition chi2 test (p-value<5%; df=19)
+NOTE: 144_1wau_Q2X8X8_PSEPU is identical to 143_1wau_A1FJL0_PSEPU but kept for subsequent analysis
+
+Reading input tree file ../output/hssp/split/Ord0009_1wau.ALL_GB.tree ...
+NOTE: ModelFinder requires 15 MB RAM!
+ModelFinder will test 78 protein models (sample size: 88) ...
+ No. Model         -LnL         df  AIC          AICc         BIC
+  1  LG            7526.656     179 15411.312    79851.312    15854.755
+  2  LG+I          7517.208     180 15394.415    80554.415    15840.336
+  3  LG+G4         7285.135     180 14930.270    80090.270    15376.191
+  4  LG+I+G4       7284.380     181 14930.760    80814.760    15379.158
+  5  LG+R2         7294.312     181 14950.625    80834.625    15399.023
+  6  LG+R3         7280.406     183 14926.813    82270.813    15380.165
+  7  LG+R4         7280.397     185 14930.795    83750.795    15389.102
+ 14  LG+F          7621.788     198 15639.576    94443.576    16130.089
+ 15  LG+F+I        7608.704     199 15615.407    95215.407    16108.397
+ 16  LG+F+G4       7301.074     199 15000.148    94600.148    15493.138
+ 17  LG+F+I+G4     7299.547     200 14999.093    95399.093    15494.561
+ 18  LG+F+R2       7316.930     200 15033.861    95433.861    15529.328
+ 19  LG+F+R3       7295.963     202 14995.925    97007.925    15496.347
+ 20  LG+F+R4       7295.917     204 14999.834    98639.834    15505.211
+ 27  WAG           7525.778     179 15409.557    79849.557    15853.000
+ 28  WAG+I         7513.401     180 15386.802    80546.802    15832.723
+ 29  WAG+G4        7344.580     180 15049.159    80209.159    15495.080
+ 30  WAG+I+G4      7342.782     181 15047.564    80931.564    15495.962
+ 31  WAG+R2        7349.187     181 15060.373    80944.373    15508.771
+ 32  WAG+R3        7339.168     183 15044.337    82388.337    15497.690
+ 33  WAG+R4        7339.168     185 15048.335    83868.335    15506.642
+ 40  WAG+F         7580.295     198 15556.590    94360.590    16047.103
+ 41  WAG+F+I       7565.717     199 15529.433    95129.433    16022.423
+ 42  WAG+F+G4      7350.070     199 15098.139    94698.139    15591.129
+ 43  WAG+F+I+G4    7347.949     200 15095.897    95495.897    15591.364
+ 44  WAG+F+R2      7356.799     200 15113.598    95513.598    15609.065
+ 45  WAG+F+R3      7343.436     202 15090.871    97102.871    15591.293
+ 46  WAG+F+R4      7343.425     204 15094.850    98734.850    15600.226
+ 53  JTT           7646.508     179 15651.016    80091.016    16094.460
+ 54  JTT+I         7628.593     180 15617.187    80777.187    16063.108
+ 55  JTT+G4        7430.231     180 15220.462    80380.462    15666.383
+ 56  JTT+I+G4      7427.000     181 15216.001    81100.001    15664.399
+ 57  JTT+R2        7441.887     181 15245.773    81129.773    15694.171
+ 58  JTT+R3        7426.092     183 15218.183    82562.183    15671.536
+ 59  JTT+R4        7426.065     185 15222.130    84042.130    15680.438
+ 66  JTT+F         7719.605     198 15835.210    94639.210    16325.723
+ 67  JTT+F+I       7698.232     199 15794.464    95394.464    16287.454
+ 68  JTT+F+G4      7435.867     199 15269.734    94869.734    15762.724
+ 69  JTT+F+I+G4    7431.696     200 15263.392    95663.392    15758.859
+ 70  JTT+F+R2      7452.011     200 15304.023    95704.023    15799.490
+ 71  JTT+F+R3      7432.000     202 15268.001    97280.001    15768.423
+ 72  JTT+F+R4      7431.991     204 15271.982    98911.982    15777.358
+Akaike Information Criterion:           LG+R3
+Corrected Akaike Information Criterion: WAG
+Bayesian Information Criterion:         LG+G4
+Best-fit model: LG+G4 chosen according to BIC
+
+All model information printed to ../output/hssp/split/Ord0009_1wau.ALL_GBP2_AICc.model.gz
+CPU time for ModelFinder: 8.556 seconds (0h:0m:8s)
+Wall-clock time for ModelFinder: 8.634 seconds (0h:0m:8s)
+
+NOTE: 6 MB RAM (0 GB) is required!
+Estimate model parameters (epsilon = 0.500)
+1. Initial log-likelihood: -7309.494
+2. Current log-likelihood: -7294.450
+3. Current log-likelihood: -7285.409
+Optimal log-likelihood: -7285.140
+Gamma shape alpha: 2.093
+Parameters optimization took 3 rounds (0.248 sec)
+--------------------------------------------------------------------
+|             INITIALIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+
+Do NNI search on 1 best initial trees
+Estimate model parameters (epsilon = 0.500)
+BETTER TREE FOUND at iteration 1: -7246.927
+Finish initializing candidate tree set (2)
+Current best tree score: -7246.927 / CPU time: 0.396
+Number of iterations: 1
+--------------------------------------------------------------------
+|               OPTIMIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Estimate model parameters (epsilon = 0.500)
+BETTER TREE FOUND at iteration 2: -7246.865
+TREE SEARCH COMPLETED AFTER 2 ITERATIONS / Time: 0h:0m:1s
+
+--------------------------------------------------------------------
+|                    FINALIZING TREE SEARCH                        |
+--------------------------------------------------------------------
+Performs final model parameters optimization
+Estimate model parameters (epsilon = 0.050)
+1. Initial log-likelihood: -7246.865
+Optimal log-likelihood: -7246.864
+Gamma shape alpha: 2.146
+Parameters optimization took 1 rounds (0.049 sec)
+BEST SCORE FOUND : -7246.864
+Total tree length: 23.837
+
+Total number of iterations: 2
+CPU time used for tree search: 0.749 sec (0h:0m:0s)
+Wall-clock time used for tree search: 0.753 sec (0h:0m:0s)
+Total CPU time used: 1.050 sec (0h:0m:1s)
+Total wall-clock time used: 1.065 sec (0h:0m:1s)
+
+Analysis results written to: 
+  IQ-TREE report:                ../output/hssp/split/Ord0009_1wau.ALL_GBP2_AICc.iqtree
+  Maximum-likelihood tree:       ../output/hssp/split/Ord0009_1wau.ALL_GBP2_AICc.treefile
+  Screen log file:               ../output/hssp/split/Ord0009_1wau.ALL_GBP2_AICc.log
+
+Date and Time: Sat Mar  9 17:04:46 2024

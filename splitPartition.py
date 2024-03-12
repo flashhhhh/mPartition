@@ -41,6 +41,7 @@ for line in parF:
 		if os.path.isfile(filex+str(parname)):
 			os.system("rm "+filex+str(parname))
 		par = open(filex+str(parname),"w")
+		print(filex+str(parname) + "here")
 		fil = open(filex,"r")
 		noOfTax = 0
 		for lx in fil:

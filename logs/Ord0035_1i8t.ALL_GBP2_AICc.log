@@ -1,0 +1,208 @@
+IQ-TREE multicore version 1.6.12 for Linux 64-bit built Aug 15 2019
+Developed by Bui Quang Minh, Nguyen Lam Tung, Olga Chernomor,
+Heiko Schmidt, Dominik Schrempf, Michael Woodhams.
+
+Host:    fit-gw.local (AVX2, FMA3, 62 GB RAM)
+Command: /home/diepht/danquan/pQMaker/iqtree -s ../output/hssp/split/Ord0035_1i8t.ALL_GBP2 -m MFP -fast -mset LG,WAG,JTT -t ../output/hssp/split/Ord0035_1i8t.ALL_GB.tree -safe -seed 0 -pre ../output/hssp/split/Ord0035_1i8t.ALL_GBP2_AICc
+Seed:    0 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Sat Mar  9 18:14:20 2024
+Kernel:  Safe AVX+FMA - 1 threads (36 CPU cores detected)
+
+HINT: Use -nt option to specify number of threads because your CPU has 36 cores!
+HINT: -nt AUTO will automatically determine the best number of threads to use.
+
+Reading alignment file ../output/hssp/split/Ord0035_1i8t.ALL_GBP2 ... Phylip format detected
+Alignment most likely contains protein sequences
+Alignment has 75 sequences with 60 columns, 60 distinct patterns
+57 parsimony-informative, 2 singleton sites, 1 constant sites
+                       Gap/Ambiguity  Composition  p-value
+   1  1i8t_seed                0.00%    passed     97.72%
+   2  2_1i8t_Q2ARV7_9BACI      0.00%    passed     99.54%
+   3  4_1i8t_Q74JS3_LACJO      0.00%    passed     94.43%
+   4  5_1i8t_Q4K1C7_STRPN      0.00%    passed     99.97%
+   5  6_1i8t_Q4K0Q8_STRPN      0.00%    passed     99.97%
+   6  8_1i8t_Q4JZV2_STRPN      0.00%    passed     99.97%
+   7  9_1i8t_Q4JZ57_STRPN      0.00%    passed     99.97%
+   8  10_1i8t_Q4K1H0_STRPN     0.00%    passed     99.97%
+   9  15_1i8t_Q93DZ5_STRTR     0.00%    passed     99.97%
+  10  20_1i8t_Q4K2E7_STRPN     0.00%    passed     99.55%
+  11  21_1i8t_Q4JZK8_STRPN     0.00%    passed     99.97%
+  12  22_1i8t_Q1G8F1_LACDA     0.00%    passed     96.58%
+  13  23_1i8t_Q042V9_LACGA     0.00%    passed     97.12%
+  14  24_1i8t_Q88XM4_LACPL     0.00%    passed     99.55%
+  15  28_1i8t_Q4K0S4_STRPN     0.00%    passed     99.97%
+  16  31_1i8t_Q048A0_LACDB     0.00%    passed     98.92%
+  17  32_1i8t_Q4JZ75_STRPN     0.00%    passed     99.97%
+  18  35_1i8t_Q3EI50_ACTSC     0.00%    passed     99.99%
+  19  36_1i8t_Q692J4_STRPN     0.00%    passed     99.97%
+  20  38_1i8t_Q4JYJ8_STRPN     0.00%    passed     99.92%
+  21  39_1i8t_Q4JZF9_STRPN     0.00%    passed     99.98%
+  22  40_1i8t_Q692J9_STRPN     0.00%    passed     99.97%
+  23  41_1i8t_Q65UU2_MANSM     0.00%    passed     99.99%
+  24  43_1i8t_Q4JYS6_STRPN     0.00%    passed     99.99%
+  25  44_1i8t_Q1U6T5_LACRE     0.00%    passed     95.56%
+  26  45_1i8t_Q4K1T3_STRPN     0.00%    passed     99.28%
+  27  46_1i8t_Q0P8H5_CAMJE     0.00%    failed      1.17%
+  28  47_1i8t_Q1U8R5_LACRE     0.00%    passed     95.56%
+  29  48_1i8t_Q1WRX7_LACS1     0.00%    passed     99.81%
+  30  49_1i8t_Q4JZ90_STRPN     0.00%    passed     99.21%
+  31  56_1i8t_Q4JZC4_STRPN     0.00%    passed     99.21%
+  32  57_1i8t_Q831L7_ENTFA     0.00%    passed     85.21%
+  33  58_1i8t_Q4K083_STRPN     0.00%    passed     99.28%
+  34  59_1i8t_Q2NHJ3_METST     0.00%    passed     87.08%
+  35  62_1i8t_Q83YR1_STRGN     0.00%    passed     99.96%
+  36  63_1i8t_Q2BW05_LACRE     0.00%    passed     98.09%
+  37  64_1i8t_Q6L5S2_STROR     0.00%    passed     99.96%
+  38  65_1i8t_Q4K161_STRPN     0.00%    passed      9.57%
+  39  66_1i8t_Q6L5Q1_STRMT     0.00%    passed     99.96%
+  40  67_1i8t_Q4K298_STRPN     0.00%    passed     99.95%
+  41  71_1i8t_Q7P736_FUSNV     0.00%    passed     47.90%
+  42  72_1i8t_Q032N5_LACLS     0.00%    passed     95.85%
+  43  74_1i8t_Q300S5_STRSU     0.00%    passed     98.35%
+  44  75_1i8t_Q88XI4_LACPL     0.00%    passed     97.72%
+  45  76_1i8t_Q03GL0_PEDPE     0.00%    passed     99.77%
+  46  77_1i8t_A0NKR4_OENOE     0.00%    passed     60.65%
+  47  80_1i8t_Q8RSE8_STRPN     0.00%    passed     98.15%
+  48  85_1i8t_Q03WC7_LEUMM     0.00%    passed     85.98%
+  49  86_1i8t_Q24T45_DESHY     0.00%    failed      4.37%
+  50  89_1i8t_Q6NER4_CORDI     0.00%    passed     90.32%
+  51  91_1i8t_Q5Z3H3_NOCFA     0.00%    passed     95.23%
+  52  92_1i8t_Q4JY28_CORJK     0.00%    passed     68.14%
+  53  93_1i8t_A0R629_MYCSM     0.00%    passed     88.90%
+  54  94_1i8t_A0Q9B4_MYCAV     0.00%    passed     85.24%
+  55  97_1i8t_Q1TYH3_9MYCO     0.00%    passed     88.78%
+  56  100_1i8t_Q8NLQ1_CORGL    0.00%    passed     82.72%
+  57  101_1i8t_Q9CDB8_MYCLE    0.00%    passed     85.67%
+  58  102_1i8t_Q8FLZ0_COREF    0.00%    passed      8.59%
+  59  103_1i8t_Q0S9D6_RHOSR    0.00%    passed     85.96%
+  60  104_1i8t_Q7TVM3_MYCBO    0.00%    passed     85.72%
+  61  106_1i8t_Q274U3_MYCFV    0.00%    passed     91.93%
+  62  107_1i8t_Q3H396_9ACTO    0.00%    passed     61.70%
+  63  108_1i8t_A0PX01_MYCUL    0.00%    passed     56.67%
+  64  109_1i8t_Q25ZB0_MYCVN    0.00%    passed     69.72%
+  65  110_1i8t_Q8G4X9_BIFLO    0.00%    passed     94.14%
+  66  112_1i8t_A0JYF3_9MICC    0.00%    passed     87.62%
+  67  113_1i8t_Q40Y66_KINRA    0.00%    passed     26.92%
+  68  114_1i8t_Q7CTR9_AGRT5    3.33%    passed     19.50%
+  69  116_1i8t_Q0LB79_9ACTO    0.00%    failed      2.11%
+  70  118_1i8t_Q8KWD4_9RHOB    3.33%    passed     40.42%
+  71  121_1i8t_Q1H225_METFK    0.00%    passed     59.81%
+  72  128_1i8t_Q8P4K9_XANCP    0.00%    passed     22.70%
+  73  131_1i8t_Q48IV3_PSE14    0.00%    failed      0.43%
+  74  142_1i8t_Q762K7_KLEPN    3.33%    passed     82.59%
+  75  144_1i8t_GLF8_KLEPN      0.00%    passed     95.21%
+****  TOTAL                    0.13%  4 sequences failed composition chi2 test (p-value<5%; df=19)
+NOTE: 6_1i8t_Q4K0Q8_STRPN is identical to 5_1i8t_Q4K1C7_STRPN but kept for subsequent analysis
+NOTE: 41_1i8t_Q65UU2_MANSM is identical to 35_1i8t_Q3EI50_ACTSC but kept for subsequent analysis
+NOTE: 47_1i8t_Q1U8R5_LACRE is identical to 44_1i8t_Q1U6T5_LACRE but kept for subsequent analysis
+NOTE: 58_1i8t_Q4K083_STRPN is identical to 45_1i8t_Q4K1T3_STRPN but kept for subsequent analysis
+NOTE: 56_1i8t_Q4JZC4_STRPN is identical to 49_1i8t_Q4JZ90_STRPN but kept for subsequent analysis
+NOTE: 64_1i8t_Q6L5S2_STROR is identical to 62_1i8t_Q83YR1_STRGN but kept for subsequent analysis
+NOTE: 10 identical sequences (see below) will be ignored for subsequent analysis
+NOTE: 8_1i8t_Q4JZV2_STRPN (identical to 5_1i8t_Q4K1C7_STRPN) is ignored but added at the end
+NOTE: 9_1i8t_Q4JZ57_STRPN (identical to 5_1i8t_Q4K1C7_STRPN) is ignored but added at the end
+NOTE: 10_1i8t_Q4K1H0_STRPN (identical to 5_1i8t_Q4K1C7_STRPN) is ignored but added at the end
+NOTE: 15_1i8t_Q93DZ5_STRTR (identical to 5_1i8t_Q4K1C7_STRPN) is ignored but added at the end
+NOTE: 21_1i8t_Q4JZK8_STRPN (identical to 5_1i8t_Q4K1C7_STRPN) is ignored but added at the end
+NOTE: 28_1i8t_Q4K0S4_STRPN (identical to 5_1i8t_Q4K1C7_STRPN) is ignored but added at the end
+NOTE: 32_1i8t_Q4JZ75_STRPN (identical to 5_1i8t_Q4K1C7_STRPN) is ignored but added at the end
+NOTE: 36_1i8t_Q692J4_STRPN (identical to 5_1i8t_Q4K1C7_STRPN) is ignored but added at the end
+NOTE: 40_1i8t_Q692J9_STRPN (identical to 5_1i8t_Q4K1C7_STRPN) is ignored but added at the end
+NOTE: 66_1i8t_Q6L5Q1_STRMT (identical to 62_1i8t_Q83YR1_STRGN) is ignored but added at the end
+
+For your convenience alignment with unique sequences printed to ../output/hssp/split/Ord0035_1i8t.ALL_GBP2_AICc.uniqueseq.phy
+
+Reading input tree file ../output/hssp/split/Ord0035_1i8t.ALL_GB.tree ...
+NOTE: ModelFinder requires 8 MB RAM!
+ModelFinder will test 78 protein models (sample size: 60) ...
+ No. Model         -LnL         df  AIC          AICc         BIC
+  1  LG            2405.868     127 5065.735     37577.735    5331.717
+  2  LG+I          2405.821     128 5067.641     38091.641    5335.717
+  3  LG+G4         2402.181     128 5060.362     38084.362    5328.439
+  4  LG+I+G4       2402.209     129 5062.419     38602.419    5332.589
+  5  LG+R2         2401.738     129 5061.476     38601.476    5331.646
+  6  LG+R3         2401.568     131 5065.136     39649.136    5339.495
+ 14  LG+F          2410.534     146 5113.069     48037.069    5418.843
+ 15  LG+F+I        2410.534     147 5115.069     48627.069    5422.937
+ 16  LG+F+G4       2404.182     147 5102.363     48614.363    5410.232
+ 17  LG+F+I+G4     2404.190     148 5104.379     49208.379    5414.342
+ 18  LG+F+R2       2403.051     148 5102.102     49206.102    5412.065
+ 19  LG+F+R3       2403.033     150 5106.065     50406.065    5420.217
+ 27  WAG           2380.693     127 5015.385     37527.385    5281.367
+ 28  WAG+I         2380.686     128 5017.372     38041.372    5285.448
+ 29  WAG+G4        2380.131     128 5016.263     38040.263    5284.339
+ 30  WAG+I+G4      2380.133     129 5018.265     38558.265    5288.435
+ 31  WAG+R2        2380.073     129 5018.146     38558.146    5288.317
+ 32  WAG+R3        2380.063     131 5022.126     39606.126    5296.485
+ 40  WAG+F         2391.421     146 5074.841     47998.841    5380.616
+ 41  WAG+F+I       2391.421     147 5076.841     48588.841    5384.710
+ 42  WAG+F+G4      2390.035     147 5074.069     48586.069    5381.938
+ 43  WAG+F+I+G4    2390.035     148 5076.071     49180.071    5386.034
+ 44  WAG+F+R2      2389.790     148 5075.581     49179.581    5385.544
+ 45  WAG+F+R3      2389.775     150 5079.550     50379.550    5393.702
+ 53  JTT           2454.276     127 5162.553     37674.553    5428.534
+ 54  JTT+I         2453.499     128 5162.998     38186.998    5431.074
+ 55  JTT+G4        2449.447     128 5154.895     38178.895    5422.971
+ 56  JTT+I+G4      2449.445     129 5156.891     38696.891    5427.061
+ 57  JTT+R2        2448.733     129 5155.467     38695.467    5425.637
+ 58  JTT+R3        2448.728     131 5159.456     39743.456    5433.815
+ 66  JTT+F         2458.887     146 5209.774     48133.774    5515.548
+ 67  JTT+F+I       2458.875     147 5211.749     48723.749    5519.618
+ 68  JTT+F+G4      2453.231     147 5200.462     48712.462    5508.331
+ 69  JTT+F+I+G4    2453.232     148 5202.463     49306.463    5512.426
+ 70  JTT+F+R2      2452.368     148 5200.737     49304.737    5510.700
+ 71  JTT+F+R3      2452.369     150 5204.737     50504.737    5518.889
+Akaike Information Criterion:           WAG
+Corrected Akaike Information Criterion: WAG
+Bayesian Information Criterion:         WAG
+Best-fit model: WAG chosen according to BIC
+
+All model information printed to ../output/hssp/split/Ord0035_1i8t.ALL_GBP2_AICc.model.gz
+CPU time for ModelFinder: 2.182 seconds (0h:0m:2s)
+Wall-clock time for ModelFinder: 2.200 seconds (0h:0m:2s)
+
+NOTE: 0 MB RAM (0 GB) is required!
+Estimate model parameters (epsilon = 0.500)
+1. Initial log-likelihood: -2380.693
+Optimal log-likelihood: -2380.693
+Parameters optimization took 1 rounds (0.004 sec)
+--------------------------------------------------------------------
+|             INITIALIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+
+Do NNI search on 1 best initial trees
+Estimate model parameters (epsilon = 0.500)
+BETTER TREE FOUND at iteration 1: -2332.271
+Finish initializing candidate tree set (2)
+Current best tree score: -2332.271 / CPU time: 0.089
+Number of iterations: 1
+--------------------------------------------------------------------
+|               OPTIMIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Estimate model parameters (epsilon = 0.500)
+BETTER TREE FOUND at iteration 2: -2326.019
+TREE SEARCH COMPLETED AFTER 2 ITERATIONS / Time: 0h:0m:0s
+
+--------------------------------------------------------------------
+|                    FINALIZING TREE SEARCH                        |
+--------------------------------------------------------------------
+Performs final model parameters optimization
+Estimate model parameters (epsilon = 0.050)
+1. Initial log-likelihood: -2326.019
+Optimal log-likelihood: -2326.019
+Parameters optimization took 1 rounds (0.004 sec)
+BEST SCORE FOUND : -2326.019
+Total tree length: 8.054
+
+Total number of iterations: 2
+CPU time used for tree search: 0.166 sec (0h:0m:0s)
+Wall-clock time used for tree search: 0.170 sec (0h:0m:0s)
+Total CPU time used: 0.179 sec (0h:0m:0s)
+Total wall-clock time used: 0.191 sec (0h:0m:0s)
+
+Analysis results written to: 
+  IQ-TREE report:                ../output/hssp/split/Ord0035_1i8t.ALL_GBP2_AICc.iqtree
+  Maximum-likelihood tree:       ../output/hssp/split/Ord0035_1i8t.ALL_GBP2_AICc.treefile
+  Screen log file:               ../output/hssp/split/Ord0035_1i8t.ALL_GBP2_AICc.log
+
+Date and Time: Sat Mar  9 18:14:22 2024

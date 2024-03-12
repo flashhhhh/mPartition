@@ -78,8 +78,8 @@ tper = 10.0
 if args.tper:
 	tper = float(args.tper)
 
-if tper >= 50: 
-	sys.exit("The minimum percent parameter must be less than 50.")
+#if tper >= 50: 
+#	sys.exit("The minimum percent parameter must be less than 50.")
 
 f = open(filex)
 line = f.readline()
@@ -282,12 +282,18 @@ max_rate = 0.0
 
 treefn = ""
 
+print("filex: " + filex)
+
 if "/" in filex:
 	treef = filex.split("/")
 	treefn = treef[len(treef)-1].strip()
 else:
 	treefn = filex
-path = filex.strip(treefn)
+
+path = os.path.dirname(filex) + "/"
+
+print("treefn: " + treefn)
+print("path: " + path)
 
 #print treefn
 
@@ -708,18 +714,34 @@ if(os.path.isfile(output+"/"+treefn+"_G1.sitelh") and os.path.isfile(output+"/"+
 			parFile.write(line.strip(",")+"\n")
 		parFile.close()
 		#os.system("python extractPartitions.py -f "+filex+" -p "+output+"/F1_Par_"+treefn+" -o "+output)
-		os.system("python splitPartition.py -f "+newfile+" -p "+output+"/F1_Par_"+treefn+"")
-		
+		os.system("python2.7 splitPartition.py -f "+newfile+" -p "+output+"/F1_Par_"+treefn+"")
+
+		print("Check: " + (path+""+treefn+"P1"))
+		if os.path.isfile(path+""+treefn+"P1"):
+			print("OK I'm right")
+
+
+		print("Check: " + (output+"/"+treefn+"P1"))
+		if os.path.isfile(output+"/"+treefn+"P1"):
+			print("OK I'm right")
+
 		if(os.path.isfile(path+""+treefn+"P1") and not os.path.isfile(output+"/"+treefn+"P1")):
+			print("HAHA")
 			os.system("cp "+path+""+treefn+"P1 "+output+"/"+treefn+"P1")
 			os.system("rm "+path+""+treefn+"P1")
+			if os.path.isfile(output+"/"+treefn+"P1"):
+				print("OK I'm right")
 		if(os.path.isfile(path+""+treefn+"P2") and not os.path.isfile(output+"/"+treefn+"P2")):
 			os.system("cp "+path+""+treefn+"P2 "+output+"/"+treefn+"P2")
 			os.system("rm "+path+""+treefn+"P2")
 		if(os.path.isfile(path+""+treefn+"P3") and not os.path.isfile(output+"/"+treefn+"P3")):
 			os.system("cp "+path+""+treefn+"P3 "+output+"/"+treefn+"P3")
 			os.system("rm "+path+""+treefn+"P3")
-		
+
+		print("Check: " + (output+"/"+treefn+"P1"))
+		if os.path.isfile(output+"/"+treefn+"P1"):
+			print("OK I'm right")
+
 		if(os.path.isfile(output+"/ck"+treefn+"P1") and not os.path.isfile(output+"/"+treefn+"P1")):
 			os.system("cp "+output+"/ck"+treefn+"P1 "+output+"/"+treefn+"P1")
 			os.system("rm "+output+"/ck"+treefn+"P1")
@@ -730,6 +752,10 @@ if(os.path.isfile(output+"/"+treefn+"_G1.sitelh") and os.path.isfile(output+"/"+
 			os.system("cp "+output+"/ck"+treefn+"P3 "+output+"/"+treefn+"P3")
 			os.system("rm "+output+"/ck"+treefn+"P3")
 		
+		print("Check: " + (output+"/"+treefn+"P1"))
+		if os.path.isfile(output+"/"+treefn+"P1"):
+			print("OK I'm right")
+
 		
 		#os.system("mv "+output+"/"+treefn+"_Par1 "+output+"/"+treefn+"P1")
 		#os.system("mv "+output+"/"+treefn+"_Par2 "+output+"/"+treefn+"P2")
@@ -743,7 +769,11 @@ if(os.path.isfile(output+"/"+treefn+"_G1.sitelh") and os.path.isfile(output+"/"+
 		if(os.path.isfile(output+"/"+treefn+"P3")):
 			command = iqtree_path+"iqtree -s "+output+"/"+treefn+"P3 -m MFP -fast -mset "+mset+" -t "+treefile+" -safe  -seed 0 -pre "+output+"/"+treefn+"P3_AICc\n"
 			os.system(command)
-		
+
+		print("Check: " + (output+"/"+treefn+"P1"))
+		if os.path.isfile(output+"/"+treefn+"P1"):
+			print("OK I'm right")
+
 		# aic = 0.0
 		# k = 0.0
 		# n = 0.0
@@ -771,7 +801,12 @@ if(os.path.isfile(output+"/"+treefn+"_G1.sitelh") and os.path.isfile(output+"/"+
 		if(os.path.isfile(output+"/"+treefn+"_AICc.iqtree")):
 			FirstBIC = float(getBIC(output+"/"+treefn+"_AICc.iqtree"))
 		print "FirstAICc: "+str(FirstBIC)+" | New AICc: "+str(bic)
-		
+
+		print("Check: " + (output+"/"+treefn+"P1"))
+		if os.path.isfile(output+"/"+treefn+"P1"):
+			print("OK I'm right")
+
+
 		checkAICcFile = 1
 		if ((not os.path.isfile(output+"/"+treefn+"P1_AICc.iqtree")) and os.path.isfile(output+"/"+treefn+"P1")):
 			checkAICcFile = 0
@@ -795,10 +830,10 @@ if(os.path.isfile(output+"/"+treefn+"_G1.sitelh") and os.path.isfile(output+"/"+
 			os.system("rm "+output+"/"+treefn+"P*")
 			os.system("rm core.*")
 			os.system("rm "+output+"/core.*")
-		elif bic > FirstBIC:
-			print "Worser."
-			os.system("cp "+output+"/"+treefn+"P*.log logs/")			
-			os.system("rm "+output+"/"+treefn+"P*")
+		# elif bic > FirstBIC:
+		#	print "Worser."
+		#	os.system("cp "+output+"/"+treefn+"P*.log logs/")			
+		#	os.system("rm "+output+"/"+treefn+"P*")
 			
 			#os.system("rm "+output+"/"+treefn+"P2*")
 		else:
@@ -806,6 +841,10 @@ if(os.path.isfile(output+"/"+treefn+"_G1.sitelh") and os.path.isfile(output+"/"+
 				print "Better. Extract "+ filex+ " to 3 partitions: "+output+"/"+treefn+"P[1,2,3]."
 			else:
 				print "Better. Extract "+ filex+ " to 2 partitions: "+output+"/"+treefn+"P[1,2]."
+			print("Check: " + (output+"/"+treefn+"P1"))
+			if os.path.isfile(output+"/"+treefn+"P1"):
+				print("OK I'm right")
+
 			if(os.path.isfile(parfile)):
 				opar = open(parfile,"r")
 				ipar = open(parfile+"_1","w")
@@ -852,6 +891,8 @@ if(os.path.isfile(output+"/"+treefn+"_G1.sitelh") and os.path.isfile(output+"/"+
 					#	opar.write(str(i+1)+";"+treefn+"P3\n")
 					i += 1
 				opar.close()
-			#os.system("rm "+output+"/"+treefn+"P*AICc*")
+			print("Check: " + (output+"/"+treefn+"P1"))
+			if os.path.isfile(output+"/"+treefn+"P1"):
+				print("OK I'm right")
 
-		
+			#os.system("rm "+output+"/"+treefn+"P*AICc*")

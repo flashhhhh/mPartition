@@ -1,0 +1,172 @@
+IQ-TREE multicore version 1.6.12 for Linux 64-bit built Aug 15 2019
+Developed by Bui Quang Minh, Nguyen Lam Tung, Olga Chernomor,
+Heiko Schmidt, Dominik Schrempf, Michael Woodhams.
+
+Host:    fit15.local (AVX2, FMA3, 125 GB RAM)
+Command: /home/diepht/danquan/pQMaker/iqtree -s ../test/custom-hssp-2-split//Ord0138_1vbg.ALL_GBP1P1 -m MFP -fast -mset LG,WAG,JTT -t ../test/custom-hssp-2-split//Ord0138_1vbg.ALL_GB.tree -safe -seed 0 -pre ../test/custom-hssp-2-split//Ord0138_1vbg.ALL_GBP1P1_AICc
+Seed:    0 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Sun Mar 10 10:18:18 2024
+Kernel:  Safe AVX+FMA - 1 threads (36 CPU cores detected)
+
+HINT: Use -nt option to specify number of threads because your CPU has 36 cores!
+HINT: -nt AUTO will automatically determine the best number of threads to use.
+
+Reading alignment file ../test/custom-hssp-2-split//Ord0138_1vbg.ALL_GBP1P1 ... Phylip format detected
+Alignment most likely contains protein sequences
+Alignment has 40 sequences with 267 columns, 172 distinct patterns
+107 parsimony-informative, 49 singleton sites, 111 constant sites
+                       Gap/Ambiguity  Composition  p-value
+   1  5_1vbg_Q7XJK1_9POAL      0.00%    passed     99.92%
+   2  6_1vbg_Q84N32_SORBI      0.00%    passed     99.81%
+   3  12_1vbg_Q6AVA8_ORYSA     0.00%    passed    100.00%
+   4  16_1vbg_O23927_9POAL     0.00%    passed    100.00%
+   5  17_1vbg_Q75KR1_ORYSA     0.00%    passed     99.96%
+   6  20_1vbg_O23928_9POAL     0.00%    passed     99.99%
+   7  25_1vbg_PPDK_MESCR       0.00%    passed     99.92%
+   8  27_1vbg_Q3EA16_ARATH     0.00%    passed     99.97%
+   9  30_1vbg_PPDK_FLATR       0.00%    passed    100.00%
+  10  41_1vbg_Q74FM6_GEOSL     0.00%    passed     99.94%
+  11  42_1vbg_Q11KA3_MESSB     0.00%    passed     98.07%
+  12  43_1vbg_Q2W3X2_MAGMM     0.00%    passed     99.96%
+  13  46_1vbg_Q12XB9_METBU     0.00%    passed     99.60%
+  14  48_1vbg_A1AUT3_9DELT     0.00%    passed    100.00%
+  15  51_1vbg_Q1Q177_9BACT     0.00%    passed     69.59%
+  16  53_1vbg_Q39RG6_GEOMG     0.00%    passed     99.95%
+  17  59_1vbg_Q0BQA6_GRABC     0.00%    passed    100.00%
+  18  60_1vbg_Q1K045_DESAC     0.00%    passed     99.87%
+  19  63_1vbg_Q1N8I9_9SPHN     0.00%    passed     99.97%
+  20  65_1vbg_Q0C4C8_HYPNA     0.00%    passed     98.39%
+  21  72_1vbg_Q2DFC0_ACICY     0.00%    passed     96.42%
+  22  74_1vbg_Q2NAM5_9SPHN     0.00%    passed     99.79%
+  23  75_1vbg_Q89S67_BRAJA     0.00%    passed     99.95%
+  24  79_1vbg_Q6R973_RHOCE     0.00%    passed     87.16%
+  25  93_1vbg_Q13BS7_RHOPS     0.00%    passed     99.99%
+  26  97_1vbg_Q20YC0_RHOPB     0.00%    passed     99.98%
+  27  117_1vbg_PPDK_RHIME      0.00%    passed     96.88%
+  28  120_1vbg_Q3SP29_NITWN    0.00%    passed     99.32%
+  29  130_1vbg_A0L9Q2_9PROT    0.00%    passed     99.69%
+  30  132_1vbg_Q4QGX9_LEIMA    0.00%    passed     99.99%
+  31  139_1vbg_Q6G0B6_BARQU    0.00%    passed     99.60%
+  32  145_1vbg_A0LLD8_9DELT    0.00%    passed     95.85%
+  33  153_1vbg_Q3AU92_CHLCH    0.00%    passed     99.80%
+  34  160_1vbg_Q44RY7_CHLLI    0.00%    passed    100.00%
+  35  185_1vbg_Q3VVW2_PROAE    0.00%    passed     99.94%
+  36  195_1vbg_Q73MK7_TREDE    0.00%    passed     69.93%
+  37  213_1vbg_Q5GT74_WOLTR    0.75%    passed     73.00%
+  38  262_1vbg_Q1RH78_RICBR    0.00%    passed     51.40%
+  39  265_1vbg_Q7PC24_RICSI    0.00%    passed     48.04%
+  40  267_1vbg_Q4ULI7_RICFE    0.00%    passed     33.95%
+****  TOTAL                    0.02%  0 sequences failed composition chi2 test (p-value<5%; df=19)
+
+Reading input tree file ../test/custom-hssp-2-split//Ord0138_1vbg.ALL_GB.tree ...
+NOTE: ModelFinder requires 11 MB RAM!
+ModelFinder will test 78 protein models (sample size: 267) ...
+ No. Model         -LnL         df  AIC          AICc         BIC
+  1  LG            8520.273     77  17194.546    17258.101    17470.764
+  2  LG+I          7882.676     78  15921.352    15986.905    16201.157
+  3  LG+G4         6988.248     78  14132.496    14198.049    14412.301
+  4  LG+I+G4       6988.420     79  14134.841    14202.434    14418.233
+  5  LG+R2         7134.651     79  14427.302    14494.895    14710.694
+  6  LG+R3         7028.437     81  14218.875    14290.680    14509.442
+  7  LG+R4         6988.953     83  14143.906    14220.103    14441.647
+  8  LG+R5         6969.057     85  14108.114    14188.887    14413.030
+  9  LG+R6         6957.265     87  14088.529    14174.071    14400.620
+ 10  LG+R7         6952.830     89  14083.660    14174.169    14402.925
+ 14  LG+F          8358.971     96  16909.942    17019.495    17254.318
+ 15  LG+F+I        7741.079     97  15676.159    15788.656    16024.122
+ 16  LG+F+G4       6935.589     97  14065.178    14177.676    14413.142
+ 17  LG+F+I+G4     6935.673     98  14067.346    14182.846    14418.897
+ 18  LG+F+R2       7008.529     98  14213.059    14328.559    14564.609
+ 19  LG+F+R3       6938.577     100 14077.154    14198.841    14435.879
+ 20  LG+F+R4       6924.690     102 14053.380    14181.502    14419.280
+ 21  LG+F+R5       6909.091     104 14026.182    14160.997    14399.256
+ 22  LG+F+R6       6900.740     106 14013.480    14155.255    14393.729
+ 23  LG+F+R7       6898.314     108 14012.627    14161.640    14400.050
+ 27  WAG           8360.038     77  16874.075    16937.631    17150.294
+ 28  WAG+I         7754.814     78  15665.627    15731.180    15945.432
+ 29  WAG+G4        6991.571     78  14139.141    14204.695    14418.947
+ 30  WAG+I+G4      6991.610     79  14141.220    14208.813    14424.613
+ 31  WAG+R2        7028.381     79  14214.761    14282.355    14498.154
+ 32  WAG+R3        6981.796     81  14125.592    14197.397    14416.159
+ 33  WAG+R4        6980.807     83  14127.614    14203.810    14425.355
+ 40  WAG+F         8228.934     96  16649.867    16759.420    16994.243
+ 41  WAG+F+I       7640.363     97  15474.727    15587.224    15822.690
+ 42  WAG+F+G4      6938.167     97  14070.333    14182.830    14418.296
+ 43  WAG+F+I+G4    6938.187     98  14072.375    14187.875    14423.925
+ 44  WAG+F+R2      6948.525     98  14093.049    14208.549    14444.600
+ 45  WAG+F+R3      6913.632     100 14027.263    14148.950    14385.988
+ 46  WAG+F+R4      6906.959     102 14017.918    14146.040    14383.818
+ 47  WAG+F+R5      6902.590     104 14013.179    14147.994    14386.253
+ 53  JTT           8562.412     77  17278.825    17342.380    17555.043
+ 54  JTT+I         7930.775     78  16017.549    16083.103    16297.355
+ 55  JTT+G4        7046.524     78  14249.049    14314.602    14528.854
+ 56  JTT+I+G4      7046.532     79  14251.063    14318.657    14534.456
+ 57  JTT+R2        7069.117     79  14296.235    14363.828    14579.627
+ 58  JTT+R3        7023.130     81  14208.259    14280.065    14498.826
+ 59  JTT+R4        7018.182     83  14202.364    14278.561    14500.106
+ 66  JTT+F         8457.925     96  17107.850    17217.403    17452.225
+ 67  JTT+F+I       7839.733     97  15873.467    15985.964    16221.430
+ 68  JTT+F+G4      7016.503     97  14227.006    14339.503    14574.969
+ 69  JTT+F+I+G4    7016.506     98  14229.012    14344.512    14580.563
+ 70  JTT+F+R2      7019.372     98  14234.744    14350.244    14586.294
+ 71  JTT+F+R3      6984.506     100 14169.013    14290.700    14527.738
+ 72  JTT+F+R4      6981.768     102 14167.535    14295.657    14533.435
+Akaike Information Criterion:           LG+F+R7
+Corrected Akaike Information Criterion: WAG+F+R4
+Bayesian Information Criterion:         WAG+F+R4
+Best-fit model: WAG+F+R4 chosen according to BIC
+
+All model information printed to ../test/custom-hssp-2-split//Ord0138_1vbg.ALL_GBP1P1_AICc.model.gz
+CPU time for ModelFinder: 9.317 seconds (0h:0m:9s)
+Wall-clock time for ModelFinder: 9.332 seconds (0h:0m:9s)
+
+NOTE: 4 MB RAM (0 GB) is required!
+Estimate model parameters (epsilon = 0.500)
+1. Initial log-likelihood: -7141.533
+2. Current log-likelihood: -6948.085
+3. Current log-likelihood: -6934.405
+4. Current log-likelihood: -6930.008
+Optimal log-likelihood: -6930.001
+Site proportion and rates:  (0.719,0.142) (0.000,0.508) (0.021,1.647) (0.260,3.322)
+Parameters optimization took 4 rounds (0.242 sec)
+--------------------------------------------------------------------
+|             INITIALIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+
+Do NNI search on 1 best initial trees
+Estimate model parameters (epsilon = 0.500)
+BETTER TREE FOUND at iteration 1: -6883.446
+Finish initializing candidate tree set (2)
+Current best tree score: -6883.446 / CPU time: 0.369
+Number of iterations: 1
+--------------------------------------------------------------------
+|               OPTIMIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Estimate model parameters (epsilon = 0.500)
+BETTER TREE FOUND at iteration 2: -6882.981
+TREE SEARCH COMPLETED AFTER 2 ITERATIONS / Time: 0h:0m:0s
+
+--------------------------------------------------------------------
+|                    FINALIZING TREE SEARCH                        |
+--------------------------------------------------------------------
+Performs final model parameters optimization
+Estimate model parameters (epsilon = 0.050)
+1. Initial log-likelihood: -6882.981
+Optimal log-likelihood: -6882.980
+Site proportion and rates:  (0.719,0.077) (0.000,0.299) (0.016,1.660) (0.265,3.465)
+Parameters optimization took 1 rounds (0.021 sec)
+BEST SCORE FOUND : -6882.980
+Total tree length: 7.240
+
+Total number of iterations: 2
+CPU time used for tree search: 0.670 sec (0h:0m:0s)
+Wall-clock time used for tree search: 0.672 sec (0h:0m:0s)
+Total CPU time used: 0.940 sec (0h:0m:0s)
+Total wall-clock time used: 0.943 sec (0h:0m:0s)
+
+Analysis results written to: 
+  IQ-TREE report:                ../test/custom-hssp-2-split//Ord0138_1vbg.ALL_GBP1P1_AICc.iqtree
+  Maximum-likelihood tree:       ../test/custom-hssp-2-split//Ord0138_1vbg.ALL_GBP1P1_AICc.treefile
+  Screen log file:               ../test/custom-hssp-2-split//Ord0138_1vbg.ALL_GBP1P1_AICc.log
+
+Date and Time: Sun Mar 10 10:18:28 2024

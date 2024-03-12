@@ -1,0 +1,98 @@
+IQ-TREE multicore version 1.6.12 for Linux 64-bit built Aug 15 2019
+Developed by Bui Quang Minh, Nguyen Lam Tung, Olga Chernomor,
+Heiko Schmidt, Dominik Schrempf, Michael Woodhams.
+
+Host:    fit-gw.local (AVX2, FMA3, 62 GB RAM)
+Command: /home/diepht/danquan/pQMaker/iqtree -s ../output/hssp/split/Ord0047_2fk6.ALL_GBP2 -m MFP -fast -mset LG,WAG,JTT -t ../output/hssp/split/Ord0047_2fk6.ALL_GB.tree -safe -seed 0 -pre ../output/hssp/split/Ord0047_2fk6.ALL_GBP2_AICc
+Seed:    0 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Sat Mar  9 18:30:38 2024
+Kernel:  Safe AVX+FMA - 1 threads (36 CPU cores detected)
+
+HINT: Use -nt option to specify number of threads because your CPU has 36 cores!
+HINT: -nt AUTO will automatically determine the best number of threads to use.
+
+Reading alignment file ../output/hssp/split/Ord0047_2fk6.ALL_GBP2 ... Phylip format detected
+Alignment most likely contains protein sequences
+Alignment has 68 sequences with 122 columns, 118 distinct patterns
+106 parsimony-informative, 6 singleton sites, 10 constant sites
+                       Gap/Ambiguity  Composition  p-value
+   1  2fk6_seed                0.00%    passed     71.84%
+   2  0_2fk6_RNZ_BACSU         0.00%    passed     67.65%
+   3  1_2fk6_RNZ_BACLD         0.00%    passed     95.72%
+   4  2_2fk6_RNZ_BACHK         0.00%    passed     99.37%
+   5  4_2fk6_Q2B6D8_9BACI      0.00%    passed     66.31%
+   6  8_2fk6_RNZ_GEOKA         0.00%    passed     67.06%
+   7  9_2fk6_Q2ANA8_9BACI      0.00%    passed     99.12%
+   8  10_2fk6_Q4MMZ3_BACCE     0.00%    passed     97.63%
+   9  11_2fk6_Q2EBP9_BACCE     0.00%    passed     88.09%
+  10  12_2fk6_RNZ_BACCR        0.00%    passed     97.07%
+  11  14_2fk6_Q03QP5_LACBA     0.00%    passed     98.45%
+  12  15_2fk6_RNZ_LACPL        0.00%    passed     74.60%
+  13  16_2fk6_Q1WT50_LACS1     0.00%    passed     93.41%
+  14  17_2fk6_Q03F36_PEDPA     0.00%    passed     99.96%
+  15  18_2fk6_RNZ_LISIN        0.00%    passed     88.20%
+  16  19_2fk6_RNZ_LISMO        0.00%    passed     72.46%
+  17  23_2fk6_A0AK82_LISW6     0.00%    passed     35.35%
+  18  24_2fk6_RNZ_ENTFA        0.00%    passed     87.69%
+  19  25_2fk6_Q1U7Y7_LACRE     0.00%    passed     99.03%
+  20  27_2fk6_Q039J0_LACC3     0.00%    passed     98.76%
+  21  28_2fk6_Q03W55_LEUMM     0.00%    passed     93.81%
+  22  29_2fk6_Q38WT6_LACSS     0.00%    passed     99.29%
+  23  30_2fk6_RNZ_LACAC        0.00%    passed     96.49%
+  24  31_2fk6_RNZ_OCEIH        0.00%    passed     39.10%
+  25  32_2fk6_RNZ_BACHD        0.00%    passed     81.57%
+  26  33_2fk6_Q1J705_STRPF     0.00%    passed     72.52%
+  27  34_2fk6_Q3DP36_STRAG     0.00%    passed     36.83%
+  28  39_2fk6_RNZ_STRT2        0.00%    passed     87.76%
+  29  52_2fk6_RNZ_LACLA        0.00%    passed     99.79%
+  30  53_2fk6_Q04B09_LACDB     0.00%    passed     98.43%
+  31  55_2fk6_A0VXU7_9ENTR     0.00%    passed     92.07%
+  32  56_2fk6_Q031A3_LACLS     0.00%    passed     99.89%
+  33  57_2fk6_Q04EZ9_OENOB     0.00%    passed     98.97%
+  34  59_2fk6_RNZ_BACSK        0.00%    passed     72.79%
+  35  60_2fk6_Q301W3_STRSU     0.00%    passed     96.47%
+  36  61_2fk6_RNZ_SHIFL        0.00%    passed     99.80%
+  37  62_2fk6_RNZ_STRR6        0.00%    passed     94.93%
+  38  65_2fk6_Q0TFH3_ECOL5     0.00%    passed     99.55%
+  39  70_2fk6_RNZ_SALTI        0.00%    passed     98.08%
+  40  74_2fk6_Q043V9_LACGA     0.00%    passed     99.90%
+  41  75_2fk6_RNZ_LACJO        0.00%    passed     99.91%
+  42  77_2fk6_Q1R9E5_ECOUT     0.00%    passed     94.33%
+  43  79_2fk6_RNZ_ECO57        0.00%    passed     97.45%
+  44  81_2fk6_Q32DS0_SHIDS     0.00%    passed     96.02%
+  45  82_2fk6_A0YVR2_9CYAN     0.00%    passed     90.09%
+  46  83_2fk6_RNZ_PROMP        0.00%    passed     87.44%
+  47  84_2fk6_RNZ_STRMU        0.00%    passed     90.57%
+  48  85_2fk6_Q3MAG6_ANAVT     0.00%    passed     62.70%
+  49  86_2fk6_RNZ_SYNEL        0.00%    passed     75.14%
+  50  87_2fk6_Q319D8_PROM9     0.00%    passed     33.40%
+  51  88_2fk6_RNZ_PROMA        0.00%    passed     84.18%
+  52  89_2fk6_RNZ_ANASP        0.00%    passed     60.62%
+  53  90_2fk6_A0ZMX8_NODSP     0.00%    passed     69.46%
+  54  91_2fk6_Q118J2_TRIEI     0.00%    passed     81.16%
+  55  92_2fk6_Q41CM1_9BACI     0.00%    passed     89.72%
+  56  93_2fk6_Q4BZE2_CROWT     0.00%    passed     53.80%
+  57  94_2fk6_RNZ_SYNY3        0.00%    passed     40.31%
+  58  95_2fk6_Q0I7X5_SYNS3     0.00%    passed     73.44%
+  59  96_2fk6_Q31LM8_SYNP7     0.00%    passed     88.22%
+  60  98_2fk6_RNZ_SYNPX        0.00%    passed     84.23%
+  61  99_2fk6_Q1PJV5_PROMA     0.00%    passed     55.67%
+  62  100_2fk6_Q3AHP8_SYNSC    0.00%    passed     90.63%
+  63  101_2fk6_Q05U13_9SYNE    0.00%    passed     72.05%
+  64  102_2fk6_RNZ_GLOVI       0.00%    passed     91.67%
+  65  112_2fk6_Q3AZH7_SYNS9    0.00%    passed     52.41%
+  66  113_2fk6_Q064V7_9SYNE    0.00%    passed     66.21%
+  67  119_2fk6_RNZ_PROMM       0.00%    passed     88.72%
+  68  120_2fk6_Q46JB7_PROMT    0.00%    passed     95.16%
+****  TOTAL                    0.00%  0 sequences failed composition chi2 test (p-value<5%; df=19)
+
+Reading input tree file ../output/hssp/split/Ord0047_2fk6.ALL_GB.tree ...
+NOTE: ModelFinder requires 14 MB RAM!
+ModelFinder will test 78 protein models (sample size: 122) ...
+ No. Model         -LnL         df  AIC          AICc         BIC
+  1  LG            6883.851     133 14033.701    49677.701    14406.636
+  2  LG+I          6833.718     134 13935.436    50115.436    14311.175
+  3  LG+G4         6633.941     134 13535.882    49715.882    13911.621
+  4  LG+I+G4       6631.884     135 13533.768    50253.768    13912.311
+  5  LG+R2         6628.358     135 13526.715    50246.715    13905.258
+  6  LG+R3         6623.075     137 13520.150    51332.150    13904.301

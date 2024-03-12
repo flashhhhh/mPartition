@@ -1,0 +1,196 @@
+IQ-TREE multicore version 1.6.12 for Linux 64-bit built Aug 15 2019
+Developed by Bui Quang Minh, Nguyen Lam Tung, Olga Chernomor,
+Heiko Schmidt, Dominik Schrempf, Michael Woodhams.
+
+Host:    fit-gw.local (AVX2, FMA3, 62 GB RAM)
+Command: /home/diepht/danquan/pQMaker/iqtree -s ../output/hssp/split/Ord0037_1z28.ALL_GBP3 -m MFP -fast -mset LG,WAG,JTT -t ../output/hssp/split/Ord0037_1z28.ALL_GB.tree -safe -seed 0 -pre ../output/hssp/split/Ord0037_1z28.ALL_GBP3_AICc
+Seed:    0 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Sat Mar  9 18:17:32 2024
+Kernel:  Safe AVX+FMA - 1 threads (36 CPU cores detected)
+
+HINT: Use -nt option to specify number of threads because your CPU has 36 cores!
+HINT: -nt AUTO will automatically determine the best number of threads to use.
+
+Reading alignment file ../output/hssp/split/Ord0037_1z28.ALL_GBP3 ... Phylip format detected
+Alignment most likely contains protein sequences
+Alignment has 75 sequences with 58 columns, 58 distinct patterns
+56 parsimony-informative, 1 singleton sites, 1 constant sites
+                       Gap/Ambiguity  Composition  p-value
+   1  1z28_seed                0.00%    passed     99.38%
+   2  1_1z28_Q14CJ7_HUMAN      0.00%    passed     96.00%
+   3  3_1z28_ST1A1_MACFA       0.00%    passed     97.10%
+   4  4_1z28_Q1ET63_HUMAN      0.00%    passed     96.80%
+   5  14_1z28_Q95KM3_RABIT     0.00%    passed     91.38%
+   6  15_1z28_Q9XT99_RABIT     1.72%    passed     91.22%
+   7  16_1z28_ST1A1_CANFA      0.00%    passed     96.27%
+   8  17_1z28_Q6Y0X5_PIG       0.00%    passed     99.74%
+   9  18_1z28_Q3T0S9_BOVIN     0.00%    passed     96.38%
+  10  19_1z28_ST1A1_BOVIN      0.00%    passed     80.71%
+  11  21_1z28_ST1A1_RAT        0.00%    passed     97.39%
+  12  25_1z28_ST1A1_MOUSE      0.00%    passed     83.34%
+  13  27_1z28_Q95JC5_ORNAN     0.00%    passed     98.33%
+  14  29_1z28_Q95JD6_CANFA     0.00%    passed     99.96%
+  15  31_1z28_Q6NZD1_MOUSE     0.00%    passed     96.63%
+  16  34_1z28_O35401_MOUSE     0.00%    passed     96.63%
+  17  35_1z28_Q6P8G4_XENTR     0.00%    passed     99.44%
+  18  37_1z28_Q9Z1G0_RAT       0.00%    passed     98.64%
+  19  38_1z28_Q68EV4_XENLA     0.00%    passed     99.15%
+  20  39_1z28_Q05AZ4_XENTR     0.00%    passed     84.41%
+  21  41_1z28_Q7SZ93_XENLA     0.00%    passed     99.05%
+  22  42_1z28_ST1B1_CHICK      0.00%    passed     93.23%
+  23  43_1z28_Q90WR6_CHICK     0.00%    passed     75.11%
+  24  44_1z28_ST1C2_MOUSE      0.00%    passed     95.31%
+  25  45_1z28_Q5EAW0_XENLA     0.00%    passed     99.77%
+  26  46_1z28_ST1B1_CANFA      0.00%    passed     94.96%
+  27  48_1z28_ST1C2_RAT        0.00%    passed     93.87%
+  28  49_1z28_ST1B1_HUMAN      0.00%    passed     97.48%
+  29  50_1z28_Q069I8_HUMAN     0.00%    passed     92.19%
+  30  51_1z28_S1C2A_RAT        0.00%    passed     91.43%
+  31  53_1z28_Q28HS2_XENTR     0.00%    passed    100.00%
+  32  54_1z28_ST1C3_HUMAN      0.00%    passed     85.27%
+  33  56_1z28_Q58CV8_BOVIN     0.00%    passed     61.25%
+  34  57_1z28_Q3T0Y3_BOVIN     0.00%    passed     98.46%
+  35  58_1z28_ST1B1_MOUSE      0.00%    passed     95.90%
+  36  59_1z28_ST1C1_RABIT      0.00%    passed     86.15%
+  37  60_1z28_ST1B1_RAT        0.00%    passed     93.99%
+  38  61_1z28_ST1C1_HUMAN      0.00%    passed     68.76%
+  39  62_1z28_ST1C1_MOUSE      0.00%    passed     99.67%
+  40  63_1z28_ST1C1_RAT        0.00%    passed     99.67%
+  41  64_1z28_Q2XV97_MACFA     0.00%    passed     97.32%
+  42  66_1z28_Q6GP49_XENLA     0.00%    passed     83.30%
+  43  67_1z28_Q95MF8_PIG       0.00%    passed     94.46%
+  44  68_1z28_ST1E1_HUMAN      0.00%    passed     97.42%
+  45  70_1z28_Q0NXS2_HORSE     0.00%    passed     94.53%
+  46  71_1z28_Q66KW4_XENLA     0.00%    passed     95.39%
+  47  74_1z28_Q3ZC30_BOVIN     0.00%    passed     99.76%
+  48  75_1z28_Q6GL93_XENTR     0.00%    passed     76.29%
+  49  76_1z28_ST1E1_CAVPO      0.00%    passed     94.43%
+  50  78_1z28_Q95JC6_TRIVU     0.00%    passed     72.34%
+  51  80_1z28_Q8JZX7_MOUSE     0.00%    passed     30.98%
+  52  83_1z28_Q53SG4_HUMAN     0.00%    passed     56.65%
+  53  86_1z28_Q6DJ68_XENTR     0.00%    passed     94.99%
+  54  87_1z28_Q5U5E7_XENLA     0.00%    passed     94.91%
+  55  88_1z28_Q6DJL6_XENLA     0.00%    passed     94.10%
+  56  90_1z28_Q4RG19_TETNG     0.00%    passed     98.15%
+  57  91_1z28_ST1E3_RAT        0.00%    passed     78.20%
+  58  94_1z28_Q7ZYH0_XENLA     0.00%    passed     92.67%
+  59  95_1z28_ST1E1_RAT        0.00%    passed     78.20%
+  60  96_1z28_ST1E6_RAT        0.00%    passed     49.89%
+  61  97_1z28_ST1E2_RAT        0.00%    passed     59.51%
+  62  100_1z28_Q5HZV7_XENTR    0.00%    passed     99.84%
+  63  101_1z28_Q4FZP1_XENLA    0.00%    passed     99.89%
+  64  102_1z28_Q49IK6_BRARE    0.00%    passed     74.98%
+  65  103_1z28_Q0IHC7_XENLA    0.00%    passed     65.74%
+  66  107_1z28_Q6P2U4_BRARE    0.00%    passed     98.06%
+  67  108_1z28_Q6Y597_BRARE    0.00%    passed     98.06%
+  68  113_1z28_A1A4N6_BOVIN    3.45%    passed     72.94%
+  69  114_1z28_Q08C30_BRARE    0.00%    passed     57.96%
+  70  118_1z28_A0EXC5_BRARE    0.00%    passed     97.36%
+  71  125_1z28_Q05A88_MOUSE    3.45%    passed     75.19%
+  72  127_1z28_SUHB_CAVPO      3.45%    passed     93.92%
+  73  130_1z28_ST2A1_MOUSE     3.45%    passed     69.59%
+  74  142_1z28_SUHA_CAVPO      0.00%    passed     86.59%
+  75  155_1z28_O62648_RABIT    0.00%    passed     56.03%
+****  TOTAL                    0.21%  0 sequences failed composition chi2 test (p-value<5%; df=19)
+NOTE: 34_1z28_O35401_MOUSE is identical to 31_1z28_Q6NZD1_MOUSE but kept for subsequent analysis
+NOTE: 63_1z28_ST1C1_RAT is identical to 62_1z28_ST1C1_MOUSE but kept for subsequent analysis
+NOTE: 95_1z28_ST1E1_RAT is identical to 91_1z28_ST1E3_RAT but kept for subsequent analysis
+NOTE: 108_1z28_Q6Y597_BRARE is identical to 107_1z28_Q6P2U4_BRARE but kept for subsequent analysis
+
+Reading input tree file ../output/hssp/split/Ord0037_1z28.ALL_GB.tree ...
+NOTE: ModelFinder requires 9 MB RAM!
+ModelFinder will test 78 protein models (sample size: 58) ...
+ No. Model         -LnL         df  AIC          AICc         BIC
+  1  LG            3629.855     147 7553.709     51065.709    7856.594
+  2  LG+I          3628.776     148 7553.552     51657.552    7858.498
+  3  LG+G4         3622.660     148 7541.319     51645.319    7846.265
+  4  LG+I+G4       3622.244     149 7542.489     52242.489    7849.495
+  5  LG+R2         3623.873     149 7545.747     52245.747    7852.753
+  6  LG+R3         3619.454     151 7540.907     53444.907    7852.034
+  7  LG+R4         3619.438     153 7544.877     54668.877    7860.125
+ 14  LG+F          3617.938     166 7567.876     63011.876    7909.910
+ 15  LG+F+I        3616.607     167 7567.214     63679.214    7911.308
+ 16  LG+F+G4       3606.932     167 7547.864     63659.864    7891.958
+ 17  LG+F+I+G4     3606.500     168 7549.001     64333.001    7895.155
+ 18  LG+F+R2       3607.512     168 7551.024     64335.024    7897.178
+ 19  LG+F+R3       3604.878     170 7549.755     65689.755    7900.031
+ 27  WAG           3597.943     147 7489.886     51001.886    7792.771
+ 28  WAG+I         3596.722     148 7489.445     51593.445    7794.390
+ 29  WAG+G4        3593.087     148 7482.173     51586.173    7787.119
+ 30  WAG+I+G4      3592.477     149 7482.954     52182.954    7789.960
+ 31  WAG+R2        3590.661     149 7479.323     52179.323    7786.329
+ 32  WAG+R3        3590.417     151 7482.834     53386.834    7793.960
+ 40  WAG+F         3586.381     166 7504.761     62948.761    7846.795
+ 41  WAG+F+I       3585.337     167 7504.675     63616.675    7848.769
+ 42  WAG+F+G4      3580.702     167 7495.404     63607.404    7839.498
+ 43  WAG+F+I+G4    3580.251     168 7496.502     64280.502    7842.657
+ 44  WAG+F+R2      3577.994     168 7491.988     64275.988    7838.142
+ 45  WAG+F+R3      3577.856     170 7495.712     65635.712    7845.987
+ 53  JTT           3542.864     147 7379.728     50891.728    7682.613
+ 54  JTT+I         3542.817     148 7381.633     51485.633    7686.579
+ 55  JTT+G4        3540.460     148 7376.920     51480.920    7681.865
+ 56  JTT+I+G4      3540.513     149 7379.026     52079.026    7686.032
+ 57  JTT+R2        3539.589     149 7377.179     52077.179    7684.185
+ 58  JTT+R3        3539.447     151 7380.894     53284.894    7692.020
+ 66  JTT+F         3529.353     166 7390.706     62834.706    7732.739
+ 67  JTT+F+I       3529.333     167 7392.667     63504.667    7736.761
+ 68  JTT+F+G4      3524.961     167 7383.923     63495.923    7728.017
+ 69  JTT+F+I+G4    3524.990     168 7385.980     64169.980    7732.135
+ 70  JTT+F+R2      3525.010     168 7386.021     64170.021    7732.175
+ 71  JTT+F+R3      3524.700     170 7389.400     65529.400    7739.675
+Akaike Information Criterion:           JTT+G4
+Corrected Akaike Information Criterion: JTT
+Bayesian Information Criterion:         JTT+G4
+Best-fit model: JTT+G4 chosen according to BIC
+
+All model information printed to ../output/hssp/split/Ord0037_1z28.ALL_GBP3_AICc.model.gz
+CPU time for ModelFinder: 4.271 seconds (0h:0m:4s)
+Wall-clock time for ModelFinder: 4.289 seconds (0h:0m:4s)
+
+NOTE: 3 MB RAM (0 GB) is required!
+Estimate model parameters (epsilon = 0.500)
+1. Initial log-likelihood: -3580.579
+2. Current log-likelihood: -3542.123
+3. Current log-likelihood: -3540.468
+Optimal log-likelihood: -3540.460
+Gamma shape alpha: 21.445
+Parameters optimization took 3 rounds (0.176 sec)
+--------------------------------------------------------------------
+|             INITIALIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+
+Do NNI search on 1 best initial trees
+Estimate model parameters (epsilon = 0.500)
+BETTER TREE FOUND at iteration 1: -3510.390
+Finish initializing candidate tree set (2)
+Current best tree score: -3510.390 / CPU time: 0.272
+Number of iterations: 1
+--------------------------------------------------------------------
+|               OPTIMIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+TREE SEARCH COMPLETED AFTER 2 ITERATIONS / Time: 0h:0m:0s
+
+--------------------------------------------------------------------
+|                    FINALIZING TREE SEARCH                        |
+--------------------------------------------------------------------
+Performs final model parameters optimization
+Estimate model parameters (epsilon = 0.050)
+1. Initial log-likelihood: -3510.390
+Optimal log-likelihood: -3510.390
+Gamma shape alpha: 22.250
+Parameters optimization took 1 rounds (0.034 sec)
+BEST SCORE FOUND : -3510.390
+Total tree length: 13.389
+
+Total number of iterations: 2
+CPU time used for tree search: 0.521 sec (0h:0m:0s)
+Wall-clock time used for tree search: 0.536 sec (0h:0m:0s)
+Total CPU time used: 0.739 sec (0h:0m:0s)
+Total wall-clock time used: 0.761 sec (0h:0m:0s)
+
+Analysis results written to: 
+  IQ-TREE report:                ../output/hssp/split/Ord0037_1z28.ALL_GBP3_AICc.iqtree
+  Maximum-likelihood tree:       ../output/hssp/split/Ord0037_1z28.ALL_GBP3_AICc.treefile
+  Screen log file:               ../output/hssp/split/Ord0037_1z28.ALL_GBP3_AICc.log
+
+Date and Time: Sat Mar  9 18:17:37 2024

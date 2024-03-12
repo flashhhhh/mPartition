@@ -1,0 +1,212 @@
+IQ-TREE multicore version 1.6.12 for Linux 64-bit built Aug 15 2019
+Developed by Bui Quang Minh, Nguyen Lam Tung, Olga Chernomor,
+Heiko Schmidt, Dominik Schrempf, Michael Woodhams.
+
+Host:    fit-gw.local (AVX2, FMA3, 62 GB RAM)
+Command: /home/diepht/danquan/pQMaker/iqtree -s ../output/hssp/split/Ord0023_2gke.ALL_GBP2 -m MFP -fast -mset LG,WAG,JTT -t ../output/hssp/split/Ord0023_2gke.ALL_GB.tree -safe -seed 0 -pre ../output/hssp/split/Ord0023_2gke.ALL_GBP2_AICc
+Seed:    0 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Sat Mar  9 17:44:27 2024
+Kernel:  Safe AVX+FMA - 1 threads (36 CPU cores detected)
+
+HINT: Use -nt option to specify number of threads because your CPU has 36 cores!
+HINT: -nt AUTO will automatically determine the best number of threads to use.
+
+Reading alignment file ../output/hssp/split/Ord0023_2gke.ALL_GBP2 ... Phylip format detected
+Alignment most likely contains protein sequences
+Alignment has 86 sequences with 119 columns, 117 distinct patterns
+106 parsimony-informative, 8 singleton sites, 5 constant sites
+                       Gap/Ambiguity  Composition  p-value
+   1  2gke_seed                0.00%    passed     95.03%
+   2  2_2gke_DAPF_PASMU        0.00%    passed     94.54%
+   3  3_2gke_Q0I572_HAES1      0.00%    passed     96.09%
+   4  4_2gke_Q65RL9_MANSM      0.00%    passed     99.92%
+   5  5_2gke_DAPF_HAEDU        0.00%    passed     99.46%
+   6  6_2gke_Q329Y5_SHIDS      0.00%    passed     99.91%
+   7  18_2gke_Q57HR0_SALCH     0.00%    passed     98.71%
+   8  22_2gke_A1JI90_YEREN     0.00%    passed     99.60%
+   9  23_2gke_A0IN38_9ENTR     0.00%    passed     99.95%
+  10  24_2gke_Q1CBM6_YERPA     0.00%    passed     99.37%
+  11  29_2gke_A0W279_9ENTR     0.00%    passed     99.73%
+  12  30_2gke_Q6CZG8_ERWCT     0.00%    passed     99.88%
+  13  31_2gke_Q7MYN5_PHOLL     0.00%    passed     89.30%
+  14  35_2gke_Q2NQF4_SODGM     0.00%    passed     97.85%
+  15  41_2gke_Q5E1W7_VIBF1     0.00%    passed     98.27%
+  16  43_2gke_Q15NG5_PSEA6     0.00%    passed     96.95%
+  17  44_2gke_Q1YY73_PHOPR     0.00%    passed     97.11%
+  18  45_2gke_Q6LLN5_PHOPR     0.00%    passed     97.94%
+  19  46_2gke_Q2ZVM2_SHEPU     0.00%    passed    100.00%
+  20  49_2gke_Q088K8_SHEFN     0.00%    passed     99.94%
+  21  51_2gke_Q12S90_SHEDO     0.00%    passed     99.97%
+  22  52_2gke_DAPF_SHEON       0.00%    passed     99.68%
+  23  53_2gke_A1SAP5_9GAMM     0.00%    passed     93.61%
+  24  54_2gke_A0KS65_9GAMM     0.00%    passed     99.83%
+  25  55_2gke_Q0KWX3_9GAMM     0.00%    passed     99.96%
+  26  58_2gke_A0KFI1_AERHH     0.00%    passed     91.41%
+  27  59_2gke_Q3IEW3_PSEHT     0.00%    passed     98.94%
+  28  62_2gke_A0Y0F0_9GAMM     0.00%    passed     99.21%
+  29  63_2gke_Q48AR8_COLP3     0.00%    passed     23.91%
+  30  65_2gke_A1SQZ9_9GAMM     0.00%    passed     74.86%
+  31  66_2gke_Q0F8A9_9PROT     0.00%    passed     70.95%
+  32  67_2gke_Q5QUS6_IDILO     0.84%    passed     98.98%
+  33  68_2gke_Q1ZDC8_9GAMM     0.84%    passed     60.42%
+  34  69_2gke_Q7VRM5_BLOFL     0.00%    failed      0.00%
+  35  70_2gke_Q491Z7_BLOPB     0.00%    failed      0.00%
+  36  71_2gke_DAPF_PSEPK       0.00%    passed     99.91%
+  37  72_2gke_Q2XHI8_PSEPU     0.00%    passed     99.91%
+  38  73_2gke_A1FDB2_PSEPU     0.00%    passed     99.96%
+  39  74_2gke_Q0VM18_ALCBS     0.84%    passed     86.81%
+  40  75_2gke_A0Y9E2_9GAMM     0.00%    passed     99.80%
+  41  76_2gke_Q21P78_SACD2     0.00%    passed     99.94%
+  42  77_2gke_Q1N419_9GAMM     0.00%    passed     89.06%
+  43  78_2gke_DAPF_PSEFL       0.00%    passed     97.00%
+  44  79_2gke_DAPF_PSESM       0.00%    passed     99.14%
+  45  80_2gke_Q2SQ64_HAHCH     0.00%    passed     97.96%
+  46  81_2gke_A1TXX7_MARHY     0.00%    passed     98.69%
+  47  82_2gke_Q3K4R8_PSEPF     0.00%    passed     96.51%
+  48  83_2gke_Q1I303_PSEE4     0.00%    passed     99.75%
+  49  84_2gke_Q1QSV1_CHRSD     0.00%    passed     53.68%
+  50  85_2gke_Q0AIP0_NITEC     0.00%    passed     32.43%
+  51  86_2gke_Q7NV18_CHRVO     0.00%    passed     84.73%
+  52  87_2gke_Q1H4X0_METFK     0.00%    passed     97.22%
+  53  89_2gke_Q2PYI1_9BACT     0.00%    passed     92.72%
+  54  90_2gke_Q4K3W2_PSEF5     0.00%    passed     96.41%
+  55  91_2gke_DAPF_PSEAE       0.00%    passed     99.57%
+  56  92_2gke_Q2BRG0_9GAMM     0.00%    passed     99.52%
+  57  93_2gke_Q0KF42_RALEH     0.00%    passed     99.56%
+  58  94_2gke_A0HU02_PSEME     0.00%    passed     99.46%
+  59  96_2gke_Q500B6_PSEU2     0.00%    passed     98.52%
+  60  97_2gke_Q4J0G2_AZOVI     0.00%    passed     98.95%
+  61  98_2gke_Q82U84_NITEU     0.84%    passed     97.07%
+  62  99_2gke_Q1YSU8_9GAMM     0.00%    passed     99.69%
+  63  100_2gke_Q47JN0_DECAR    0.00%    passed     99.61%
+  64  102_2gke_Q6F950_ACIAD    0.00%    passed     94.98%
+  65  103_2gke_Q3JEA2_NITOC    0.00%    passed     58.25%
+  66  104_2gke_A0WKT8_9GAMM    0.00%    passed     99.60%
+  67  109_2gke_Q3SFX7_THIDA    0.00%    passed     95.49%
+  68  110_2gke_Q476V3_RALEJ    0.00%    passed     80.24%
+  69  114_2gke_A0FR54_9BURK    0.00%    passed     94.01%
+  70  117_2gke_Q4BNH7_BURVI    0.00%    passed     94.00%
+  71  118_2gke_A1K306_9RHOO    0.00%    passed     71.34%
+  72  119_2gke_Q1LS37_RALME    0.00%    passed     86.33%
+  73  120_2gke_Q5P2V2_AZOSE    0.00%    passed     44.53%
+  74  121_2gke_DAPF_BUCAP      0.00%    failed      0.00%
+  75  122_2gke_DAPF_RALSO      0.00%    passed     54.59%
+  76  123_2gke_DAPF_BUCAI      0.00%    failed      0.00%
+  77  124_2gke_A0TLS0_9BURK    0.00%    passed     96.77%
+  78  125_2gke_A1WC24_9BURK    0.00%    passed     33.19%
+  79  126_2gke_A1HCW5_BURPI    0.00%    passed     64.15%
+  80  128_2gke_Q21SV0_RHOFD    0.00%    passed     83.66%
+  81  129_2gke_Q63YH7_BURPS    0.00%    passed     89.63%
+  82  132_2gke_Q146W2_BURXL    0.00%    passed     84.77%
+  83  133_2gke_A0GMS3_9BURK    0.00%    passed     92.57%
+  84  134_2gke_A0TY25_9BURK    0.00%    passed     96.29%
+  85  135_2gke_Q39BY7_BURS3    0.00%    passed     94.23%
+  86  138_2gke_A0Z3C4_9GAMM    0.00%    passed     97.36%
+****  TOTAL                    0.04%  4 sequences failed composition chi2 test (p-value<5%; df=19)
+NOTE: 72_2gke_Q2XHI8_PSEPU is identical to 71_2gke_DAPF_PSEPK but kept for subsequent analysis
+
+Reading input tree file ../output/hssp/split/Ord0023_2gke.ALL_GB.tree ...
+NOTE: ModelFinder requires 18 MB RAM!
+ModelFinder will test 78 protein models (sample size: 119) ...
+ No. Model         -LnL         df  AIC          AICc         BIC
+  1  LG            7963.386     169 16264.771    73724.771    16734.443
+  2  LG+I          7934.260     170 16208.520    74348.520    16680.971
+  3  LG+G4         7647.752     170 15635.505    73775.505    16107.956
+  4  LG+I+G4       7647.466     171 15636.932    74460.932    16112.162
+  5  LG+R2         7654.118     171 15650.235    74474.235    16125.466
+  6  LG+R3         7640.380     173 15626.760    75830.760    16107.549
+  7  LG+R4         7639.873     175 15629.746    77229.746    16116.092
+ 14  LG+F          8020.252     188 16416.503    87480.503    16938.978
+ 15  LG+F+I        7996.197     189 16370.395    88190.395    16895.649
+ 16  LG+F+G4       7699.190     189 15776.380    87596.380    16301.635
+ 17  LG+F+I+G4     7698.895     190 15777.789    88357.789    16305.823
+ 18  LG+F+R2       7708.102     190 15796.204    88376.204    16324.237
+ 19  LG+F+R3       7693.258     192 15770.517    89882.517    16304.108
+ 20  LG+F+R4       7692.745     194 15773.489    91433.489    16312.639
+ 27  WAG           7973.045     169 16284.089    73744.089    16753.761
+ 28  WAG+I         7944.302     170 16228.604    74368.604    16701.055
+ 29  WAG+G4        7694.514     170 15729.028    73869.028    16201.479
+ 30  WAG+I+G4      7694.108     171 15730.217    74554.217    16205.447
+ 31  WAG+R2        7703.422     171 15748.843    74572.843    16224.073
+ 32  WAG+R3        7688.878     173 15723.757    75927.757    16204.545
+ 33  WAG+R4        7688.863     175 15727.726    77327.726    16214.072
+ 40  WAG+F         8028.295     188 16432.590    87496.590    16955.065
+ 41  WAG+F+I       8003.470     189 16384.940    88204.940    16910.195
+ 42  WAG+F+G4      7746.702     189 15871.403    87691.403    16396.658
+ 43  WAG+F+I+G4    7746.149     190 15872.298    88452.298    16400.331
+ 44  WAG+F+R2      7755.851     190 15891.703    88471.703    16419.736
+ 45  WAG+F+R3      7739.611     192 15863.223    89975.223    16396.815
+ 46  WAG+F+R4      7739.601     194 15867.203    91527.203    16406.353
+ 53  JTT           8040.394     169 16418.788    73878.788    16888.460
+ 54  JTT+I         8008.977     170 16357.955    74497.955    16830.406
+ 55  JTT+G4        7728.801     170 15797.601    73937.601    16270.052
+ 56  JTT+I+G4      7728.574     171 15799.148    74623.148    16274.378
+ 57  JTT+R2        7743.240     171 15828.480    74652.480    16303.710
+ 58  JTT+R3        7724.593     173 15795.186    75999.186    16275.974
+ 59  JTT+R4        7724.571     175 15799.143    77399.143    16285.490
+ 66  JTT+F         8124.989     188 16625.977    87689.977    17148.452
+ 67  JTT+F+I       8098.361     189 16574.721    88394.721    17099.976
+ 68  JTT+F+G4      7808.558     189 15995.116    87815.116    16520.371
+ 69  JTT+F+I+G4    7808.407     190 15996.814    88576.814    16524.848
+ 70  JTT+F+R2      7824.135     190 16028.271    88608.271    16556.304
+ 71  JTT+F+R3      7803.991     192 15991.982    90103.982    16525.573
+ 72  JTT+F+R4      7803.906     194 15995.812    91655.812    16534.962
+Akaike Information Criterion:           LG+R3
+Corrected Akaike Information Criterion: LG
+Bayesian Information Criterion:         LG+R3
+Best-fit model: LG+R3 chosen according to BIC
+
+All model information printed to ../output/hssp/split/Ord0023_2gke.ALL_GBP2_AICc.model.gz
+CPU time for ModelFinder: 8.293 seconds (0h:0m:8s)
+Wall-clock time for ModelFinder: 8.329 seconds (0h:0m:8s)
+
+NOTE: 5 MB RAM (0 GB) is required!
+Estimate model parameters (epsilon = 0.500)
+1. Initial log-likelihood: -7650.848
+2. Current log-likelihood: -7641.618
+3. Current log-likelihood: -7640.723
+Optimal log-likelihood: -7640.436
+Site proportion and rates:  (0.422,0.281) (0.203,0.761) (0.376,1.937)
+Parameters optimization took 3 rounds (0.375 sec)
+--------------------------------------------------------------------
+|             INITIALIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+
+Do NNI search on 1 best initial trees
+Estimate model parameters (epsilon = 0.500)
+BETTER TREE FOUND at iteration 1: -7618.507
+Finish initializing candidate tree set (2)
+Current best tree score: -7618.507 / CPU time: 0.334
+Number of iterations: 1
+--------------------------------------------------------------------
+|               OPTIMIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Estimate model parameters (epsilon = 0.500)
+BETTER TREE FOUND at iteration 2: -7615.898
+TREE SEARCH COMPLETED AFTER 2 ITERATIONS / Time: 0h:0m:1s
+
+--------------------------------------------------------------------
+|                    FINALIZING TREE SEARCH                        |
+--------------------------------------------------------------------
+Performs final model parameters optimization
+Estimate model parameters (epsilon = 0.050)
+1. Initial log-likelihood: -7615.898
+2. Current log-likelihood: -7615.842
+Optimal log-likelihood: -7615.831
+Site proportion and rates:  (0.470,0.304) (0.163,0.863) (0.367,1.953)
+Parameters optimization took 2 rounds (0.226 sec)
+BEST SCORE FOUND : -7615.831
+Total tree length: 16.484
+
+Total number of iterations: 2
+CPU time used for tree search: 0.768 sec (0h:0m:0s)
+Wall-clock time used for tree search: 0.773 sec (0h:0m:0s)
+Total CPU time used: 1.378 sec (0h:0m:1s)
+Total wall-clock time used: 1.392 sec (0h:0m:1s)
+
+Analysis results written to: 
+  IQ-TREE report:                ../output/hssp/split/Ord0023_2gke.ALL_GBP2_AICc.iqtree
+  Maximum-likelihood tree:       ../output/hssp/split/Ord0023_2gke.ALL_GBP2_AICc.treefile
+  Screen log file:               ../output/hssp/split/Ord0023_2gke.ALL_GBP2_AICc.log
+
+Date and Time: Sat Mar  9 17:44:37 2024

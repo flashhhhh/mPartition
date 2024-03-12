@@ -1,0 +1,191 @@
+IQ-TREE multicore version 1.6.12 for Linux 64-bit built Aug 15 2019
+Developed by Bui Quang Minh, Nguyen Lam Tung, Olga Chernomor,
+Heiko Schmidt, Dominik Schrempf, Michael Woodhams.
+
+Host:    fit15.local (AVX2, FMA3, 125 GB RAM)
+Command: /home/diepht/danquan/pQMaker/iqtree -s ../test/custom-hssp-2-split//Ord0069_2iny.ALL_GBP1P2 -m MFP -fast -mset LG,WAG,JTT -t ../test/custom-hssp-2-split//Ord0069_2iny.ALL_GB.tree -safe -seed 0 -pre ../test/custom-hssp-2-split//Ord0069_2iny.ALL_GBP1P2_AICc
+Seed:    0 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Sun Mar 10 10:03:48 2024
+Kernel:  Safe AVX+FMA - 1 threads (36 CPU cores detected)
+
+HINT: Use -nt option to specify number of threads because your CPU has 36 cores!
+HINT: -nt AUTO will automatically determine the best number of threads to use.
+
+Reading alignment file ../test/custom-hssp-2-split//Ord0069_2iny.ALL_GBP1P2 ... Phylip format detected
+Alignment most likely contains protein sequences
+Alignment has 60 sequences with 229 columns, 169 distinct patterns
+147 parsimony-informative, 26 singleton sites, 56 constant sites
+                       Gap/Ambiguity  Composition  p-value
+   1  2iny_seed                0.00%    failed      0.00%
+   2  19_2iny_Q9QM73_9ADEN     0.00%    failed      0.00%
+   3  24_2iny_Q66853_ADEGX     0.44%    failed      0.00%
+   4  403_2iny_HEX_ADECC       0.87%    passed     99.81%
+   5  417_2iny_Q3S8C5_9ADEN    0.00%    passed    100.00%
+   6  420_2iny_P87562_ADEC2    0.87%    passed     99.90%
+   7  422_2iny_Q2KSE8_ADE04    0.00%    passed    100.00%
+   8  423_2iny_Q3S8A5_9ADEN    0.00%    passed    100.00%
+   9  426_2iny_Q3S8B5_9ADEN    0.00%    passed    100.00%
+  10  429_2iny_Q3S8C1_9ADEN    0.00%    passed    100.00%
+  11  431_2iny_Q3S8A1_9ADEN    0.00%    passed    100.00%
+  12  436_2iny_HEX_ADE41       0.00%    passed    100.00%
+  13  437_2iny_Q3ZKU4_9ADEN    0.00%    passed    100.00%
+  14  438_2iny_Q3ZKY9_9ADEN    0.00%    passed    100.00%
+  15  442_2iny_Q3S8B7_9ADEN    0.00%    passed    100.00%
+  16  443_2iny_Q2KS38_ADE07    0.00%    passed    100.00%
+  17  445_2iny_Q3S8A3_9ADEN    0.00%    passed    100.00%
+  18  446_2iny_Q3S897_9ADEN    0.00%    passed    100.00%
+  19  447_2iny_Q2TK92_ADE03    0.00%    passed    100.00%
+  20  467_2iny_Q9DT29_9ADEN    0.00%    passed    100.00%
+  21  472_2iny_Q910Z9_ADE02    0.00%    passed    100.00%
+  22  480_2iny_Q3S8B1_9ADEN    0.00%    passed    100.00%
+  23  482_2iny_Q3S8B2_9ADEN    0.00%    passed    100.00%
+  24  483_2iny_Q3S8B9_9ADEN    0.00%    passed    100.00%
+  25  484_2iny_Q3S8A4_9ADEN    0.00%    passed    100.00%
+  26  498_2iny_Q3S8A8_9ADEN    0.00%    passed    100.00%
+  27  499_2iny_Q3S8C3_ADE08    0.00%    passed    100.00%
+  28  500_2iny_Q5UW08_9ADEN    0.00%    passed    100.00%
+  29  502_2iny_Q67814_ADE04    0.00%    passed    100.00%
+  30  506_2iny_Q80RJ0_ADE03    0.00%    passed    100.00%
+  31  508_2iny_HEX_ADE03       0.00%    passed    100.00%
+  32  510_2iny_A0MK56_9ADEN    0.00%    passed    100.00%
+  33  511_2iny_Q0PLY2_ADES7    0.00%    passed    100.00%
+  34  512_2iny_Q0MW45_ADEC2    0.87%    passed     99.91%
+  35  514_2iny_Q6QPE0_9ADEN    0.00%    passed    100.00%
+  36  520_2iny_Q2KRX0_ADE16    0.00%    passed    100.00%
+  37  521_2iny_Q80RI3_ADE02    0.00%    passed    100.00%
+  38  523_2iny_O39793_ADEE1    0.44%    passed     99.99%
+  39  524_2iny_Q3S8A6_9ADEN    0.00%    passed    100.00%
+  40  525_2iny_Q3S8B8_9ADEN    0.00%    passed    100.00%
+  41  527_2iny_Q3S8A2_9ADEN    0.00%    passed    100.00%
+  42  528_2iny_Q3S896_9ADEN    0.00%    passed    100.00%
+  43  530_2iny_Q83109_9ADEN    0.00%    passed    100.00%
+  44  532_2iny_Q3S8A7_9ADEN    0.00%    passed    100.00%
+  45  534_2iny_Q3S8A0_9ADEN    0.00%    passed    100.00%
+  46  537_2iny_Q3S8B0_9ADEN    0.00%    passed    100.00%
+  47  539_2iny_HEX_ADE09       0.00%    passed    100.00%
+  48  540_2iny_Q5C8P9_9ADEN    0.00%    passed    100.00%
+  49  541_2iny_Q4KSJ8_9ADEN    0.00%    passed    100.00%
+  50  542_2iny_HEX_ADE40       0.00%    passed    100.00%
+  51  545_2iny_Q80RI4_ADE03    0.00%    passed    100.00%
+  52  547_2iny_Q2KS08_ADE05    0.00%    passed     99.99%
+  53  558_2iny_Q3S8B4_9ADEN    0.00%    passed    100.00%
+  54  560_2iny_Q3S8B6_9ADEN    0.00%    passed    100.00%
+  55  562_2iny_Q3S899_9ADEN    0.00%    passed    100.00%
+  56  563_2iny_Q2V0B3_ADE09    0.00%    passed    100.00%
+  57  564_2iny_Q3S895_9ADEN    0.00%    passed    100.00%
+  58  657_2iny_HEX_ADE12       0.00%    passed    100.00%
+  59  660_2iny_Q71BW8_ADE01    0.00%    passed    100.00%
+  60  662_2iny_Q3S8C4_ADE06    0.00%    passed    100.00%
+****  TOTAL                    0.06%  3 sequences failed composition chi2 test (p-value<5%; df=19)
+NOTE: 438_2iny_Q3ZKY9_9ADEN is identical to 417_2iny_Q3S8C5_9ADEN but kept for subsequent analysis
+NOTE: 502_2iny_Q67814_ADE04 is identical to 422_2iny_Q2KSE8_ADE04 but kept for subsequent analysis
+NOTE: 480_2iny_Q3S8B1_9ADEN is identical to 431_2iny_Q3S8A1_9ADEN but kept for subsequent analysis
+NOTE: 467_2iny_Q9DT29_9ADEN is identical to 437_2iny_Q3ZKU4_9ADEN but kept for subsequent analysis
+NOTE: 508_2iny_HEX_ADE03 is identical to 447_2iny_Q2TK92_ADE03 but kept for subsequent analysis
+NOTE: 534_2iny_Q3S8A0_9ADEN is identical to 530_2iny_Q83109_9ADEN but kept for subsequent analysis
+NOTE: 4 identical sequences (see below) will be ignored for subsequent analysis
+NOTE: 527_2iny_Q3S8A2_9ADEN (identical to 431_2iny_Q3S8A1_9ADEN) is ignored but added at the end
+NOTE: 532_2iny_Q3S8A7_9ADEN (identical to 431_2iny_Q3S8A1_9ADEN) is ignored but added at the end
+NOTE: 539_2iny_HEX_ADE09 (identical to 431_2iny_Q3S8A1_9ADEN) is ignored but added at the end
+NOTE: 564_2iny_Q3S895_9ADEN (identical to 431_2iny_Q3S8A1_9ADEN) is ignored but added at the end
+
+For your convenience alignment with unique sequences printed to ../test/custom-hssp-2-split//Ord0069_2iny.ALL_GBP1P2_AICc.uniqueseq.phy
+
+Reading input tree file ../test/custom-hssp-2-split//Ord0069_2iny.ALL_GB.tree ...
+NOTE: ModelFinder requires 16 MB RAM!
+ModelFinder will test 78 protein models (sample size: 229) ...
+ No. Model         -LnL         df  AIC          AICc         BIC
+  1  LG            2593.702     109 5405.404     5606.916     5779.680
+  2  LG+I          2589.257     110 5398.514     5605.463     5776.223
+  3  LG+G4         2518.695     110 5257.390     5464.339     5635.099
+  4  LG+I+G4       2518.979     111 5259.957     5472.470     5641.100
+  5  LG+R2         2466.805     111 5155.610     5368.122     5536.753
+  6  LG+R3         2462.682     113 5151.364     5375.399     5539.375
+ 14  LG+F          2581.648     128 5419.296     5749.536     5858.812
+ 15  LG+F+I        2577.001     129 5412.002     5750.790     5854.952
+ 16  LG+F+G4       2506.680     129 5271.360     5610.148     5714.310
+ 17  LG+F+I+G4     2506.893     130 5273.787     5621.338     5720.171
+ 18  LG+F+R2       2456.209     130 5172.418     5519.969     5618.802
+ 19  LG+F+R3       2452.074     132 5168.149     5533.899     5621.400
+ 27  WAG           2623.805     109 5465.610     5667.122     5839.885
+ 28  WAG+I         2617.881     110 5455.762     5662.712     5833.472
+ 29  WAG+G4        2547.873     110 5315.747     5522.696     5693.456
+ 30  WAG+I+G4      2548.035     111 5318.071     5530.584     5699.214
+ 31  WAG+R2        2497.181     111 5216.361     5428.874     5597.504
+ 32  WAG+R3        2493.035     113 5212.071     5436.105     5600.081
+ 40  WAG+F         2600.817     128 5457.633     5787.873     5897.150
+ 41  WAG+F+I       2594.793     129 5447.586     5786.373     5890.536
+ 42  WAG+F+G4      2527.225     129 5312.449     5651.237     5755.400
+ 43  WAG+F+I+G4    2527.346     130 5314.692     5662.243     5761.075
+ 44  WAG+F+R2      2477.048     130 5214.096     5561.647     5660.479
+ 45  WAG+F+R3      2472.986     132 5209.972     5575.722     5663.223
+ 53  JTT           2645.347     109 5508.694     5710.206     5882.969
+ 54  JTT+I         2639.422     110 5498.843     5705.792     5876.553
+ 55  JTT+G4        2565.165     110 5350.330     5557.279     5728.039
+ 56  JTT+I+G4      2565.263     111 5352.526     5565.039     5733.669
+ 57  JTT+R2        2517.010     111 5256.020     5468.532     5637.163
+ 58  JTT+R3        2512.864     113 5251.728     5475.763     5639.739
+ 66  JTT+F         2628.759     128 5513.518     5843.758     5953.034
+ 67  JTT+F+I       2622.030     129 5502.060     5840.848     5945.010
+ 68  JTT+F+G4      2549.218     129 5356.435     5695.223     5799.385
+ 69  JTT+F+I+G4    2549.289     130 5358.578     5706.129     5804.962
+ 70  JTT+F+R2      2502.676     130 5265.351     5612.902     5711.735
+ 71  JTT+F+R3      2498.498     132 5260.996     5626.746     5714.248
+Akaike Information Criterion:           LG+R3
+Corrected Akaike Information Criterion: LG+R2
+Bayesian Information Criterion:         LG+R2
+Best-fit model: LG+R2 chosen according to BIC
+
+All model information printed to ../test/custom-hssp-2-split//Ord0069_2iny.ALL_GBP1P2_AICc.model.gz
+CPU time for ModelFinder: 4.916 seconds (0h:0m:4s)
+Wall-clock time for ModelFinder: 4.936 seconds (0h:0m:4s)
+
+NOTE: 3 MB RAM (0 GB) is required!
+Estimate model parameters (epsilon = 0.500)
+1. Initial log-likelihood: -2543.839
+2. Current log-likelihood: -2476.419
+3. Current log-likelihood: -2467.162
+Optimal log-likelihood: -2467.106
+Site proportion and rates:  (0.871,0.495) (0.129,4.417)
+Parameters optimization took 3 rounds (0.158 sec)
+--------------------------------------------------------------------
+|             INITIALIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+
+Do NNI search on 1 best initial trees
+Estimate model parameters (epsilon = 0.500)
+BETTER TREE FOUND at iteration 1: -2445.091
+Finish initializing candidate tree set (2)
+Current best tree score: -2445.091 / CPU time: 0.214
+Number of iterations: 1
+--------------------------------------------------------------------
+|               OPTIMIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Estimate model parameters (epsilon = 0.500)
+BETTER TREE FOUND at iteration 2: -2441.004
+TREE SEARCH COMPLETED AFTER 2 ITERATIONS / Time: 0h:0m:0s
+
+--------------------------------------------------------------------
+|                    FINALIZING TREE SEARCH                        |
+--------------------------------------------------------------------
+Performs final model parameters optimization
+Estimate model parameters (epsilon = 0.050)
+1. Initial log-likelihood: -2441.004
+Optimal log-likelihood: -2441.004
+Site proportion and rates:  (0.870,0.493) (0.130,4.396)
+Parameters optimization took 1 rounds (0.031 sec)
+BEST SCORE FOUND : -2441.004
+Total tree length: 2.253
+
+Total number of iterations: 2
+CPU time used for tree search: 0.553 sec (0h:0m:0s)
+Wall-clock time used for tree search: 0.555 sec (0h:0m:0s)
+Total CPU time used: 0.750 sec (0h:0m:0s)
+Total wall-clock time used: 0.754 sec (0h:0m:0s)
+
+Analysis results written to: 
+  IQ-TREE report:                ../test/custom-hssp-2-split//Ord0069_2iny.ALL_GBP1P2_AICc.iqtree
+  Maximum-likelihood tree:       ../test/custom-hssp-2-split//Ord0069_2iny.ALL_GBP1P2_AICc.treefile
+  Screen log file:               ../test/custom-hssp-2-split//Ord0069_2iny.ALL_GBP1P2_AICc.log
+
+Date and Time: Sun Mar 10 10:03:54 2024

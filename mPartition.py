@@ -58,6 +58,7 @@ for ll in cdna:
 					prot = 0 
 	zz += 1
 cdna.close()
+
 ndna = 1
 mset = "JC69,F81,HKY,GTR"
 if prot == 0:
@@ -73,14 +74,16 @@ tper = 50.0
 if args.tper:
 	tper = float(args.tper)
 
+def getLength():
+	f = open(filex,"r")
+	line = f.readline()
+	f.close()
+	if (" " in line):
+		return int(line.split(" ",1)[1].strip())
+	else:
+		return int(line.split("\t",1)[1].strip())
 
-f = open(filex,"r")
-line = f.readline()
-f.close()
-if (" " in line):
-	maxlength = int(line.split(" ",1)[1].strip())
-else:
-	maxlength = int(line.split("\t",1)[1].strip())
+maxlength = getLength()
 if tper >= 50:
 	tper = float(tper*100/maxlength)
 
@@ -132,12 +135,17 @@ else:
 	treefn = filex
 treefile = output+"/"+treefn+".tree"
 print("mset: "+mset)
+
+done = False
+
 while len(alignList) > 0:
 	for align in alignList:
 		if num_run == 1 and len(alignList) == 1:
-			command = "python mPartition_3part.py -f "+align+" -m "+str(maxlength)+" -tper "+str(tper)+" -mset "+mset+" -o "+output+" -prot "+str(ndna)
-			os.system(command)
-
+			command = "python2.7 mPartition_3part.py -f "+align+" -m "+str(maxlength)+" -tper "+str(tper)+" -mset "+mset+" -o "+output+" -prot "+str(ndna)
+			if getLength() > 300:
+				os.system(command)
+				done = True
+				
 			extS = 0
 			if(os.path.isfile(output+"/"+getFilename(align)+"P1")):
 				alignList.append(output+"/"+getFilename(align)+"P1")
@@ -155,9 +163,12 @@ while len(alignList) > 0:
 			parfile = output + "/par."+treefn
 			tiger_file = "rate_"+treefn
 			inv_file = "inv_"+treefn
-			command = "python mPartition_3part.py -f "+align+" -m "+str(maxlength)+" -tiger "+tiger_file+" -inv "+inv_file+" -tper "+str(tper)+" -mset "+mset+" -t "+treefile+" -p "+parfile+" -o "+output+" -prot "+str(ndna)
+			command = "python2.7 mPartition_3part.py -f "+align+" -m "+str(maxlength)+" -tiger "+tiger_file+" -inv "+inv_file+" -tper "+str(tper)+" -mset "+mset+" -t "+treefile+" -p "+parfile+" -o "+output+" -prot "+str(ndna)
+			
+			if getLength() > 300:
+				os.system(command)
+				done = True
 
-			os.system(command)
 			extS = 0
 			if(os.path.isfile(output+"/"+getFilename(align)+"P1")):
 				alignList.append(output+"/"+getFilename(align)+"P1")
@@ -174,70 +185,73 @@ while len(alignList) > 0:
 	print("Number of Executes: "+str(num_run)) 
 	num_run += 1
 print("Mission Completed.")
+print(output + "/Results/"+treefn)
 
-ivalue=[]
-invfile = open(output+"/inv_"+treefn,"r")
-for line in invfile:
-	ivalue.append(int(line.strip()))
-invfile.close()
+if done:
+	ivalue=[]
+	invfile = open(output+"/inv_"+treefn,"r")
+	for line in invfile:
+		ivalue.append(int(line.strip()))
+	invfile.close()
 
-if(os.path.isfile(output + "/par."+treefn)):
-	par = open(output + "/par."+treefn,"r")
-	for line in par:
-		v = line.split(";")
-		vfile = open(output+"/par."+treefn+"_parf_"+v[1].replace("-","_").strip(),"a+")
-		vfile.write(v[0].strip()+" ")
-		vfile.close()
-	par.close()
-	if(os.path.isfile(output + "/Results/par."+treefn)):
-		os.system("rm "+output + "/Results/par."+treefn)
-	
-	tempinv = []
-	for file in os.listdir(output):
-		if "par."+treefn+"_parf_" in file:
-			wp = open(output+"/"+file,"r")
-			sitev = []
-			for line in wp:
-				sitev = line.strip().split(" ")
-			wp.close()
-			ii = 0
-			for x in sitev:
-				if(ivalue[int(x)-1] == 1):
-					ii += 1
-			if (ii == len(sitev)):
-				for x in sitev:
-					tempinv.append(int(x))
-				os.system("rm "+output+"/"+file)
-	if len(tempinv) > 0:
-		tempinv.sort()
-		vfile = open(output+"/par."+treefn+"_parf_ParInv","a+")
-		for iz in tempinv:
-			vfile.write(str(iz)+" ")
-		vfile.close()
-	finishParfile = open(output + "/Results/par."+treefn,"a+")
-	finishParfile.write("#nexus\nbegin sets;\n")
-	for file in os.listdir(output):
-		if "par."+treefn+"_parf_" in file:
-			finishParfile.write("\tcharset "+file.replace("par."+treefn+"_parf_","")+" = ")
-			wp = open(output+"/"+file,"r")
-			for line in wp:
-				finishParfile.write(line.strip()+";\n")
-			wp.close()
-	finishParfile.write("end;\n")
-	finishParfile.close()	
-	os.system("rm "+output + "/par."+treefn+"_parf_*")
-else:
-	if(os.path.isfile(output + "/Results/"+treefn)):
+	if(os.path.isfile(output + "/par."+treefn)):
+		par = open(output + "/par."+treefn,"r")
+		for line in par:
+			v = line.split(";")
+			vfile = open(output+"/par."+treefn+"_parf_"+v[1].replace("-","_").strip(),"a+")
+			vfile.write(v[0].strip()+" ")
+			vfile.close()
+		par.close()
 		if(os.path.isfile(output + "/Results/par."+treefn)):
 			os.system("rm "+output + "/Results/par."+treefn)
+		
+		tempinv = []
+		for file in os.listdir(output):
+			if "par."+treefn+"_parf_" in file:
+				wp = open(output+"/"+file,"r")
+				sitev = []
+				for line in wp:
+					sitev = line.strip().split(" ")
+				wp.close()
+				ii = 0
+				for x in sitev:
+					if(ivalue[int(x)-1] == 1):
+						ii += 1
+				if (ii == len(sitev)):
+					for x in sitev:
+						tempinv.append(int(x))
+					os.system("rm "+output+"/"+file)
+		if len(tempinv) > 0:
+			tempinv.sort()
+			vfile = open(output+"/par."+treefn+"_parf_ParInv","a+")
+			for iz in tempinv:
+				vfile.write(str(iz)+" ")
+			vfile.close()
 		finishParfile = open(output + "/Results/par."+treefn,"a+")
 		finishParfile.write("#nexus\nbegin sets;\n")
-		finishParfile.write("\tcharset Par1 = 1-"+str(maxlength)+";\n")
+		for file in os.listdir(output):
+			if "par."+treefn+"_parf_" in file:
+				finishParfile.write("\tcharset "+file.replace("par."+treefn+"_parf_","")+" = ")
+				wp = open(output+"/"+file,"r")
+				for line in wp:
+					finishParfile.write(line.strip()+";\n")
+				wp.close()
 		finishParfile.write("end;\n")
 		finishParfile.close()	
+		os.system("rm "+output + "/par."+treefn+"_parf_*")
+	else:
+		if(os.path.isfile(output + "/Results/"+treefn)):
+			if(os.path.isfile(output + "/Results/par."+treefn)):
+				os.system("rm "+output + "/Results/par."+treefn)
+			finishParfile = open(output + "/Results/par."+treefn,"a+")
+			finishParfile.write("#nexus\nbegin sets;\n")
+			finishParfile.write("\tcharset Par1 = 1-"+str(maxlength)+";\n")
+			finishParfile.write("end;\n")
+			finishParfile.close()	
+	if (not os.path.isdir(output)):
+		os.system("mkdir " + output)
+	os.system("rm "+output+"/"+treefn+"*")
 
-os.system("rm "+output+"/"+treefn+"*")
-
-if(not os.path.isdir("Results")):
-	os.system("mkdir Results")
-os.system("cp "+output+"/Results/par."+treefn+" Results/")
+	if(not os.path.isdir("Results")):
+		os.system("mkdir Results")
+	os.system("cp "+output+"/Results/par."+treefn+" Results/")

@@ -1,0 +1,155 @@
+IQ-TREE multicore version 1.6.12 for Linux 64-bit built Aug 15 2019
+Developed by Bui Quang Minh, Nguyen Lam Tung, Olga Chernomor,
+Heiko Schmidt, Dominik Schrempf, Michael Woodhams.
+
+Host:    fit-gw.local (AVX2, FMA3, 62 GB RAM)
+Command: /home/diepht/danquan/pQMaker/iqtree -s ../output/hssp/split/Ord0167_1yo8.ALL_GBP2P2 -m MFP -fast -mset LG,WAG,JTT -t ../output/hssp/split/Ord0167_1yo8.ALL_GB.tree -safe -seed 0 -pre ../output/hssp/split/Ord0167_1yo8.ALL_GBP2P2_AICc
+Seed:    0 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Sat Mar  9 20:22:22 2024
+Kernel:  Safe AVX+FMA - 1 threads (36 CPU cores detected)
+
+HINT: Use -nt option to specify number of threads because your CPU has 36 cores!
+HINT: -nt AUTO will automatically determine the best number of threads to use.
+
+Reading alignment file ../output/hssp/split/Ord0167_1yo8.ALL_GBP2P2 ... Phylip format detected
+Alignment most likely contains protein sequences
+Alignment has 36 sequences with 84 columns, 84 distinct patterns
+75 parsimony-informative, 4 singleton sites, 5 constant sites
+                      Gap/Ambiguity  Composition  p-value
+   1  1yo8_seed               0.00%    passed     95.15%
+   2  4_1yo8_TSP2_BOVIN       0.00%    passed     82.86%
+   3  5_1yo8_TSP2_MOUSE       0.00%    passed     90.90%
+   4  8_1yo8_TSP2_CHICK       0.00%    passed     97.06%
+   5  9_1yo8_Q4RQ74_TETNG     0.00%    passed     94.67%
+   6  15_1yo8_Q5SPG5_BRARE    0.00%    passed     99.04%
+   7  16_1yo8_Q8CGB2_MOUSE    0.00%    passed     99.77%
+   8  20_1yo8_TSP1_XENLA      0.00%    passed     99.53%
+   9  22_1yo8_Q4S758_TETNG    0.00%    passed     95.61%
+  10  23_1yo8_Q71SA3_RAT      0.00%    passed     99.77%
+  11  24_1yo8_TSP1_HUMAN      0.00%    passed     99.52%
+  12  27_1yo8_TSP1_BOVIN      0.00%    passed     99.01%
+  13  28_1yo8_Q4RLR5_TETNG    0.00%    passed     71.85%
+  14  30_1yo8_Q5VH52_CIOIN    0.00%    passed      7.75%
+  15  39_1yo8_COMP_HUMAN      0.00%    passed     95.13%
+  16  41_1yo8_COMP_RAT        0.00%    passed     95.13%
+  17  42_1yo8_A1A557_MOUSE    0.00%    passed     95.13%
+  18  46_1yo8_Q9BG80_HORSE    0.00%    passed     94.41%
+  19  47_1yo8_Q3SWW8_BOVIN    1.19%    passed     99.99%
+  20  48_1yo8_TSP3_HUMAN      0.00%    passed     99.78%
+  21  49_1yo8_Q7TN15_MOUSE    0.00%    passed     99.85%
+  22  51_1yo8_TSP4_MOUSE      1.19%    passed     99.99%
+  23  55_1yo8_TSP4_HUMAN      1.19%    passed     99.99%
+  24  56_1yo8_O42507_XENLA    0.00%    passed     83.87%
+  25  57_1yo8_TSP4_RAT        1.19%    passed     99.87%
+  26  59_1yo8_Q5M7J5_XENTR    0.00%    passed     69.88%
+  27  60_1yo8_Q08D10_XENTR    0.00%    passed    100.00%
+  28  61_1yo8_TSP4_XENLA      0.00%    passed    100.00%
+  29  62_1yo8_Q6DE79_XENLA    0.00%    passed    100.00%
+  30  63_1yo8_Q502R1_BRARE    0.00%    passed    100.00%
+  31  65_1yo8_Q4SFH7_TETNG    2.38%    passed     96.27%
+  32  67_1yo8_Q4RZ32_TETNG    0.00%    passed    100.00%
+  33  69_1yo8_Q7QK54_ANOGA    0.00%    passed     96.07%
+  34  70_1yo8_TSP3A_BRARE     0.00%    passed     99.65%
+  35  72_1yo8_Q16ZU9_AEDAE    0.00%    passed     88.12%
+  36  75_1yo8_Q968S4_DROME    1.19%    passed     83.42%
+****  TOTAL                   0.23%  0 sequences failed composition chi2 test (p-value<5%; df=19)
+NOTE: 23_1yo8_Q71SA3_RAT is identical to 16_1yo8_Q8CGB2_MOUSE but kept for subsequent analysis
+NOTE: 41_1yo8_COMP_RAT is identical to 39_1yo8_COMP_HUMAN but kept for subsequent analysis
+NOTE: 1 identical sequences (see below) will be ignored for subsequent analysis
+NOTE: 42_1yo8_A1A557_MOUSE (identical to 39_1yo8_COMP_HUMAN) is ignored but added at the end
+
+For your convenience alignment with unique sequences printed to ../output/hssp/split/Ord0167_1yo8.ALL_GBP2P2_AICc.uniqueseq.phy
+
+Reading input tree file ../output/hssp/split/Ord0167_1yo8.ALL_GB.tree ...
+NOTE: ModelFinder requires 5 MB RAM!
+ModelFinder will test 78 protein models (sample size: 84) ...
+ No. Model         -LnL         df  AIC          AICc         BIC
+  1  LG            1791.695     67  3717.390     4286.890     3880.255
+  2  LG+I          1790.752     68  3717.505     4343.105     3882.800
+  3  LG+G4         1791.700     68  3719.401     4345.001     3884.696
+  4  LG+I+G4       1790.771     69  3719.542     4409.542     3887.268
+  5  LG+R2         1791.827     69  3721.654     4411.654     3889.380
+  6  LG+R3         1791.762     71  3725.524     4577.524     3898.112
+ 14  LG+F          1777.601     86  3727.201     18691.201    3936.252
+ 15  LG+F+I        1776.371     87  3726.741     19038.741    3938.222
+ 16  LG+F+G4       1777.600     87  3729.199     19041.199    3940.681
+ 17  LG+F+I+G4     1776.385     88  3728.771     19392.771    3942.682
+ 18  LG+F+R2       1777.608     88  3731.216     19395.216    3945.128
+ 19  LG+F+R3       1777.572     90  3735.144     20115.144    3953.917
+ 27  WAG           1830.224     67  3794.448     4363.948     3957.313
+ 28  WAG+I         1829.559     68  3795.118     4420.718     3960.413
+ 29  WAG+G4        1830.227     68  3796.453     4422.053     3961.749
+ 30  WAG+I+G4      1829.580     69  3797.159     4487.159     3964.886
+ 31  WAG+R2        1830.289     69  3798.577     4488.577     3966.304
+ 32  WAG+R3        1830.258     71  3802.515     4654.515     3975.103
+ 40  WAG+F         1803.316     86  3778.633     18742.633    3987.683
+ 41  WAG+F+I       1802.479     87  3778.958     19090.958    3990.439
+ 42  WAG+F+G4      1803.321     87  3780.642     19092.642    3992.123
+ 43  WAG+F+I+G4    1802.495     88  3780.991     19444.991    3994.903
+ 44  WAG+F+R2      1803.372     88  3782.745     19446.745    3996.656
+ 45  WAG+F+R3      1803.345     90  3786.691     20166.691    4005.464
+ 53  JTT           1847.055     67  3828.110     4397.610     3990.975
+ 54  JTT+I         1846.005     68  3828.010     4453.610     3993.306
+ 55  JTT+G4        1847.057     68  3830.114     4455.714     3995.410
+ 56  JTT+I+G4      1846.020     69  3830.040     4520.040     3997.766
+ 57  JTT+R2        1847.061     69  3832.123     4522.123     3999.849
+ 58  JTT+R3        1847.038     71  3836.075     4688.075     4008.663
+ 66  JTT+F         1817.800     86  3807.600     18771.600    4016.651
+ 67  JTT+F+I       1817.097     87  3808.195     19120.195    4019.676
+ 68  JTT+F+G4      1817.807     87  3809.615     19121.615    4021.096
+ 69  JTT+F+I+G4    1817.115     88  3810.230     19474.230    4024.142
+ 70  JTT+F+R2      1817.854     88  3811.707     19475.707    4025.619
+ 71  JTT+F+R3      1817.826     90  3815.653     20195.653    4034.426
+Akaike Information Criterion:           LG
+Corrected Akaike Information Criterion: LG
+Bayesian Information Criterion:         LG
+Best-fit model: LG chosen according to BIC
+
+All model information printed to ../output/hssp/split/Ord0167_1yo8.ALL_GBP2P2_AICc.model.gz
+CPU time for ModelFinder: 1.027 seconds (0h:0m:1s)
+Wall-clock time for ModelFinder: 1.041 seconds (0h:0m:1s)
+WARNING: States(s) C rarely appear in alignment and may cause numerical problems
+
+NOTE: 0 MB RAM (0 GB) is required!
+Estimate model parameters (epsilon = 0.500)
+1. Initial log-likelihood: -1791.695
+Optimal log-likelihood: -1791.694
+Parameters optimization took 1 rounds (0.003 sec)
+--------------------------------------------------------------------
+|             INITIALIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+
+Do NNI search on 1 best initial trees
+Estimate model parameters (epsilon = 0.500)
+BETTER TREE FOUND at iteration 1: -1782.118
+Finish initializing candidate tree set (2)
+Current best tree score: -1782.118 / CPU time: 0.025
+Number of iterations: 1
+--------------------------------------------------------------------
+|               OPTIMIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+TREE SEARCH COMPLETED AFTER 2 ITERATIONS / Time: 0h:0m:0s
+
+--------------------------------------------------------------------
+|                    FINALIZING TREE SEARCH                        |
+--------------------------------------------------------------------
+Performs final model parameters optimization
+Estimate model parameters (epsilon = 0.050)
+1. Initial log-likelihood: -1782.118
+Optimal log-likelihood: -1782.118
+Parameters optimization took 1 rounds (0.003 sec)
+BEST SCORE FOUND : -1782.118
+Total tree length: 4.847
+
+Total number of iterations: 2
+CPU time used for tree search: 0.057 sec (0h:0m:0s)
+Wall-clock time used for tree search: 0.058 sec (0h:0m:0s)
+Total CPU time used: 0.071 sec (0h:0m:0s)
+Total wall-clock time used: 0.073 sec (0h:0m:0s)
+
+Analysis results written to: 
+  IQ-TREE report:                ../output/hssp/split/Ord0167_1yo8.ALL_GBP2P2_AICc.iqtree
+  Maximum-likelihood tree:       ../output/hssp/split/Ord0167_1yo8.ALL_GBP2P2_AICc.treefile
+  Screen log file:               ../output/hssp/split/Ord0167_1yo8.ALL_GBP2P2_AICc.log
+
+Date and Time: Sat Mar  9 20:22:23 2024

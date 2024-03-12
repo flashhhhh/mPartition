@@ -1,0 +1,197 @@
+IQ-TREE multicore version 1.6.12 for Linux 64-bit built Aug 15 2019
+Developed by Bui Quang Minh, Nguyen Lam Tung, Olga Chernomor,
+Heiko Schmidt, Dominik Schrempf, Michael Woodhams.
+
+Host:    fit-gw.local (AVX2, FMA3, 62 GB RAM)
+Command: /home/diepht/danquan/pQMaker/iqtree -s ../output/hssp/split/Ord0007_1o98.ALL_GBP3 -m MFP -fast -mset LG,WAG,JTT -t ../output/hssp/split/Ord0007_1o98.ALL_GB.tree -safe -seed 0 -pre ../output/hssp/split/Ord0007_1o98.ALL_GBP3_AICc
+Seed:    0 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Sat Mar  9 16:59:01 2024
+Kernel:  Safe AVX+FMA - 1 threads (36 CPU cores detected)
+
+HINT: Use -nt option to specify number of threads because your CPU has 36 cores!
+HINT: -nt AUTO will automatically determine the best number of threads to use.
+
+Reading alignment file ../output/hssp/split/Ord0007_1o98.ALL_GBP3 ... Phylip format detected
+Alignment most likely contains protein sequences
+Alignment has 92 sequences with 54 columns, 54 distinct patterns
+54 parsimony-informative, 0 singleton sites, 0 constant sites
+                       Gap/Ambiguity  Composition  p-value
+   1  1o98_seed                0.00%    passed     99.64%
+   2  2_1o98_GPMI_BACLD        0.00%    passed     99.74%
+   3  3_1o98_GPMI_BACME        0.00%    passed     99.79%
+   4  4_1o98_GPMI_BACSU        0.00%    passed     99.08%
+   5  5_1o98_Q2EAF1_BACCE      0.00%    passed     99.73%
+   6  6_1o98_Q2B700_9BACI      0.00%    passed     98.54%
+   7  8_1o98_A0RKS4_BACTU      0.00%    passed     98.89%
+   8  13_1o98_GPMI_BACHD       0.00%    passed     99.94%
+   9  16_1o98_Q2AWJ9_9BACI     0.00%    passed     99.31%
+  10  17_1o98_GPMI_BACSK       0.00%    passed     99.97%
+  11  19_1o98_GPMI_OCEIH       0.00%    passed     97.86%
+  12  27_1o98_GPMI_STAEQ       1.85%    passed     76.55%
+  13  29_1o98_GPMI_STAHJ       1.85%    passed     74.30%
+  14  30_1o98_Q2FIL8_STAA3     1.85%    passed     62.57%
+  15  41_1o98_Q41AA8_9BACI     0.00%    passed    100.00%
+  16  42_1o98_GPMI_STAS1       1.85%    passed     79.80%
+  17  51_1o98_Q18TF5_DESHD     0.00%    passed     97.91%
+  18  52_1o98_GPMI_CLOAB       0.00%    passed     94.34%
+  19  57_1o98_Q0PIF9_HELMO     0.00%    passed     95.29%
+  20  61_1o98_Q2CZ31_9FIRM     0.00%    passed     61.14%
+  21  64_1o98_Q1ETE7_9CLOT     0.00%    passed     81.88%
+  22  65_1o98_GPMI1_METBF      0.00%    passed     99.50%
+  23  66_1o98_Q0B081_SYNWW     0.00%    passed     81.08%
+  24  67_1o98_A0H487_9CHLR     0.00%    passed     98.66%
+  25  68_1o98_Q2D076_9FIRM     0.00%    passed     86.50%
+  26  69_1o98_GPMI2_METAC      0.00%    passed     99.03%
+  27  73_1o98_GPMI_THIDA       1.85%    passed     98.62%
+  28  74_1o98_Q3C305_9CLOT     0.00%    passed     92.74%
+  29  75_1o98_GPMI2_METBF      0.00%    passed     99.77%
+  30  76_1o98_GPMI1_METAC      0.00%    passed     94.70%
+  31  77_1o98_Q3E4X4_CHLAU     0.00%    passed     97.21%
+  32  78_1o98_GPMI_SYMTH       1.85%    passed     89.26%
+  33  82_1o98_GPMI_METMA       0.00%    passed     96.64%
+  34  85_1o98_GPMI_PELCD       1.85%    passed     99.98%
+  35  87_1o98_A0IF59_9CHLR     0.00%    passed     96.73%
+  36  88_1o98_Q1F1H1_9CHLR     0.00%    passed     93.59%
+  37  105_1o98_Q1DCX8_MYXXD    0.00%    passed     99.79%
+  38  106_1o98_Q2IMH9_ANADE    0.00%    passed     80.97%
+  39  109_1o98_Q1JWG7_DESAC    1.85%    passed     87.12%
+  40  111_1o98_Q31E77_THICR    0.00%    passed     39.27%
+  41  113_1o98_Q2WAL6_MAGMM    3.70%    passed     79.04%
+  42  118_1o98_Q09CI8_STIAU    0.00%    passed     90.89%
+  43  122_1o98_Q33UE0_9GAMM    0.00%    passed     99.70%
+  44  123_1o98_Q21NH1_SACD2    1.85%    passed     45.68%
+  45  128_1o98_A0J4H5_9GAMM    0.00%    passed     98.68%
+  46  129_1o98_Q3QEJ2_9GAMM    1.85%    passed     99.93%
+  47  130_1o98_Q1GZ82_METFK    1.85%    passed     95.75%
+  48  138_1o98_Q3Q1N4_9GAMM    0.00%    passed     96.71%
+  49  145_1o98_Q2S026_SALRD    0.00%    passed     31.85%
+  50  162_1o98_Q1QCZ7_PSYCK    1.85%    passed     87.15%
+  51  163_1o98_GPMI_COXBU      1.85%    passed     98.56%
+  52  165_1o98_Q0LQN3_HERAU    0.00%    passed     85.03%
+  53  166_1o98_GPMI_SHEON      0.00%    passed     98.53%
+  54  167_1o98_Q2ZST1_SHEPU    0.00%    passed     98.53%
+  55  168_1o98_A0X8Z6_9GAMM    0.00%    passed     99.55%
+  56  175_1o98_Q07VW8_SHEFN    0.00%    passed     93.56%
+  57  178_1o98_A0YA26_9GAMM    0.00%    passed     94.62%
+  58  184_1o98_A0KR77_9GAMM    0.00%    passed     98.53%
+  59  191_1o98_GPMI_COLP3      1.85%    passed     98.38%
+  60  193_1o98_Q2RV10_RHORT    1.85%    passed     83.80%
+  61  194_1o98_GPMI_PSEHT      1.85%    passed     99.75%
+  62  196_1o98_Q1VUZ2_9FLAO    0.00%    passed     88.72%
+  63  199_1o98_GPMI_PSYAR      1.85%    passed     90.82%
+  64  200_1o98_Q2SMA7_HAHCH    0.00%    passed     73.74%
+  65  203_1o98_GPMI_NITOC      1.85%    passed     98.45%
+  66  206_1o98_Q2D8D3_ACICY    1.85%    passed     93.25%
+  67  207_1o98_Q2BHX0_9GAMM    0.00%    passed     98.11%
+  68  222_1o98_GPMI_LEGPH      1.85%    passed     31.20%
+  69  226_1o98_GPMI_AGRT5      3.70%    passed     75.23%
+  70  228_1o98_GPMI_RHOBA      1.85%    passed     86.47%
+  71  232_1o98_Q1YUN6_9GAMM    1.85%    passed     90.69%
+  72  239_1o98_GPMI_BACTN      1.85%    passed      5.19%
+  73  240_1o98_Q0FDQ4_9PROT    1.85%    passed     78.95%
+  74  245_1o98_Q0I7U9_SYNS3    1.85%    passed     12.10%
+  75  247_1o98_Q12HV5_SHEDO    0.00%    passed     99.30%
+  76  251_1o98_GPMI_BACFN      1.85%    passed     14.55%
+  77  271_1o98_Q1ZEK5_9GAMM    0.00%    passed     94.85%
+  78  274_1o98_Q55JL9_CRYNE    1.85%    passed     25.60%
+  79  278_1o98_Q5B8S1_EMENI    1.85%    passed     32.78%
+  80  279_1o98_Q4WXF1_ASPFU    1.85%    passed     47.76%
+  81  280_1o98_A1CK41_ASPCL    1.85%    passed     16.61%
+  82  284_1o98_Q6F0W3_MESFL    1.85%    passed     57.64%
+  83  285_1o98_A1D7C3_9EURO    1.85%    passed     52.41%
+  84  289_1o98_Q7S5B2_NEUCR    1.85%    passed     12.07%
+  85  290_1o98_Q1E6C6_COCIM    1.85%    passed     39.80%
+  86  291_1o98_Q2GQX3_CHAGB    1.85%    passed     22.96%
+  87  299_1o98_Q9HGY4_ASPOR    1.85%    passed     30.07%
+  88  300_1o98_Q4HFW7_CAMCO    5.56%    failed      2.64%
+  89  302_1o98_GPMI_WOLTR      3.70%    passed     60.04%
+  90  304_1o98_Q4I9Q3_GIBZE    1.85%    passed     32.50%
+  91  314_1o98_Q8IA68_CAEEL    1.85%    passed     69.76%
+  92  316_1o98_Q61D32_CAEBR    1.85%    passed     78.47%
+****  TOTAL                    0.97%  1 sequences failed composition chi2 test (p-value<5%; df=19)
+NOTE: 167_1o98_Q2ZST1_SHEPU is identical to 166_1o98_GPMI_SHEON but kept for subsequent analysis
+NOTE: 1 identical sequences (see below) will be ignored for subsequent analysis
+NOTE: 184_1o98_A0KR77_9GAMM (identical to 166_1o98_GPMI_SHEON) is ignored but added at the end
+
+For your convenience alignment with unique sequences printed to ../output/hssp/split/Ord0007_1o98.ALL_GBP3_AICc.uniqueseq.phy
+
+Reading input tree file ../output/hssp/split/Ord0007_1o98.ALL_GB.tree ...
+NOTE: ModelFinder requires 10 MB RAM!
+ModelFinder will test 66 protein models (sample size: 54) ...
+ No. Model         -LnL         df  AIC          AICc         BIC
+  1  LG            4650.421     179 9658.842     74098.842    10014.871
+  2  LG+G4         4647.826     180 9655.653     74815.653    10013.670
+  3  LG+R2         4650.218     181 9662.435     75546.435    10022.441
+  4  LG+R3         4647.477     183 9660.953     77004.953    10024.937
+ 12  LG+F          4635.075     198 9666.150     88470.150    10059.969
+ 13  LG+F+G4       4631.020     199 9660.040     89260.040    10055.848
+ 14  LG+F+R2       4630.865     200 9661.729     90061.729    10059.526
+ 15  LG+F+R3       4630.642     202 9665.283     91677.283    10067.058
+ 23  WAG           4599.138     179 9556.276     73996.276    9912.304
+ 24  WAG+G4        4598.793     180 9557.586     74717.586    9915.603
+ 25  WAG+R2        4598.780     181 9559.559     75443.559    9919.566
+ 26  WAG+R3        4598.614     183 9563.227     76907.227    9927.212
+ 34  WAG+F         4592.282     198 9580.564     88384.564    9974.383
+ 35  WAG+F+G4      4592.053     199 9582.106     89182.106    9977.914
+ 36  WAG+F+R2      4592.048     200 9584.095     89984.095    9981.892
+ 37  WAG+F+R3      4592.010     202 9588.019     91600.019    9989.794
+ 45  JTT           4676.555     179 9711.109     74151.109    10067.137
+ 46  JTT+G4        4672.368     180 9704.736     74864.736    10062.753
+ 47  JTT+R2        4672.053     181 9706.106     75590.106    10066.112
+ 48  JTT+R3        4672.053     183 9710.106     77054.106    10074.090
+ 56  JTT+F         4687.494     198 9770.989     88574.989    10164.807
+ 57  JTT+F+G4      4680.253     199 9758.506     89358.506    10154.314
+ 58  JTT+F+R2      4680.236     200 9760.471     90160.471    10158.268
+ 59  JTT+F+R3      4680.233     202 9764.467     91776.467    10166.242
+Akaike Information Criterion:           WAG
+Corrected Akaike Information Criterion: WAG
+Bayesian Information Criterion:         WAG
+Best-fit model: WAG chosen according to BIC
+
+All model information printed to ../output/hssp/split/Ord0007_1o98.ALL_GBP3_AICc.model.gz
+CPU time for ModelFinder: 2.371 seconds (0h:0m:2s)
+Wall-clock time for ModelFinder: 2.398 seconds (0h:0m:2s)
+
+NOTE: 1 MB RAM (0 GB) is required!
+Estimate model parameters (epsilon = 0.500)
+1. Initial log-likelihood: -4599.138
+Optimal log-likelihood: -4599.137
+Parameters optimization took 1 rounds (0.006 sec)
+--------------------------------------------------------------------
+|             INITIALIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+
+Do NNI search on 1 best initial trees
+Estimate model parameters (epsilon = 0.500)
+BETTER TREE FOUND at iteration 1: -4524.716
+Finish initializing candidate tree set (2)
+Current best tree score: -4524.716 / CPU time: 0.090
+Number of iterations: 1
+--------------------------------------------------------------------
+|               OPTIMIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+TREE SEARCH COMPLETED AFTER 2 ITERATIONS / Time: 0h:0m:0s
+
+--------------------------------------------------------------------
+|                    FINALIZING TREE SEARCH                        |
+--------------------------------------------------------------------
+Performs final model parameters optimization
+Estimate model parameters (epsilon = 0.050)
+1. Initial log-likelihood: -4524.716
+Optimal log-likelihood: -4524.716
+Parameters optimization took 1 rounds (0.005 sec)
+BEST SCORE FOUND : -4524.716
+Total tree length: 19.335
+
+Total number of iterations: 2
+CPU time used for tree search: 0.165 sec (0h:0m:0s)
+Wall-clock time used for tree search: 0.169 sec (0h:0m:0s)
+Total CPU time used: 0.183 sec (0h:0m:0s)
+Total wall-clock time used: 0.193 sec (0h:0m:0s)
+
+Analysis results written to: 
+  IQ-TREE report:                ../output/hssp/split/Ord0007_1o98.ALL_GBP3_AICc.iqtree
+  Maximum-likelihood tree:       ../output/hssp/split/Ord0007_1o98.ALL_GBP3_AICc.treefile
+  Screen log file:               ../output/hssp/split/Ord0007_1o98.ALL_GBP3_AICc.log
+
+Date and Time: Sat Mar  9 16:59:04 2024

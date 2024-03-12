@@ -1,0 +1,178 @@
+IQ-TREE multicore version 1.6.12 for Linux 64-bit built Aug 15 2019
+Developed by Bui Quang Minh, Nguyen Lam Tung, Olga Chernomor,
+Heiko Schmidt, Dominik Schrempf, Michael Woodhams.
+
+Host:    fit15.local (AVX2, FMA3, 125 GB RAM)
+Command: /home/diepht/danquan/pQMaker/iqtree -s ../test/custom-hssp-1-split//Ord0124_2gho.ALL_GBP2P3 -m MFP -fast -mset LG,WAG,JTT -t ../test/custom-hssp-1-split//Ord0124_2gho.ALL_GB.tree -safe -seed 0 -pre ../test/custom-hssp-1-split//Ord0124_2gho.ALL_GBP2P3_AICc
+Seed:    0 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Sun Mar 10 09:52:03 2024
+Kernel:  Safe AVX+FMA - 1 threads (36 CPU cores detected)
+
+HINT: Use -nt option to specify number of threads because your CPU has 36 cores!
+HINT: -nt AUTO will automatically determine the best number of threads to use.
+
+Reading alignment file ../test/custom-hssp-1-split//Ord0124_2gho.ALL_GBP2P3 ... Phylip format detected
+Alignment most likely contains protein sequences
+Alignment has 43 sequences with 53 columns, 41 distinct patterns
+31 parsimony-informative, 2 singleton sites, 20 constant sites
+                        Gap/Ambiguity  Composition  p-value
+   1  2gho_seed                 0.00%    passed     97.74%
+   2  9_2gho_RPOB_THET2         0.00%    passed     90.98%
+   3  13_2gho_Q1J0P6_DEIGD      1.89%    passed     67.31%
+   4  14_2gho_RPOB_DEIRA        1.89%    passed     73.16%
+   5  756_2gho_RPOB_BRAJA       0.00%    passed    100.00%
+   6  765_2gho_Q1YND8_9RHIZ     0.00%    passed    100.00%
+   7  809_2gho_Q1GT23_SPHAL     0.00%    passed     99.95%
+   8  810_2gho_Q6XBK6_9BRAD     0.00%    passed    100.00%
+   9  840_2gho_Q359P3_9BRAD     0.00%    passed    100.00%
+  10  841_2gho_Q6XBL3_9BRAD     0.00%    passed    100.00%
+  11  857_2gho_A0XUC2_9SPHN     0.00%    passed     98.00%
+  12  858_2gho_RPOB_ZYMMO       0.00%    passed    100.00%
+  13  873_2gho_Q6XBL2_9BRAD     0.00%    passed    100.00%
+  14  874_2gho_Q6XBL1_9BRAD     0.00%    passed    100.00%
+  15  875_2gho_Q6XBM3_9BRAD     0.00%    passed     98.66%
+  16  876_2gho_Q6XBM0_AFIFE     0.00%    passed    100.00%
+  17  886_2gho_Q0G7I3_9RHIZ     0.00%    passed    100.00%
+  18  908_2gho_Q6XBL6_9BRAD     0.00%    passed    100.00%
+  19  915_2gho_Q27DN0_MYCFV     0.00%    passed     99.88%
+  20  917_2gho_RPOB_BRUSU       0.00%    passed    100.00%
+  21  929_2gho_RPOB_RHILO       0.00%    passed    100.00%
+  22  931_2gho_Q6XBM1_9BRAD     0.00%    passed     98.66%
+  23  932_2gho_Q6XBL9_AFIFE     0.00%    passed    100.00%
+  24  933_2gho_Q6XBM2_9BRAD     0.00%    passed     98.66%
+  25  955_2gho_Q53AV0_9BRAD     0.00%    passed     98.66%
+  26  956_2gho_RPOB_RHOPA       0.00%    passed    100.00%
+  27  976_2gho_Q08T04_STIAU     0.00%    passed     99.18%
+  28  977_2gho_RPOB_NOVAD       0.00%    passed     99.86%
+  29  989_2gho_Q6XBL0_9BRAD     0.00%    passed    100.00%
+  30  1007_2gho_Q2K9M4_RHIEC    0.00%    passed    100.00%
+  31  1008_2gho_Q1NA06_9SPHN    0.00%    passed    100.00%
+  32  1036_2gho_Q1MIE9_RHIL3    0.00%    passed    100.00%
+  33  1055_2gho_Q1D7U3_MYXXD    0.00%    passed     99.41%
+  34  1297_2gho_RPOB_DESVH      0.00%    passed     87.28%
+  35  1354_2gho_RPOB_DESDG      0.00%    passed     86.16%
+  36  1407_2gho_Q1MPW8_LAWIP    0.00%    passed     95.09%
+  37  1548_2gho_A1A317_BIFAD    0.00%    passed     99.63%
+  38  1586_2gho_RPOB_AQUAE      0.00%    passed     66.88%
+  39  1616_2gho_RPOB_AQUPY      0.00%    passed     66.88%
+  40  1761_2gho_RPOBC_HELHP     0.00%    passed     85.01%
+  41  1860_2gho_RPOBC_HELPY     0.00%    passed     96.12%
+  42  1865_2gho_Q17VN6_HELAH    0.00%    passed     96.12%
+  43  1876_2gho_RPOBC_HELPJ     0.00%    passed     96.12%
+****  TOTAL                     0.09%  0 sequences failed composition chi2 test (p-value<5%; df=19)
+NOTE: 840_2gho_Q359P3_9BRAD is identical to 756_2gho_RPOB_BRAJA but kept for subsequent analysis
+NOTE: 873_2gho_Q6XBL2_9BRAD is identical to 810_2gho_Q6XBK6_9BRAD but kept for subsequent analysis
+NOTE: 931_2gho_Q6XBM1_9BRAD is identical to 875_2gho_Q6XBM3_9BRAD but kept for subsequent analysis
+NOTE: 1036_2gho_Q1MIE9_RHIL3 is identical to 1007_2gho_Q2K9M4_RHIEC but kept for subsequent analysis
+NOTE: 1616_2gho_RPOB_AQUPY is identical to 1586_2gho_RPOB_AQUAE but kept for subsequent analysis
+NOTE: 1865_2gho_Q17VN6_HELAH is identical to 1860_2gho_RPOBC_HELPY but kept for subsequent analysis
+NOTE: 10 identical sequences (see below) will be ignored for subsequent analysis
+NOTE: 841_2gho_Q6XBL3_9BRAD (identical to 756_2gho_RPOB_BRAJA) is ignored but added at the end
+NOTE: 876_2gho_Q6XBM0_AFIFE (identical to 756_2gho_RPOB_BRAJA) is ignored but added at the end
+NOTE: 908_2gho_Q6XBL6_9BRAD (identical to 756_2gho_RPOB_BRAJA) is ignored but added at the end
+NOTE: 932_2gho_Q6XBL9_AFIFE (identical to 756_2gho_RPOB_BRAJA) is ignored but added at the end
+NOTE: 956_2gho_RPOB_RHOPA (identical to 756_2gho_RPOB_BRAJA) is ignored but added at the end
+NOTE: 874_2gho_Q6XBL1_9BRAD (identical to 810_2gho_Q6XBK6_9BRAD) is ignored but added at the end
+NOTE: 989_2gho_Q6XBL0_9BRAD (identical to 810_2gho_Q6XBK6_9BRAD) is ignored but added at the end
+NOTE: 933_2gho_Q6XBM2_9BRAD (identical to 875_2gho_Q6XBM3_9BRAD) is ignored but added at the end
+NOTE: 955_2gho_Q53AV0_9BRAD (identical to 875_2gho_Q6XBM3_9BRAD) is ignored but added at the end
+NOTE: 1876_2gho_RPOBC_HELPJ (identical to 1860_2gho_RPOBC_HELPY) is ignored but added at the end
+
+For your convenience alignment with unique sequences printed to ../test/custom-hssp-1-split//Ord0124_2gho.ALL_GBP2P3_AICc.uniqueseq.phy
+
+Reading input tree file ../test/custom-hssp-1-split//Ord0124_2gho.ALL_GB.tree ...
+NOTE: ModelFinder requires 3 MB RAM!
+ModelFinder will test 78 protein models (sample size: 53) ...
+ No. Model         -LnL         df  AIC          AICc         BIC
+  1  LG            799.262      63  1724.523     9788.523     1848.651
+  2  LG+I          782.761      64  1693.521     10013.521    1819.620
+  3  LG+G4         789.877      64  1707.754     10027.754    1833.853
+  4  LG+I+G4       782.764      65  1695.528     10275.528    1823.596
+  5  LG+R2         787.767      65  1705.533     10285.533    1833.602
+  6  LG+R3         785.765      67  1705.530     10817.530    1837.539
+ 14  LG+F          801.241      82  1766.482     15378.482    1928.046
+ 15  LG+F+I        789.522      83  1745.043     15689.043    1908.578
+ 16  LG+F+G4       798.132      83  1762.265     15706.265    1925.799
+ 17  LG+F+I+G4     789.543      84  1747.087     16027.087    1912.591
+ 18  LG+F+R2       794.036      84  1756.072     16036.072    1921.576
+ 19  LG+F+R3       792.151      86  1756.302     16720.302    1925.747
+ 27  WAG           787.024      63  1700.048     9764.048     1824.177
+ 28  WAG+I         772.990      64  1673.980     9993.980     1800.078
+ 29  WAG+G4        781.260      64  1690.519     10010.519    1816.618
+ 30  WAG+I+G4      773.002      65  1676.004     10256.004    1804.073
+ 31  WAG+R2        777.372      65  1684.745     10264.745    1812.814
+ 32  WAG+R3        775.685      67  1685.370     10797.370    1817.379
+ 40  WAG+F         799.515      82  1763.030     15375.030    1924.594
+ 41  WAG+F+I       788.996      83  1743.993     15687.993    1907.527
+ 42  WAG+F+G4      797.187      83  1760.373     15704.373    1923.907
+ 43  WAG+F+I+G4    789.019      84  1746.038     16026.038    1911.542
+ 44  WAG+F+R2      792.728      84  1753.456     16033.456    1918.961
+ 45  WAG+F+R3      791.280      86  1754.560     16718.560    1924.006
+ 53  JTT           814.227      63  1754.454     9818.454     1878.583
+ 54  JTT+I         796.934      64  1721.869     10041.869    1847.968
+ 55  JTT+G4        803.550      64  1735.101     10055.101    1861.199
+ 56  JTT+I+G4      796.935      65  1723.870     10303.870    1851.939
+ 57  JTT+R2        800.293      65  1730.586     10310.586    1858.655
+ 58  JTT+R3        799.190      67  1732.380     10844.380    1864.389
+ 66  JTT+F         828.405      82  1820.810     15432.810    1982.374
+ 67  JTT+F+I       814.800      83  1795.600     15739.600    1959.134
+ 68  JTT+F+G4      823.161      83  1812.323     15756.323    1975.857
+ 69  JTT+F+I+G4    814.815      84  1797.629     16077.629    1963.134
+ 70  JTT+F+R2      818.325      84  1804.650     16084.650    1970.154
+ 71  JTT+F+R3      817.110      86  1806.220     16770.220    1975.665
+Akaike Information Criterion:           WAG+I
+Corrected Akaike Information Criterion: WAG
+Bayesian Information Criterion:         WAG+I
+Best-fit model: WAG+I chosen according to BIC
+
+All model information printed to ../test/custom-hssp-1-split//Ord0124_2gho.ALL_GBP2P3_AICc.model.gz
+CPU time for ModelFinder: 1.071 seconds (0h:0m:1s)
+Wall-clock time for ModelFinder: 1.078 seconds (0h:0m:1s)
+WARNING: States(s) W rarely appear in alignment and may cause numerical problems
+
+NOTE: 0 MB RAM (0 GB) is required!
+Estimate model parameters (epsilon = 0.500)
+1. Initial log-likelihood: -775.377
+2. Current log-likelihood: -773.426
+Optimal log-likelihood: -773.011
+Proportion of invariable sites: 0.306
+Parameters optimization took 2 rounds (0.009 sec)
+--------------------------------------------------------------------
+|             INITIALIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+
+Do NNI search on 1 best initial trees
+Estimate model parameters (epsilon = 0.500)
+BETTER TREE FOUND at iteration 1: -764.670
+Finish initializing candidate tree set (2)
+Current best tree score: -764.670 / CPU time: 0.026
+Number of iterations: 1
+--------------------------------------------------------------------
+|               OPTIMIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+TREE SEARCH COMPLETED AFTER 2 ITERATIONS / Time: 0h:0m:0s
+
+--------------------------------------------------------------------
+|                    FINALIZING TREE SEARCH                        |
+--------------------------------------------------------------------
+Performs final model parameters optimization
+Estimate model parameters (epsilon = 0.050)
+1. Initial log-likelihood: -764.670
+Optimal log-likelihood: -764.667
+Proportion of invariable sites: 0.318
+Parameters optimization took 1 rounds (0.004 sec)
+BEST SCORE FOUND : -764.667
+Total tree length: 2.562
+
+Total number of iterations: 2
+CPU time used for tree search: 0.051 sec (0h:0m:0s)
+Wall-clock time used for tree search: 0.054 sec (0h:0m:0s)
+Total CPU time used: 0.071 sec (0h:0m:0s)
+Total wall-clock time used: 0.080 sec (0h:0m:0s)
+
+Analysis results written to: 
+  IQ-TREE report:                ../test/custom-hssp-1-split//Ord0124_2gho.ALL_GBP2P3_AICc.iqtree
+  Maximum-likelihood tree:       ../test/custom-hssp-1-split//Ord0124_2gho.ALL_GBP2P3_AICc.treefile
+  Screen log file:               ../test/custom-hssp-1-split//Ord0124_2gho.ALL_GBP2P3_AICc.log
+
+Date and Time: Sun Mar 10 09:52:04 2024

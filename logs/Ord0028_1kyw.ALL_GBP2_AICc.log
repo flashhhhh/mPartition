@@ -1,0 +1,193 @@
+IQ-TREE multicore version 1.6.12 for Linux 64-bit built Aug 15 2019
+Developed by Bui Quang Minh, Nguyen Lam Tung, Olga Chernomor,
+Heiko Schmidt, Dominik Schrempf, Michael Woodhams.
+
+Host:    fit-gw.local (AVX2, FMA3, 62 GB RAM)
+Command: /home/diepht/danquan/pQMaker/iqtree -s ../output/hssp/split/Ord0028_1kyw.ALL_GBP2 -m MFP -fast -mset LG,WAG,JTT -t ../output/hssp/split/Ord0028_1kyw.ALL_GB.tree -safe -seed 0 -pre ../output/hssp/split/Ord0028_1kyw.ALL_GBP2_AICc
+Seed:    0 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Sat Mar  9 17:55:09 2024
+Kernel:  Safe AVX+FMA - 1 threads (36 CPU cores detected)
+
+HINT: Use -nt option to specify number of threads because your CPU has 36 cores!
+HINT: -nt AUTO will automatically determine the best number of threads to use.
+
+Reading alignment file ../output/hssp/split/Ord0028_1kyw.ALL_GBP2 ... Phylip format detected
+Alignment most likely contains protein sequences
+Alignment has 79 sequences with 55 columns, 55 distinct patterns
+53 parsimony-informative, 2 singleton sites, 0 constant sites
+                       Gap/Ambiguity  Composition  p-value
+   1  1kyw_seed                0.00%    passed     99.99%
+   2  2_1kyw_Q1T6K4_MEDTR      0.00%    passed    100.00%
+   3  4_1kyw_Q3SCM5_9FABA      0.00%    passed     99.92%
+   4  8_1kyw_COMT1_POPTM       0.00%    passed     99.70%
+   5  18_1kyw_COMT1_PRUDU      0.00%    passed     99.93%
+   6  21_1kyw_Q7X9J0_ROSCH     0.00%    passed     99.54%
+   7  25_1kyw_Q9M602_FRAAN     0.00%    passed     99.54%
+   8  26_1kyw_Q09K02_MALDO     0.00%    passed     99.96%
+   9  30_1kyw_Q14VV8_BOENI     0.00%    passed    100.00%
+  10  36_1kyw_COMT1_CLABR      0.00%    passed     99.99%
+  11  43_1kyw_Q09K01_MALDO     0.00%    passed    100.00%
+  12  45_1kyw_COMT1_EUCGU      0.00%    passed    100.00%
+  13  53_1kyw_Q09K03_MALDO     0.00%    passed    100.00%
+  14  66_1kyw_Q9SWR0_LIQST     0.00%    passed     99.84%
+  15  67_1kyw_COMT1_CAPAN      0.00%    passed     99.99%
+  16  68_1kyw_Q1JUZ8_IPONI     0.00%    passed     99.99%
+  17  75_1kyw_COMT1_OCIBA      0.00%    passed    100.00%
+  18  77_1kyw_COMT2_OCIBA      0.00%    passed     99.98%
+  19  80_1kyw_COMT1_COFCA      0.00%    passed     99.97%
+  20  84_1kyw_COMT1_CATRO      0.00%    passed     99.99%
+  21  87_1kyw_Q9M560_VITVI     0.00%    passed     99.87%
+  22  91_1kyw_COMT1_CAPCH      0.00%    passed     99.99%
+  23  98_1kyw_Q6T1F5_9APIA     0.00%    passed     99.99%
+  24  101_1kyw_Q9XE90_9MAGN    0.00%    passed     99.94%
+  25  102_1kyw_Q9XE92_9MAGN    0.00%    passed     99.67%
+  26  105_1kyw_Q9SYR9_9MAGN    0.00%    passed     98.61%
+  27  107_1kyw_O65362_MESCR    0.00%    passed     99.99%
+  28  109_1kyw_Q9XE91_9MAGN    0.00%    passed     99.99%
+  29  113_1kyw_Q6WUC0_PAPSO    0.00%    passed    100.00%
+  30  114_1kyw_IEMT_CLABR      0.00%    passed    100.00%
+  31  118_1kyw_Q0ZUG4_ISATI    0.00%    passed     86.81%
+  32  125_1kyw_COMT1_ZINEL     0.00%    passed     99.98%
+  33  127_1kyw_Q5KSL8_IRIHO    0.00%    passed     95.25%
+  34  129_1kyw_Q6T1F6_9APIA    0.00%    passed     96.84%
+  35  136_1kyw_Q6UNM7_9POAL    0.00%    passed     99.08%
+  36  141_1kyw_Q38J50_WHEAT    0.00%    passed     99.02%
+  37  145_1kyw_Q94GB0_FESAR    0.00%    passed     96.85%
+  38  148_1kyw_Q94GA9_FESAR    0.00%    passed     99.25%
+  39  162_1kyw_O22381_LOLPR    0.00%    passed     96.85%
+  40  170_1kyw_Q9ZTU2_LOLPR    0.00%    passed     96.85%
+  41  178_1kyw_Q6VWF7_MAIZE    0.00%    passed     99.83%
+  42  179_1kyw_Q84X55_SORBI    0.00%    passed     97.99%
+  43  191_1kyw_Q9ZTU0_LOLPR    0.00%    passed     99.33%
+  44  192_1kyw_Q6VWE6_MAIZE    0.00%    passed     99.18%
+  45  193_1kyw_Q84N28_WHEAT    0.00%    passed     97.45%
+  46  202_1kyw_OMT1_ORYSA      0.00%    passed     99.02%
+  47  204_1kyw_Q94GA7_FESAR    0.00%    passed     99.33%
+  48  209_1kyw_Q5NDD5_PICAB    0.00%    passed     99.46%
+  49  213_1kyw_Q6L8K4_ROSCH    0.00%    passed     96.77%
+  50  216_1kyw_Q6Q796_VANPL    0.00%    passed     89.89%
+  51  218_1kyw_Q42949_TOBAC    0.00%    passed     91.45%
+  52  219_1kyw_Q6VMV9_MENPI    0.00%    passed     98.88%
+  53  221_1kyw_Q8S3K6_TOBAC    0.00%    passed     91.45%
+  54  225_1kyw_Q2HTB3_MEDTR    0.00%    passed     94.34%
+  55  229_1kyw_Q8H0D1_HORVU    0.00%    passed     98.90%
+  56  232_1kyw_Q1WMA5_CATRO    0.00%    passed     87.64%
+  57  234_1kyw_IMT1_MESCR      0.00%    passed     52.21%
+  58  235_1kyw_Q2HTB5_MEDTR    0.00%    passed     99.72%
+  59  240_1kyw_Q9ZTU1_LOLPR    0.00%    passed     93.02%
+  60  241_1kyw_Q7X9J1_ROSCH    0.00%    passed     76.59%
+  61  243_1kyw_Q27I62_VANPL    0.00%    passed     59.37%
+  62  245_1kyw_Q1SIU5_MEDTR    0.00%    passed     96.56%
+  63  248_1kyw_Q27I63_VANPL    0.00%    passed     63.87%
+  64  250_1kyw_Q96424_GLYEC    0.00%    passed     84.90%
+  65  259_1kyw_Q9LPU5_ARATH    0.00%    passed     50.18%
+  66  268_1kyw_Q0WUM9_ARATH    0.00%    passed     50.18%
+  67  270_1kyw_Q9CAQ3_ARATH    0.00%    passed     84.85%
+  68  281_1kyw_Q9LPU7_ARATH    0.00%    passed     54.48%
+  69  282_1kyw_Q8LGI0_ARATH    0.00%    passed     20.09%
+  70  283_1kyw_Q9LPU8_ARATH    0.00%    passed     50.18%
+  71  289_1kyw_Q9ZU24_ARATH    0.00%    passed     37.75%
+  72  290_1kyw_Q3E7R3_ARATH    0.00%    passed     27.83%
+  73  291_1kyw_Q8L8L1_ARATH    0.00%    passed     75.87%
+  74  294_1kyw_Q9LPU6_ARATH    0.00%    passed     54.48%
+  75  297_1kyw_Q84WJ8_ARATH    0.00%    passed     93.44%
+  76  300_1kyw_A0MFN9_ARATH    0.00%    passed     62.20%
+  77  307_1kyw_Q9CAM9_ARATH    0.00%    passed     37.97%
+  78  314_1kyw_Q7XXD3_ORYSA    0.00%    failed      1.77%
+  79  323_1kyw_Q9SRD4_ARATH    0.00%    passed     46.93%
+****  TOTAL                    0.00%  1 sequences failed composition chi2 test (p-value<5%; df=19)
+NOTE: 25_1kyw_Q9M602_FRAAN is identical to 21_1kyw_Q7X9J0_ROSCH but kept for subsequent analysis
+NOTE: 162_1kyw_O22381_LOLPR is identical to 145_1kyw_Q94GB0_FESAR but kept for subsequent analysis
+NOTE: 204_1kyw_Q94GA7_FESAR is identical to 191_1kyw_Q9ZTU0_LOLPR but kept for subsequent analysis
+NOTE: 221_1kyw_Q8S3K6_TOBAC is identical to 218_1kyw_Q42949_TOBAC but kept for subsequent analysis
+NOTE: 268_1kyw_Q0WUM9_ARATH is identical to 259_1kyw_Q9LPU5_ARATH but kept for subsequent analysis
+NOTE: 294_1kyw_Q9LPU6_ARATH is identical to 281_1kyw_Q9LPU7_ARATH but kept for subsequent analysis
+NOTE: 2 identical sequences (see below) will be ignored for subsequent analysis
+NOTE: 170_1kyw_Q9ZTU2_LOLPR (identical to 145_1kyw_Q94GB0_FESAR) is ignored but added at the end
+NOTE: 283_1kyw_Q9LPU8_ARATH (identical to 259_1kyw_Q9LPU5_ARATH) is ignored but added at the end
+
+For your convenience alignment with unique sequences printed to ../output/hssp/split/Ord0028_1kyw.ALL_GBP2_AICc.uniqueseq.phy
+
+Reading input tree file ../output/hssp/split/Ord0028_1kyw.ALL_GB.tree ...
+NOTE: ModelFinder requires 9 MB RAM!
+ModelFinder will test 66 protein models (sample size: 55) ...
+ No. Model         -LnL         df  AIC          AICc         BIC
+  1  LG            2670.439     151 5642.877     51546.877    5945.985
+  2  LG+G4         2662.371     152 5628.742     52140.742    5933.857
+  3  LG+R2         2662.087     153 5630.173     52754.173    5937.295
+  4  LG+R3         2661.978     155 5633.955     53993.955    5945.092
+ 12  LG+F          2724.633     170 5789.267     63929.267    6130.513
+ 13  LG+F+G4       2715.870     171 5773.741     64597.741    6116.995
+ 14  LG+F+R2       2715.576     172 5775.152     65287.152    6120.413
+ 15  LG+F+R3       2715.565     174 5779.131     66679.131    6128.407
+ 23  WAG           2655.693     151 5613.386     51517.386    5916.494
+ 24  WAG+G4        2651.321     152 5606.642     52118.642    5911.757
+ 25  WAG+R2        2650.343     153 5606.687     52730.687    5913.809
+ 26  WAG+R3        2650.340     155 5610.680     53970.680    5921.817
+ 34  WAG+F         2709.679     170 5759.358     63899.358    6100.604
+ 35  WAG+F+G4      2706.618     171 5755.236     64579.236    6098.490
+ 36  WAG+F+R2      2705.857     172 5755.715     65267.715    6100.976
+ 37  WAG+F+R3      2705.847     174 5759.694     66659.694    6108.970
+ 45  JTT           2599.328     151 5500.657     51404.657    5803.764
+ 46  JTT+G4        2595.759     152 5495.519     52007.519    5800.633
+ 47  JTT+R2        2595.112     153 5496.223     52620.223    5803.345
+ 48  JTT+R3        2595.108     155 5500.215     53860.215    5811.352
+ 56  JTT+F         2650.897     170 5641.794     63781.794    5983.040
+ 57  JTT+F+G4      2647.635     171 5637.269     64461.269    5980.523
+ 58  JTT+F+R2      2647.098     172 5638.195     65150.195    5983.457
+ 59  JTT+F+R3      2647.084     174 5642.168     66542.168    5991.443
+Akaike Information Criterion:           JTT+G4
+Corrected Akaike Information Criterion: JTT
+Bayesian Information Criterion:         JTT+G4
+Best-fit model: JTT+G4 chosen according to BIC
+
+All model information printed to ../output/hssp/split/Ord0028_1kyw.ALL_GBP2_AICc.model.gz
+CPU time for ModelFinder: 1.663 seconds (0h:0m:1s)
+Wall-clock time for ModelFinder: 1.674 seconds (0h:0m:1s)
+
+NOTE: 3 MB RAM (0 GB) is required!
+Estimate model parameters (epsilon = 0.500)
+1. Initial log-likelihood: -2630.092
+2. Current log-likelihood: -2596.074
+Optimal log-likelihood: -2595.760
+Gamma shape alpha: 12.195
+Parameters optimization took 2 rounds (0.120 sec)
+--------------------------------------------------------------------
+|             INITIALIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+
+Do NNI search on 1 best initial trees
+Estimate model parameters (epsilon = 0.500)
+BETTER TREE FOUND at iteration 1: -2564.117
+Finish initializing candidate tree set (2)
+Current best tree score: -2564.117 / CPU time: 0.407
+Number of iterations: 1
+--------------------------------------------------------------------
+|               OPTIMIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+TREE SEARCH COMPLETED AFTER 2 ITERATIONS / Time: 0h:0m:0s
+
+--------------------------------------------------------------------
+|                    FINALIZING TREE SEARCH                        |
+--------------------------------------------------------------------
+Performs final model parameters optimization
+Estimate model parameters (epsilon = 0.050)
+1. Initial log-likelihood: -2564.117
+Optimal log-likelihood: -2564.117
+Gamma shape alpha: 16.849
+Parameters optimization took 1 rounds (0.034 sec)
+BEST SCORE FOUND : -2564.117
+Total tree length: 11.244
+
+Total number of iterations: 2
+CPU time used for tree search: 0.736 sec (0h:0m:0s)
+Wall-clock time used for tree search: 0.747 sec (0h:0m:0s)
+Total CPU time used: 0.898 sec (0h:0m:0s)
+Total wall-clock time used: 0.916 sec (0h:0m:0s)
+
+Analysis results written to: 
+  IQ-TREE report:                ../output/hssp/split/Ord0028_1kyw.ALL_GBP2_AICc.iqtree
+  Maximum-likelihood tree:       ../output/hssp/split/Ord0028_1kyw.ALL_GBP2_AICc.treefile
+  Screen log file:               ../output/hssp/split/Ord0028_1kyw.ALL_GBP2_AICc.log
+
+Date and Time: Sat Mar  9 17:55:12 2024

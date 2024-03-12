@@ -1,0 +1,144 @@
+IQ-TREE multicore version 1.6.12 for Linux 64-bit built Aug 15 2019
+Developed by Bui Quang Minh, Nguyen Lam Tung, Olga Chernomor,
+Heiko Schmidt, Dominik Schrempf, Michael Woodhams.
+
+Host:    fit-gw.local (AVX2, FMA3, 62 GB RAM)
+Command: /home/diepht/danquan/pQMaker/iqtree -s ../output/hssp/split/Ord0249_1c82.ALL_GBP1P2 -m MFP -fast -mset LG,WAG,JTT -t ../output/hssp/split/Ord0249_1c82.ALL_GB.tree -safe -seed 0 -pre ../output/hssp/split/Ord0249_1c82.ALL_GBP1P2_AICc
+Seed:    0 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Sat Mar  9 20:24:30 2024
+Kernel:  Safe AVX+FMA - 1 threads (36 CPU cores detected)
+
+HINT: Use -nt option to specify number of threads because your CPU has 36 cores!
+HINT: -nt AUTO will automatically determine the best number of threads to use.
+
+Reading alignment file ../output/hssp/split/Ord0249_1c82.ALL_GBP1P2 ... Phylip format detected
+Alignment most likely contains protein sequences
+Alignment has 18 sequences with 65 columns, 44 distinct patterns
+31 parsimony-informative, 0 singleton sites, 34 constant sites
+                      Gap/Ambiguity  Composition  p-value
+   1  1c82_seed               0.00%    passed     99.52%
+   2  2_1c82_HYSA_STRPN       0.00%    passed     97.82%
+   3  3_1c82_Q934I4_STRIT     0.00%    passed     99.99%
+   4  4_1c82_Q6W9D8_STRCV     0.00%    passed     99.99%
+   5  5_1c82_Q6W9E0_STRAP     0.00%    passed     99.55%
+   6  6_1c82_Q934I5_STRCV     0.00%    passed     98.06%
+   7  8_1c82_Q3DB25_STRAG     0.00%    passed     99.40%
+   8  10_1c82_Q3DE55_STRAG    0.00%    passed     99.97%
+   9  11_1c82_Q3K0Q6_STRA1    0.00%    passed     99.97%
+  10  13_1c82_Q8DZB2_STRA5    0.00%    passed     99.40%
+  11  14_1c82_O86478_STRAG    0.00%    passed     99.40%
+  12  19_1c82_Q48TV7_STRPM    0.00%    passed     99.96%
+  13  20_1c82_Q9L7W9_STRPY    0.00%    passed     99.96%
+  14  22_1c82_Q1JH55_STRPD    0.00%    passed     99.96%
+  15  25_1c82_Q878K8_STRP3    0.00%    passed     99.92%
+  16  28_1c82_Q6H8Y4_STRSU    0.00%    passed     60.79%
+  17  30_1c82_Q2ZXV0_STRSU    0.00%    passed     60.79%
+  18  35_1c82_Q6H8Y1_STRSU    0.00%    passed     60.79%
+****  TOTAL                   0.00%  0 sequences failed composition chi2 test (p-value<5%; df=17)
+NOTE: 13_1c82_Q8DZB2_STRA5 is identical to 8_1c82_Q3DB25_STRAG but kept for subsequent analysis
+NOTE: 11_1c82_Q3K0Q6_STRA1 is identical to 10_1c82_Q3DE55_STRAG but kept for subsequent analysis
+NOTE: 20_1c82_Q9L7W9_STRPY is identical to 19_1c82_Q48TV7_STRPM but kept for subsequent analysis
+NOTE: 30_1c82_Q2ZXV0_STRSU is identical to 28_1c82_Q6H8Y4_STRSU but kept for subsequent analysis
+NOTE: 3 identical sequences (see below) will be ignored for subsequent analysis
+NOTE: 14_1c82_O86478_STRAG (identical to 8_1c82_Q3DB25_STRAG) is ignored but added at the end
+NOTE: 22_1c82_Q1JH55_STRPD (identical to 19_1c82_Q48TV7_STRPM) is ignored but added at the end
+NOTE: 35_1c82_Q6H8Y1_STRSU (identical to 28_1c82_Q6H8Y4_STRSU) is ignored but added at the end
+
+For your convenience alignment with unique sequences printed to ../output/hssp/split/Ord0249_1c82.ALL_GBP1P2_AICc.uniqueseq.phy
+
+Reading input tree file ../output/hssp/split/Ord0249_1c82.ALL_GB.tree ...
+NOTE: ModelFinder requires 1 MB RAM!
+ModelFinder will test 78 protein models (sample size: 65) ...
+ No. Model         -LnL         df  AIC          AICc         BIC
+  1  LG            568.013      27  1190.025     1230.890     1248.734
+  2  LG+I          550.799      28  1157.599     1202.710     1218.482
+  3  LG+G4         542.015      28  1140.030     1185.142     1200.913
+  4  LG+I+G4       542.446      29  1142.892     1192.606     1205.949
+  5  LG+R2         542.347      29  1142.693     1192.407     1205.750
+  6  LG+R3         541.924      31  1145.847     1205.969     1213.253
+ 14  LG+F          551.763      46  1195.526     1435.748     1295.548
+ 15  LG+F+I        533.013      47  1160.026     1425.438     1262.223
+ 16  LG+F+G4       525.600      47  1145.200     1410.612     1247.396
+ 17  LG+F+I+G4     525.850      48  1147.699     1441.699     1252.070
+ 18  LG+F+R2       526.242      48  1148.485     1442.485     1252.855
+ 19  LG+F+R3       525.882      50  1151.764     1516.050     1260.484
+ 27  WAG           556.889      27  1167.778     1208.643     1226.487
+ 28  WAG+I         541.845      28  1139.691     1184.802     1200.574
+ 29  WAG+G4        537.633      28  1131.266     1176.377     1192.148
+ 30  WAG+I+G4      537.778      29  1133.556     1183.271     1196.614
+ 31  WAG+R2        537.989      29  1133.978     1183.692     1197.035
+ 32  WAG+R3        537.789      31  1137.578     1197.700     1204.984
+ 40  WAG+F         544.096      46  1180.192     1420.414     1280.214
+ 41  WAG+F+I       527.617      47  1149.235     1414.647     1251.431
+ 42  WAG+F+G4      523.822      47  1141.643     1407.055     1243.839
+ 43  WAG+F+I+G4    523.916      48  1143.831     1437.831     1248.202
+ 44  WAG+F+R2      524.405      48  1144.810     1438.810     1249.180
+ 45  WAG+F+R3      524.144      50  1148.288     1512.574     1257.007
+ 53  JTT           567.420      27  1188.840     1229.705     1247.549
+ 54  JTT+I         549.567      28  1155.134     1200.245     1216.017
+ 55  JTT+G4        541.562      28  1139.124     1184.236     1200.007
+ 56  JTT+I+G4      541.754      29  1141.509     1191.223     1204.566
+ 57  JTT+R2        541.992      29  1141.984     1191.698     1205.041
+ 58  JTT+R3        541.655      31  1145.310     1205.432     1212.716
+ 66  JTT+F         549.995      46  1191.991     1432.213     1292.012
+ 67  JTT+F+I       531.128      47  1156.255     1421.667     1258.452
+ 68  JTT+F+G4      523.904      47  1141.807     1407.219     1244.003
+ 69  JTT+F+I+G4    524.076      48  1144.151     1438.151     1248.522
+ 70  JTT+F+R2      524.595      48  1145.190     1439.190     1249.561
+ 71  JTT+F+R3      524.229      50  1148.458     1512.744     1257.177
+Akaike Information Criterion:           WAG+G4
+Corrected Akaike Information Criterion: WAG+G4
+Bayesian Information Criterion:         WAG+G4
+Best-fit model: WAG+G4 chosen according to BIC
+
+All model information printed to ../output/hssp/split/Ord0249_1c82.ALL_GBP1P2_AICc.model.gz
+CPU time for ModelFinder: 0.359 seconds (0h:0m:0s)
+Wall-clock time for ModelFinder: 0.366 seconds (0h:0m:0s)
+NOTE: State(s) C, H not present in alignment and thus removed from Markov process to prevent numerical problems
+NOTE: 2 states (see above) are not present and thus removed from Markov process to prevent numerical problems
+
+NOTE: 0 MB RAM (0 GB) is required!
+Estimate model parameters (epsilon = 0.500)
+1. Initial log-likelihood: -541.674
+2. Current log-likelihood: -537.968
+Optimal log-likelihood: -537.634
+Gamma shape alpha: 0.391
+Parameters optimization took 2 rounds (0.019 sec)
+--------------------------------------------------------------------
+|             INITIALIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+
+Do NNI search on 1 best initial trees
+BETTER TREE FOUND at iteration 1: -537.633
+Finish initializing candidate tree set (2)
+Current best tree score: -537.633 / CPU time: 0.016
+Number of iterations: 1
+--------------------------------------------------------------------
+|               OPTIMIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+TREE SEARCH COMPLETED AFTER 2 ITERATIONS / Time: 0h:0m:0s
+
+--------------------------------------------------------------------
+|                    FINALIZING TREE SEARCH                        |
+--------------------------------------------------------------------
+Performs final model parameters optimization
+Estimate model parameters (epsilon = 0.050)
+1. Initial log-likelihood: -537.633
+Optimal log-likelihood: -537.633
+Gamma shape alpha: 0.389
+Parameters optimization took 1 rounds (0.005 sec)
+BEST SCORE FOUND : -537.633
+Total tree length: 1.700
+
+Total number of iterations: 2
+CPU time used for tree search: 0.045 sec (0h:0m:0s)
+Wall-clock time used for tree search: 0.049 sec (0h:0m:0s)
+Total CPU time used: 0.074 sec (0h:0m:0s)
+Total wall-clock time used: 0.085 sec (0h:0m:0s)
+
+Analysis results written to: 
+  IQ-TREE report:                ../output/hssp/split/Ord0249_1c82.ALL_GBP1P2_AICc.iqtree
+  Maximum-likelihood tree:       ../output/hssp/split/Ord0249_1c82.ALL_GBP1P2_AICc.treefile
+  Screen log file:               ../output/hssp/split/Ord0249_1c82.ALL_GBP1P2_AICc.log
+
+Date and Time: Sat Mar  9 20:24:30 2024

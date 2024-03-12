@@ -1,0 +1,220 @@
+IQ-TREE multicore version 1.6.12 for Linux 64-bit built Aug 15 2019
+Developed by Bui Quang Minh, Nguyen Lam Tung, Olga Chernomor,
+Heiko Schmidt, Dominik Schrempf, Michael Woodhams.
+
+Host:    fit-gw.local (AVX2, FMA3, 62 GB RAM)
+Command: /home/diepht/danquan/pQMaker/iqtree -s ../output/hssp/split/Ord0034_1rzu.ALL_GBP1 -m MFP -fast -mset LG,WAG,JTT -t ../output/hssp/split/Ord0034_1rzu.ALL_GB.tree -safe -seed 0 -pre ../output/hssp/split/Ord0034_1rzu.ALL_GBP1_AICc
+Seed:    0 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Sat Mar  9 18:10:44 2024
+Kernel:  Safe AVX+FMA - 1 threads (36 CPU cores detected)
+
+HINT: Use -nt option to specify number of threads because your CPU has 36 cores!
+HINT: -nt AUTO will automatically determine the best number of threads to use.
+
+Reading alignment file ../output/hssp/split/Ord0034_1rzu.ALL_GBP1 ... Phylip format detected
+Alignment most likely contains protein sequences
+Alignment has 76 sequences with 196 columns, 169 distinct patterns
+147 parsimony-informative, 7 singleton sites, 42 constant sites
+                        Gap/Ambiguity  Composition  p-value
+   1  1rzu_seed                 0.00%    passed     99.90%
+   2  5_1rzu_Q1MBS7_RHIL3       0.00%    passed     99.92%
+   3  7_1rzu_GLGA_RHIEC         0.00%    passed     99.88%
+   4  8_1rzu_GLGA_RHITR         0.00%    passed     99.07%
+   5  11_1rzu_Q0MLQ8_9RHIZ      0.00%    passed     98.58%
+   6  13_1rzu_GLGA1_RHIME       0.00%    passed     97.93%
+   7  15_1rzu_GLGA_RHILO        0.00%    passed     88.36%
+   8  18_1rzu_Q1NB35_9SPHN      0.00%    passed     58.12%
+   9  22_1rzu_GLGA_NOVAD        0.00%    passed     64.10%
+  10  24_1rzu_GLGA2_RHIME       0.00%    passed     97.50%
+  11  26_1rzu_Q13EA7_RHOPS      0.00%    passed     91.56%
+  12  28_1rzu_Q165E4_ROSDO      0.00%    passed     97.76%
+  13  30_1rzu_GLGA_RHOPB        0.00%    passed     98.06%
+  14  33_1rzu_Q07TH8_RHOPA      0.00%    passed     94.27%
+  15  34_1rzu_GLGA_RHOPA        0.00%    passed     98.55%
+  16  37_1rzu_Q0M9P5_9RHIZ      0.00%    passed     99.21%
+  17  42_1rzu_Q0G3B2_9RHIZ      0.00%    passed     95.93%
+  18  44_1rzu_Q2DG79_ACICY      0.00%    passed     84.41%
+  19  47_1rzu_GLGA_RHOP2        0.00%    passed     93.04%
+  20  53_1rzu_Q35E26_9BRAD      0.00%    passed     76.97%
+  21  57_1rzu_Q2CIS9_9RHOB      1.02%    passed     90.69%
+  22  58_1rzu_GLGA2_AGRT5       0.00%    passed     95.27%
+  23  61_1rzu_Q0BPL3_GRABC      0.00%    passed     93.10%
+  24  64_1rzu_Q141E7_BURXL      0.00%    passed     92.32%
+  25  70_1rzu_A0GLB5_9BURK      0.00%    passed     97.26%
+  26  72_1rzu_GLGA_DECAR        0.00%    passed     98.89%
+  27  74_1rzu_A0IRL1_9ENTR      0.00%    passed     94.28%
+  28  76_1rzu_A0G839_9BURK      0.00%    passed     87.37%
+  29  78_1rzu_GLGA_YERPS        0.00%    passed     99.92%
+  30  93_1rzu_GLGA_RHORT        0.00%    passed     99.66%
+  31  96_1rzu_GLGA_SALPA        0.00%    passed     95.86%
+  32  103_1rzu_GLGA_RHOFD       0.00%    passed     50.24%
+  33  105_1rzu_A0XGU1_9ENTR     0.00%    passed     97.67%
+  34  115_1rzu_Q1R5J7_ECOUT     0.00%    passed     95.05%
+  35  134_1rzu_GLGA_ERWCT       0.00%    passed     99.92%
+  36  141_1rzu_Q0AIE6_NITEC     0.00%    passed     95.32%
+  37  142_1rzu_GLGA_MANSM       0.00%    passed     99.36%
+  38  144_1rzu_GLGA_MAGMM       0.00%    passed     95.54%
+  39  150_1rzu_Q3EFV6_ACTSC     0.00%    passed     98.86%
+  40  152_1rzu_A0Q596_FRANO     0.00%    passed     99.33%
+  41  153_1rzu_GLGA_PASMU       0.00%    passed     91.43%
+  42  156_1rzu_GLGA_FRATT       0.00%    passed     97.09%
+  43  167_1rzu_GLGA1_METCA      0.00%    passed     72.50%
+  44  172_1rzu_A0WI31_9GAMM     0.00%    passed     71.15%
+  45  183_1rzu_Q1H197_METFK     0.00%    passed     73.48%
+  46  186_1rzu_GLGA_HAEI8       0.00%    passed     95.67%
+  47  188_1rzu_A0GAH9_9BURK     0.00%    passed     96.80%
+  48  196_1rzu_Q13MK9_BURXL     0.00%    passed     91.58%
+  49  204_1rzu_Q06PX9_PASHA     0.00%    passed     99.71%
+  50  205_1rzu_Q1DCS0_MYXXD     0.00%    passed     99.04%
+  51  210_1rzu_A0FVQ8_9BURK     0.00%    passed     91.00%
+  52  213_1rzu_Q2CUC5_ECTHA     0.00%    passed     29.33%
+  53  215_1rzu_Q0I3I0_HAES1     0.00%    passed     95.60%
+  54  217_1rzu_GLGA_AZOSE       0.00%    passed     37.01%
+  55  262_1rzu_A0ICX7_9CHLR     0.00%    passed     98.99%
+  56  264_1rzu_GLGA_THICR       0.00%    passed     66.12%
+  57  279_1rzu_Q1F8P5_9CHLR     0.00%    passed     95.69%
+  58  295_1rzu_GLGA_BACST       0.00%    passed     82.58%
+  59  330_1rzu_Q0YIW8_9DELT     0.00%    passed     94.25%
+  60  444_1rzu_A0PY73_CLONO     0.00%    passed     10.97%
+  61  447_1rzu_Q2AFX8_9FIRM     0.00%    failed      0.58%
+  62  512_1rzu_Q2WHC9_CLOBE     0.00%    passed     39.80%
+  63  533_1rzu_GLGA_PELCD       0.00%    passed     61.61%
+  64  546_1rzu_Q2E8L0_BACCE     0.00%    passed     48.38%
+  65  574_1rzu_Q2DLH1_9DELT     0.00%    passed     86.32%
+  66  603_1rzu_Q4CK23_CLOTM     0.00%    passed     10.76%
+  67  616_1rzu_GLGA_BACCR       0.00%    passed     62.30%
+  68  653_1rzu_Q1Q6L2_9BACT     0.00%    passed      8.23%
+  69  664_1rzu_GLGA_BACAN       0.00%    passed     70.53%
+  70  806_1rzu_GLGA_CLOPE       0.00%    passed     62.84%
+  71  824_1rzu_A0RK84_BACTU     0.00%    passed     74.77%
+  72  825_1rzu_Q2AYC5_9BACI     0.00%    passed     88.07%
+  73  831_1rzu_Q0SWZ0_CLOPS     0.00%    passed     57.82%
+  74  862_1rzu_Q2D5H3_9FIRM     0.00%    passed     16.68%
+  75  970_1rzu_A0UW34_CLOCE     0.00%    passed     72.91%
+  76  1379_1rzu_Q2AFY2_9FIRM    0.00%    passed      5.52%
+****  TOTAL                     0.01%  1 sequences failed composition chi2 test (p-value<5%; df=19)
+
+Reading input tree file ../output/hssp/split/Ord0034_1rzu.ALL_GB.tree ...
+NOTE: ModelFinder requires 22 MB RAM!
+ModelFinder will test 78 protein models (sample size: 196) ...
+ No. Model         -LnL         df  AIC          AICc         BIC
+  1  LG            14781.829    149 29861.657    30833.397    30350.096
+  2  LG+I          14217.377    150 28734.755    29741.421    29226.472
+  3  LG+G4         13403.503    150 27107.006    28113.673    27598.723
+  4  LG+I+G4       13375.857    151 27053.714    28096.987    27548.710
+  5  LG+R2         13788.306    151 27878.613    28921.885    28373.608
+  6  LG+R3         13437.605    153 27181.211    28303.211    27682.762
+  7  LG+R4         13404.140    155 27118.281    28327.281    27626.388
+  8  LG+R5         13391.652    157 27097.304    28402.883    27611.968
+  9  LG+R6         13385.661    159 27089.323    28502.656    27610.543
+ 10  LG+R7         13382.177    161 27086.354    28620.590    27614.131
+ 14  LG+F          14633.255    168 29602.509    31705.620    30153.232
+ 15  LG+F+I        14063.319    169 28464.638    30674.638    29018.640
+ 16  LG+F+G4       13250.729    169 26839.458    29049.458    27393.460
+ 17  LG+F+I+G4     13224.466    170 26788.932    29114.532    27346.211
+ 18  LG+F+R2       13643.501    170 27627.001    29952.601    28184.281
+ 19  LG+F+R3       13266.462    172 26876.924    29464.402    27440.759
+ 20  LG+F+R4       13239.053    174 26826.106    29726.106    27396.498
+ 21  LG+F+R5       13230.021    176 26812.043    30091.201    27388.991
+ 22  LG+F+R6       13227.145    178 26810.290    30558.761    27393.795
+ 27  WAG           14766.162    149 29830.325    30802.064    30318.764
+ 28  WAG+I         14161.534    150 28623.068    29629.734    29114.785
+ 29  WAG+G4        13491.649    150 27283.298    28289.964    27775.015
+ 30  WAG+I+G4      13452.089    151 27206.177    28249.450    27701.172
+ 31  WAG+R2        13773.743    151 27849.485    28892.758    28344.481
+ 32  WAG+R3        13498.925    153 27303.850    28425.850    27805.401
+ 33  WAG+R4        13469.329    155 27248.658    28457.658    27756.766
+ 34  WAG+R5        13459.662    157 27233.324    28538.903    27747.988
+ 35  WAG+R6        13457.347    159 27232.694    28646.028    27753.914
+ 40  WAG+F         14630.609    168 29597.218    31700.329    30147.941
+ 41  WAG+F+I       14025.678    169 28389.356    30599.356    28943.357
+ 42  WAG+F+G4      13355.558    169 27049.116    29259.116    27603.118
+ 43  WAG+F+I+G4    13320.026    170 26980.052    29305.652    27537.331
+ 44  WAG+F+R2      13642.584    170 27625.169    29950.769    28182.448
+ 45  WAG+F+R3      13359.620    172 27063.241    29650.719    27627.077
+ 46  WAG+F+R4      13334.531    174 27017.062    29917.062    27587.454
+ 47  WAG+F+R5      13324.952    176 27001.903    30281.061    27578.852
+ 48  WAG+F+R6      13323.216    178 27002.432    30750.902    27585.936
+ 53  JTT           14999.791    149 30297.583    31269.322    30786.022
+ 54  JTT+I         14380.234    150 29060.467    30067.134    29552.185
+ 55  JTT+G4        13613.705    150 27527.410    28534.077    28019.127
+ 56  JTT+I+G4      13578.004    151 27458.009    28501.282    27953.004
+ 57  JTT+R2        13934.126    151 28170.252    29213.525    28665.248
+ 58  JTT+R3        13639.660    153 27585.320    28707.320    28086.872
+ 59  JTT+R4        13597.651    155 27505.302    28714.302    28013.409
+ 60  JTT+R5        13586.245    157 27486.490    28792.069    28001.154
+ 61  JTT+R6        13582.498    159 27482.997    28896.330    28004.217
+ 66  JTT+F         14875.946    168 30087.892    32191.003    30638.615
+ 67  JTT+F+I       14249.082    169 28836.164    31046.164    29390.165
+ 68  JTT+F+G4      13476.991    169 27291.981    29501.981    27845.983
+ 69  JTT+F+I+G4    13442.776    170 27225.552    29551.152    27782.831
+ 70  JTT+F+R2      13806.922    170 27953.844    30279.444    28511.123
+ 71  JTT+F+R3      13503.640    172 27351.280    29938.758    27915.116
+ 72  JTT+F+R4      13461.828    174 27271.656    30171.656    27842.048
+ 73  JTT+F+R5      13449.955    176 27251.910    30531.068    27828.858
+ 74  JTT+F+R6      13445.382    178 27246.763    30995.234    27830.267
+Akaike Information Criterion:           LG+F+I+G4
+Corrected Akaike Information Criterion: LG+I+G4
+Bayesian Information Criterion:         LG+F+I+G4
+Best-fit model: LG+F+I+G4 chosen according to BIC
+
+All model information printed to ../output/hssp/split/Ord0034_1rzu.ALL_GBP1_AICc.model.gz
+CPU time for ModelFinder: 101.199 seconds (0h:1m:41s)
+Wall-clock time for ModelFinder: 101.431 seconds (0h:1m:41s)
+
+NOTE: 9 MB RAM (0 GB) is required!
+Estimate model parameters (epsilon = 0.500)
+Thoroughly optimizing +I+G parameters from 10 start values...
+Init pinv, alpha: 0.000, 1.000 / Estimate: 0.000, 0.509 / LogL: -13250.728
+Init pinv, alpha: 0.024, 1.000 / Estimate: 0.193, 0.860 / LogL: -13224.508
+Init pinv, alpha: 0.048, 1.000 / Estimate: 0.193, 0.859 / LogL: -13224.516
+Init pinv, alpha: 0.071, 1.000 / Estimate: 0.192, 0.858 / LogL: -13224.513
+Init pinv, alpha: 0.095, 1.000 / Estimate: 0.194, 0.864 / LogL: -13224.479
+Init pinv, alpha: 0.119, 1.000 / Estimate: 0.192, 0.861 / LogL: -13224.484
+Init pinv, alpha: 0.143, 1.000 / Estimate: 0.194, 0.866 / LogL: -13224.469
+Init pinv, alpha: 0.167, 1.000 / Estimate: 0.195, 0.870 / LogL: -13224.466
+Init pinv, alpha: 0.190, 1.000 / Estimate: 0.195, 0.871 / LogL: -13224.466
+Init pinv, alpha: 0.214, 1.000 / Estimate: 0.196, 0.874 / LogL: -13224.477
+Optimal pinv,alpha: 0.195, 0.870 / LogL: -13224.466
+
+Parameters optimization took 3.368 sec
+--------------------------------------------------------------------
+|             INITIALIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+
+Do NNI search on 1 best initial trees
+Estimate model parameters (epsilon = 0.500)
+BETTER TREE FOUND at iteration 1: -13182.412
+Finish initializing candidate tree set (2)
+Current best tree score: -13182.412 / CPU time: 0.434
+Number of iterations: 1
+--------------------------------------------------------------------
+|               OPTIMIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+TREE SEARCH COMPLETED AFTER 2 ITERATIONS / Time: 0h:0m:4s
+
+--------------------------------------------------------------------
+|                    FINALIZING TREE SEARCH                        |
+--------------------------------------------------------------------
+Performs final model parameters optimization
+Estimate model parameters (epsilon = 0.050)
+1. Initial log-likelihood: -13182.412
+Optimal log-likelihood: -13182.412
+Proportion of invariable sites: 0.194
+Gamma shape alpha: 0.876
+Parameters optimization took 1 rounds (0.078 sec)
+BEST SCORE FOUND : -13182.412
+Total tree length: 23.207
+
+Total number of iterations: 2
+CPU time used for tree search: 0.913 sec (0h:0m:0s)
+Wall-clock time used for tree search: 0.917 sec (0h:0m:0s)
+Total CPU time used: 4.371 sec (0h:0m:4s)
+Total wall-clock time used: 4.383 sec (0h:0m:4s)
+
+Analysis results written to: 
+  IQ-TREE report:                ../output/hssp/split/Ord0034_1rzu.ALL_GBP1_AICc.iqtree
+  Maximum-likelihood tree:       ../output/hssp/split/Ord0034_1rzu.ALL_GBP1_AICc.treefile
+  Screen log file:               ../output/hssp/split/Ord0034_1rzu.ALL_GBP1_AICc.log
+
+Date and Time: Sat Mar  9 18:12:30 2024

@@ -1,0 +1,138 @@
+IQ-TREE multicore version 1.6.12 for Linux 64-bit built Aug 15 2019
+Developed by Bui Quang Minh, Nguyen Lam Tung, Olga Chernomor,
+Heiko Schmidt, Dominik Schrempf, Michael Woodhams.
+
+Host:    fit-gw.local (AVX2, FMA3, 62 GB RAM)
+Command: /home/diepht/danquan/pQMaker/iqtree -s ../output/hssp/split/Ord0249_1c82.ALL_GBP2P2P2 -m MFP -fast -mset LG,WAG,JTT -t ../output/hssp/split/Ord0249_1c82.ALL_GB.tree -safe -seed 0 -pre ../output/hssp/split/Ord0249_1c82.ALL_GBP2P2P2_AICc
+Seed:    0 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Sat Mar  9 20:24:23 2024
+Kernel:  Safe AVX+FMA - 1 threads (36 CPU cores detected)
+
+HINT: Use -nt option to specify number of threads because your CPU has 36 cores!
+HINT: -nt AUTO will automatically determine the best number of threads to use.
+
+Reading alignment file ../output/hssp/split/Ord0249_1c82.ALL_GBP2P2P2 ... Phylip format detected
+Alignment most likely contains protein sequences
+Alignment has 18 sequences with 126 columns, 113 distinct patterns
+111 parsimony-informative, 2 singleton sites, 13 constant sites
+                      Gap/Ambiguity  Composition  p-value
+   1  1c82_seed               0.00%    passed     99.99%
+   2  2_1c82_HYSA_STRPN       0.00%    passed     99.99%
+   3  3_1c82_Q934I4_STRIT     0.00%    passed     99.92%
+   4  4_1c82_Q6W9D8_STRCV     0.00%    passed     99.92%
+   5  5_1c82_Q6W9E0_STRAP     0.00%    passed     99.48%
+   6  6_1c82_Q934I5_STRCV     0.00%    passed     99.62%
+   7  8_1c82_Q3DB25_STRAG     0.00%    passed     99.93%
+   8  10_1c82_Q3DE55_STRAG    0.00%    passed     99.90%
+   9  11_1c82_Q3K0Q6_STRA1    0.00%    passed     99.58%
+  10  13_1c82_Q8DZB2_STRA5    0.00%    passed     99.93%
+  11  14_1c82_O86478_STRAG    0.00%    passed     99.71%
+  12  19_1c82_Q48TV7_STRPM    0.79%    passed     68.74%
+  13  20_1c82_Q9L7W9_STRPY    0.79%    passed     74.84%
+  14  22_1c82_Q1JH55_STRPD    0.79%    passed     71.48%
+  15  25_1c82_Q878K8_STRP3    0.00%    passed     38.71%
+  16  28_1c82_Q6H8Y4_STRSU    1.59%    passed     33.42%
+  17  30_1c82_Q2ZXV0_STRSU    1.59%    passed     33.42%
+  18  35_1c82_Q6H8Y1_STRSU    1.59%    passed     33.42%
+****  TOTAL                   0.40%  0 sequences failed composition chi2 test (p-value<5%; df=19)
+NOTE: 2_1c82_HYSA_STRPN is identical to 1c82_seed but kept for subsequent analysis
+NOTE: 4_1c82_Q6W9D8_STRCV is identical to 3_1c82_Q934I4_STRIT but kept for subsequent analysis
+NOTE: 30_1c82_Q2ZXV0_STRSU is identical to 28_1c82_Q6H8Y4_STRSU but kept for subsequent analysis
+NOTE: 1 identical sequences (see below) will be ignored for subsequent analysis
+NOTE: 35_1c82_Q6H8Y1_STRSU (identical to 28_1c82_Q6H8Y4_STRSU) is ignored but added at the end
+
+For your convenience alignment with unique sequences printed to ../output/hssp/split/Ord0249_1c82.ALL_GBP2P2P2_AICc.uniqueseq.phy
+
+Reading input tree file ../output/hssp/split/Ord0249_1c82.ALL_GB.tree ...
+NOTE: ModelFinder requires 3 MB RAM!
+ModelFinder will test 78 protein models (sample size: 126) ...
+ No. Model         -LnL         df  AIC          AICc         BIC
+  1  LG            1268.563     31  2599.126     2620.233     2687.051
+  2  LG+I          1268.556     32  2601.112     2623.821     2691.873
+  3  LG+G4         1268.566     32  2601.132     2623.841     2691.893
+  4  LG+I+G4       1268.785     33  2603.570     2627.962     2697.168
+  5  LG+R2         1268.640     33  2603.281     2627.672     2696.878
+  6  LG+R3         1268.616     35  2607.231     2635.231     2706.501
+ 14  LG+F          1246.111     50  2592.223     2660.223     2734.037
+ 15  LG+F+I        1246.111     51  2594.222     2665.898     2738.872
+ 16  LG+F+G4       1245.900     51  2593.801     2665.476     2738.451
+ 17  LG+F+I+G4     1246.028     52  2596.056     2671.563     2743.543
+ 18  LG+F+R2       1246.053     52  2596.106     2671.613     2743.592
+ 19  LG+F+R3       1246.030     54  2600.061     2683.723     2753.220
+ 27  WAG           1312.158     31  2686.315     2707.421     2774.240
+ 28  WAG+I         1312.146     32  2688.292     2711.002     2779.054
+ 29  WAG+G4        1312.159     32  2688.318     2711.028     2779.079
+ 30  WAG+I+G4      1312.228     33  2690.456     2714.847     2784.053
+ 31  WAG+R2        1312.217     33  2690.433     2714.825     2784.031
+ 32  WAG+R3        1312.172     35  2694.343     2722.343     2793.613
+ 40  WAG+F         1263.053     50  2626.106     2694.106     2767.921
+ 41  WAG+F+I       1263.052     51  2628.105     2699.780     2772.755
+ 42  WAG+F+G4      1263.058     51  2628.117     2699.792     2772.767
+ 43  WAG+F+I+G4    1263.116     52  2630.232     2705.739     2777.719
+ 44  WAG+F+R2      1263.076     52  2630.152     2705.659     2777.639
+ 45  WAG+F+R3      1263.059     54  2634.119     2717.781     2787.278
+ 53  JTT           1323.571     31  2709.141     2730.247     2797.066
+ 54  JTT+I         1323.570     32  2711.140     2733.849     2801.901
+ 55  JTT+G4        1323.576     32  2711.152     2733.862     2801.913
+ 56  JTT+I+G4      1323.598     33  2713.195     2737.587     2806.793
+ 57  JTT+R2        1323.587     33  2713.174     2737.565     2806.771
+ 58  JTT+R3        1323.574     35  2717.148     2745.148     2816.418
+ 66  JTT+F         1272.448     50  2644.897     2712.897     2786.711
+ 67  JTT+F+I       1272.448     51  2646.896     2718.572     2791.547
+ 68  JTT+F+G4      1272.440     51  2646.880     2718.556     2791.530
+ 69  JTT+F+I+G4    1272.474     52  2648.947     2724.454     2796.434
+ 70  JTT+F+R2      1272.445     52  2648.891     2724.398     2796.378
+ 71  JTT+F+R3      1272.445     54  2652.891     2736.553     2806.050
+Akaike Information Criterion:           LG+F
+Corrected Akaike Information Criterion: LG
+Bayesian Information Criterion:         LG
+Best-fit model: LG chosen according to BIC
+
+All model information printed to ../output/hssp/split/Ord0249_1c82.ALL_GBP2P2P2_AICc.model.gz
+CPU time for ModelFinder: 0.897 seconds (0h:0m:0s)
+Wall-clock time for ModelFinder: 0.910 seconds (0h:0m:0s)
+WARNING: States(s) C rarely appear in alignment and may cause numerical problems
+
+NOTE: 0 MB RAM (0 GB) is required!
+Estimate model parameters (epsilon = 0.500)
+1. Initial log-likelihood: -1268.563
+Optimal log-likelihood: -1268.556
+Parameters optimization took 1 rounds (0.002 sec)
+--------------------------------------------------------------------
+|             INITIALIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+
+Do NNI search on 1 best initial trees
+Estimate model parameters (epsilon = 0.500)
+BETTER TREE FOUND at iteration 1: -1253.099
+Finish initializing candidate tree set (2)
+Current best tree score: -1253.099 / CPU time: 0.022
+Number of iterations: 1
+--------------------------------------------------------------------
+|               OPTIMIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+TREE SEARCH COMPLETED AFTER 2 ITERATIONS / Time: 0h:0m:0s
+
+--------------------------------------------------------------------
+|                    FINALIZING TREE SEARCH                        |
+--------------------------------------------------------------------
+Performs final model parameters optimization
+Estimate model parameters (epsilon = 0.050)
+1. Initial log-likelihood: -1253.099
+Optimal log-likelihood: -1253.099
+Parameters optimization took 1 rounds (0.002 sec)
+BEST SCORE FOUND : -1253.099
+Total tree length: 2.195
+
+Total number of iterations: 2
+CPU time used for tree search: 0.033 sec (0h:0m:0s)
+Wall-clock time used for tree search: 0.037 sec (0h:0m:0s)
+Total CPU time used: 0.042 sec (0h:0m:0s)
+Total wall-clock time used: 0.052 sec (0h:0m:0s)
+
+Analysis results written to: 
+  IQ-TREE report:                ../output/hssp/split/Ord0249_1c82.ALL_GBP2P2P2_AICc.iqtree
+  Maximum-likelihood tree:       ../output/hssp/split/Ord0249_1c82.ALL_GBP2P2P2_AICc.treefile
+  Screen log file:               ../output/hssp/split/Ord0249_1c82.ALL_GBP2P2P2_AICc.log
+
+Date and Time: Sat Mar  9 20:24:24 2024
